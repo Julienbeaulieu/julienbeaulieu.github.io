@@ -100,7 +100,8 @@ Now, below are all the resources I have gathered to complete my data science tra
 ## Resources
 
 <b>Curriculum</b>
-
+- http://datasciencemasters.org/ - A ton of amazing resources to complement my learnings. Must read for anyone planning to learn data science on their own.  
+- [https://learn.lambdaschool.com/syllabus/ds](Lambda school) – This page details everything that they teach in data science at Lambda School. I’ll be using this page to check if I have any holes in the curriculum I am creating for myself.  
 <b>Online courses</b>
 
 <b>Programming and data science</b>
@@ -120,6 +121,13 @@ Now, below are all the resources I have gathered to complete my data science tra
 <b>Podcasts</b>
 
 <b>Communities</b>
+- DataTau - an aggregator of data science content where people can upvote the best selection of data science content. 
+- Machine learning subreddit  
+- Data is beautiful subreddit – Redditors posts cool apps and visualizations they’ve build and a lot of them are inspiring. Sometimes they even post their GitHub!  
+- Kaggle’s online forums 
+- KDNuggets  
+- Meetup.com – Join meetups in your city! 
+- Evenbrite – Go to events near you.  
 
 While I have officially began my journey towards becoming a data scientist, there won’t ever be an endpoint. Due to the rapid pace of development in this industry, I believe data scientist are on a never-ending journey of continuous learning. I hope this article has been useful to those of you considering a career change and for those who are deciding on how you’ll transition.  
 
