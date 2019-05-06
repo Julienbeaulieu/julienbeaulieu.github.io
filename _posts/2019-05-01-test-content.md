@@ -139,7 +139,6 @@ This is what my plan looks like in a few bullet points. I’ll be learning Data 
 
 </br>
 </br>
-
 ## Resources
 
 Below are all the resources I have gathered to complete my Data Science training. This list will continue to be updated as I continue to discover more. 
