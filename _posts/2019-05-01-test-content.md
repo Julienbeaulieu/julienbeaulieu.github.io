@@ -80,6 +80,7 @@ From what I have gathered, employers don’t really care that much if you know h
 One key concept to have in mind while doing this is to build the minimum viable version of the project and not spend too much time on it trying to make it perfect. My code doesn’t have to be great, it just has to work. If the project ends up being promising and gets traction, maybe I can go back and improve it, make it scale, and update my code. Otherwise, it’s best to move and learn something new.
 </br>
 
+
 <b>5. Time and Money.</b> 
 
 Another important reason behind my decision is that getting a college degree is expensive and takes a very long time. I am fortunate enough to live in Montreal where there are cheap, relatively fast and quality options. Unfortunately, none have all three at the same time. The Masters in Management in Analytics at McGill University is only a year, but costs 45,000 CAD. Data Science graduate degree at Montreal’s School of Commerce is only 6000$ thanks to government subsidies but takes about 1.5 to 2 years to complete and I could only start in August or January.  
@@ -94,25 +95,30 @@ A cheaper and faster way is to make my own curriculum through a combination of M
 There are so many good learning options out there, so many great lectures and videos that are available for free or for relatively cheap, that it would in fact be more effective for me to learn this way. By learning on an as-needed basis, I study what I actually need, and don’t spend time on topics that may end up being irrelevant. 
 </br>
 
+
 <b>7. Creating a network.</b>
 
 This is definitely something a school will give you that (most) online classes won’t. One way I make up for this is to simply reach out to people over lunch or coffee. It’s been going great so far. It’s surprising the number of people who are happy to take some time out of their schedule and help out. Also, it’s important that I continue networking at local Data Science events and go to conferences.
 </br>
+
 
 <b>8. Understanding what the best way for me to learn is and making the most of it.</b>
 
 I know my weaknesses and strengths when it comes to learning. I’ve been learning things on the side and I’ve had many side projects ever since I started my professional career 8 years ago. I know I am a self-starter, that I have the discipline to teach myself things outside of a classroom or a work environment. Therefore, I know I am getting into something that I can succeed in and complete. 
 </br>
 
+
 <b>9. Immersing myself in the community.</b>
 
 My favorite and most effective way to learn is to surround myself with all things Data Science. This is done by subscribing to Data Science newsletters, reading articles and books, listening to podcasts, watching videos on YouTube, taking advantage of sites like <a href="https://www.meetup.com/">Meetup</a> and <a href="https://www.eventbrite.com/">Eventbrite</a> by attending all and any Data Science events, finding online communities on reddit, Slack, and LinkedIn and joining them. 
 </br>
 
+
 <b>10. Math.</b>
 
 My approach to math is as follows: I need to know the science and math behind what’s going on with data or else I’ll be extremely limited in what I can learn. Math will be increasingly important for me the more I advance my career. The tools and tech will continue to change rapidly, but the underlying math will not. Having said this, you don’t need an extensive foundation in math to begin working on projects. 
 </br>
+
 
 <b>11. Diversity.</b>
 
@@ -136,9 +142,9 @@ This is what my plan looks like in a few bullet points. I’ll be learning Data 
 - Projects can be an interesting starting point for networking – Find people interested in it, or that have worked on similar projects and have a discussion. Talk to potential employers about them too. 
 
 - Repeat these steps to create a portfolio.
+</br>
+</br>
 
-</br>
-</br>
 ## Resources
 
 Below are all the resources I have gathered to complete my Data Science training. This list will continue to be updated as I continue to discover more. 
