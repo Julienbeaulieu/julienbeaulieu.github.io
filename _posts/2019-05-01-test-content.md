@@ -8,9 +8,9 @@ I am an aspiring data scientist currently looking for a job. This article is abo
 I will first share some background about myself, why and how I chose this career. I will then explain the path I chose to pursue my education, as well as lessons learned. Finally, I’ll share some resources that I think have been essential in getting a toehold in data science. 
 
 Feel free to skip directly to the parts you are most interested in. 
-
-### Why do I want to become a data scientist? 
 </br>
+### Why do I want to become a data scientist? 
+
 I am a geek at heart and I have long been fascinated by the world of technology, science, and video games. While coding was something I was interested in, I never really considered a career in it. 
 
 After a masters in e-commerce at a business school and a few stints at various online marketing companies, I joined GSoft which is a startup based in Montreal. Aside from being a great place to work, GSoft had a keen interest in keeping its employees and products abreast of the cutting-edge technologies, particularly AI. As such, they hosted hackathons and training events, always focused on the power of data and how best to use it to drive the business forward. These events woke up the engineer in me I'd never known was there. It was at that point that I developed a passion for data. I decided I wanted to learn how to code and to pursue a career in Data Science.  
@@ -18,9 +18,9 @@ After a masters in e-commerce at a business school and a few stints at various o
 Data Science is currently a hot career, so I naturally wanted to make sure it wasn’t just hype and that it was truly for me. I started to do extensive research by reading a lot of articles, books, speaking to Data Scientists, and going to events. This finally culminated in my taking a consulting role in the more data driven part of the business at a bank all while I pursued a more formal education in data technology. I enrolled in an online bootcamp at <a href="https://rmotr.com/data-science-python-course">Rmotr</a>, which is focused on programming in Python and learning the Python libraries for Data Science.  
 
 So far, I have been consistently blown away by the number and power of tools already at a data scientist’s disposal, constantly cementing the notion that this is the career for me. To quote Andrew Ng, data science and deep learning is “the new electricity”.  The deeper I get, the more I understand where he's coming from, and the more I want to share my insights into this exciting and high impact field with anyone who may be in the situation I was in so recently. 
-
-### How I plan on becoming a Data Scientist  
 </br>
+### How I plan on becoming a Data Scientist  
+
 Changing careers requires a lot of time, effort and money, so it’s important to carefully and meticulously evaluate all possible options.  
 
 There are three different approaches to learning data science that I have been considering:  
@@ -36,7 +36,7 @@ I like James Kobielus’ insight in his article <a href="https://www.ibmbigdatah
 > “There’s yet another trend that will alleviate any talent gap: the democratization of data science. While I agree wholeheartedly with Raden’s statement that ‘the crème-de-la-crème of data scientists will fill roles in academia, technology vendors, Wall Street, research and government,’ I think he’s understating the extent to which autodidacts – the self-taught, uncredentialed, data-passionate people – will come to play a significant role in many organizations’ data science initiatives.” 
 
 I agree with his opinion that academic credentials are important but not necessary for high-quality data science (or simply to get a job). The core aptitudes – curiosity, intellectual agility, statistical fluency, research stamina, scientific rigor, a skeptical nature – that distinguish the best data scientists are all things you can acquire on the job, and by working smart. 
-
+</br>
 ### 10 lessons learned during my time learning Data Science 
 
 <b>There is a great opportunity for me in this field as someone from a non-technical background.</b> 
@@ -84,7 +84,7 @@ A cheaper and faster way is to make my own curriculum through a combination of M
 <b>Diversity.</b> One last thing I’ll mention about the field that really appeals to me: there is an incredible diversity of the people in Data Science; more so than in any other technical field I know as a matter of fact. Data scientists come from the widest variety of backgrounds; from mathematics, physics, economy, engineering, to business and social sciences. These are people from all over the world, men and women alike.  
 
 I believe this is one of the field’s greatest strengths. Countless studies have found that diverse teams perform better. I just cannot wait to work with PHDs, engineers and other incredibly smart people. Man is that exciting! 
-
+</br>
 ### Next Steps
 
 This is what my plan looks like in a few bullet points. I’ll be learning data science full time and using the resources I list below. 
@@ -102,8 +102,7 @@ This is what my plan looks like in a few bullet points. I’ll be learning data 
 - Repeat these steps to create a portfolio.
 
 Now, below are all the resources I have gathered to complete my data science training. This list will continue to be updated as I continue to discover more. 
-
-
+</br>
 ### Resources
 
 <b>Curriculum</b>
