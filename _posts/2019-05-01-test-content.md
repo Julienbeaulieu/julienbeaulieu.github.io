@@ -9,7 +9,6 @@ I am an aspiring Data Scientist currently looking for a job. This article is abo
 I will first share some background about myself, why and how I chose this career. I will then explain the path I chose to pursue my education, as well as lessons learned. Finally, I’ll share some resources that I think have been essential in getting a toehold in Data Science. 
 
 Feel free to skip directly to the parts you are most interested in. 
-
 <br />
 
 ## Why do I want to Become a Data Scientist? 
@@ -21,7 +20,6 @@ After a masters in e-commerce at a business school and a few stints at various o
 Data Science is currently a hot career, so I naturally wanted to make sure it wasn’t just hype and that it was truly for me. I started to do extensive research by reading a lot of articles, books, speaking to data scientists, and going to events. This finally culminated in my taking a consulting role in the more data driven part of the business at a bank all while I pursued a more formal education in data technology. I enrolled in an online bootcamp at <a href="https://rmotr.com/data-science-python-course">Rmotr</a>, which is focused on programming in Python and learning the Python libraries for Data Science.  
 
 So far, I have been consistently blown away by the number and power of tools already at a data scientist’s disposal, constantly cementing the notion that this is the career for me. To quote Andrew Ng, Data Science and deep learning is “the new electricity”.  The deeper I get, the more I understand where he's coming from, and the more I want to share my insights into this exciting and high impact field with anyone who may be in the situation I was in so recently. 
-
 <br />
 
 ## How I Plan on Becoming a Data Scientist  
