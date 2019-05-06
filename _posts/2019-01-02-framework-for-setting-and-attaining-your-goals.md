@@ -19,15 +19,15 @@ Defining objectives for my personal life has helped surface what is important fo
 
 I anticipate that having clear, specific, ambitious objectives will produce a higher level of productivity, will create clarity and increase my engagement towards reaching those goals. 
 
+<br />
+
 ## Definition of OKRs and leading principles 
 
 I use the OKR model to define my objectives so here is a definition taken directly from the book: 
 
 > “Objectives: This is simply WHAT is to be achieved, no more, and no less. By definition, objectives are significant, concrete, action oriented and (ideally), inspirational. 
 
-> Key results: benchmark and monitor HOW we get to the objective. Effective KRs are specific and timebound, aggressive yet realistic. Most of all they are measurable and verifiable. You either meet a key result’s requirements or you don’t.” 
-
-John Doerr 
+> Key results: benchmark and monitor HOW we get to the objective. Effective KRs are specific and timebound, aggressive yet realistic. Most of all they are measurable and verifiable. You either meet a key result’s requirements or you don’t.” John Doerr 
 
 OKR is a system used in a business context, and since I’ve decided to take some of the concepts and apply them to my own life, I found that there are three core OKR aspects that are useful to follow:  
 
@@ -37,9 +37,9 @@ OKR is a system used in a business context, and since I’ve decided to take som
 
 3. <b>Share my goals with friends and colleagues.</b> This will make me accountable. It will create <a href="https://seths.blog/2017/05/tension-vs-fear/">tension</a> and push me to stay engaged and motivated because now people are looking.  
 
-> “In one California study, people who recorded their goals and sent weekly progress reports to a friend - [two integral OKR features] - attained 43 percent more of their objectives than those who merely thought about goals without sharing them”. 
+> “In one California study, people who recorded their goals and sent weekly progress reports to a friend - [two integral OKR features] - attained 43 percent more of their objectives than those who merely thought about goals without sharing them”. John Doerr 
 
-John Doerr 
+<br />
 
 ## Other things to consider during the process 
 
@@ -52,8 +52,7 @@ Goals should be adaptable by nature. They’re meant to be guardrails, not chain
 
 ### Retrospection on goals 
 
-> “OKRS do not expire with completion of the work. As in any data-driven system, tremendous value can be gained from post hoc evaluation and analysis.” 
-John Doerr 
+> “OKRS do not expire with completion of the work. As in any data-driven system, tremendous value can be gained from post hoc evaluation and analysis.” John Doerr 
 
 Regular self-assessment and reflection on my objectives will be done to uncover learnings. I intend to reflect on my objectives every three months and write an analysis at the end of the year.   
 
