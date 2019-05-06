@@ -2,7 +2,7 @@
 layout: post
 title: Transitionning into Data Science from a Non-Technical Background 
 ---
-![how to become a data scientist](https://github.com/Julienbeaulieu/julienbeaulieu.github.io/blob/master/public/how_to_become_a_data_scientist.png "How to Become a Data Scientist")
+![how to become a data scientist]({{ site.url }}/public/how_to_become_a_data_scientist.png)
 
 I am an aspiring Data Scientist currently looking for a job. This article is about how I am transitioning into the field coming from a non-technical business background. In writing this, I hope to give the motivation and inspiration to people in similar situations to take on this journey as well. 
 
@@ -164,7 +164,7 @@ Below are all the resources I have gathered to complete my Data Science training
 
 <b>Curriculum</b>
 
-- http://datasciencemasters.org/ - A ton of amazing resources to complement my learnings. Must read for anyone planning to learn Data Science on their own.  
+- <a href="http://datasciencemasters.org/">http://datasciencemasters.org/</a> - A ton of amazing resources to complement my learnings. Must read for anyone planning to learn Data Science on their own.  
 - <a href="https://learn.lambdaschool.com/syllabus/ds">Lambda school</a> – This page details everything that they teach in data science at Lambda School. I’ll be using this page to check if I have any holes in the curriculum I am creating for myself.  
 
 <b>Online courses</b>
