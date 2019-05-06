@@ -9,7 +9,7 @@ I will first share some background about myself, why and how I chose this career
 
 Feel free to skip directly to the parts you are most interested in. 
 
-## Why do I want to become a data scientist? 
+### Why do I want to become a data scientist? 
 
 I am a geek at heart and I have long been fascinated by the world of technology, science, and video games. While coding was something I was interested in, I never really considered a career in it. 
 
@@ -19,7 +19,7 @@ Data Science is currently a hot career, so I naturally wanted to make sure it wa
 
 So far, I have been consistently blown away by the number and power of tools already at a data scientist’s disposal, constantly cementing the notion that this is the career for me. To quote Andrew Ng, data science and deep learning is “the new electricity”.  The deeper I get, the more I understand where he's coming from, and the more I want to share my insights into this exciting and high impact field with anyone who may be in the situation I was in so recently. 
 
-## How I plan on becoming a Data Scientist  
+### How I plan on becoming a Data Scientist  
 
 Changing careers requires a lot of time, effort and money, so it’s important to carefully and meticulously evaluate all possible options.  
 
@@ -37,19 +37,22 @@ I like James Kobielus’ insight in his article <a href="https://www.ibmbigdatah
 
 I agree with his opinion that academic credentials are important but not necessary for high-quality data science (or simply to get a job). The core aptitudes – curiosity, intellectual agility, statistical fluency, research stamina, scientific rigor, a skeptical nature – that distinguish the best data scientists are all things you can acquire on the job, and by working smart. 
 
-## 10 lessons learned during my time learning Data Science 
+### 10 lessons learned during my time learning Data Science 
 
-<b>There is a great opportunity for me in this field as someone from a non-technical background.</b> What I mean is that my unique background can play into my advantage since there are less people in the field with my business experience and perspective. As a marketing professional, I am innately customer-focused, always asking the questions, who’s it for, what’s it for, and how can I get people excited about it and spread the word. I also understand the importance of stakeholders, always thinking about how much impact my initiatives will have on the bottom line.  
+<b>There is a great opportunity for me in this field as someone from a non-technical background.</b> 
+What I mean is that my unique background can play into my advantage since there are less people in the field with my business experience and perspective. As a marketing professional, I am innately customer-focused, always asking the questions, who’s it for, what’s it for, and how can I get people excited about it and spread the word. I also understand the importance of stakeholders, always thinking about how much impact my initiatives will have on the bottom line.  
 
 I also had the opportunity to work in an agile environment in a startup. Lean production and iteration cycles, constant improvement and prioritization are all concepts I apply in my day to day work.  
 
 I believe that this background that can be effectively used and applied in data science, and that these are skills that are typically lacking in the field.  
 
-<b>Data science is difficult but not inaccessible.</b> While data science may seem intimidating to some, what many don’t realize is just how accessible it is thanks to the democratization of resources: video courses, eBooks, Stack Overflow, GitHub, hackathons, meetups, etc., most of which are free and open. What is required is dedication, as well as hard and smart work. Thankfully, this is something I can perform quite well.  
+<b>Data science is difficult but not inaccessible.</b>
+While data science may seem intimidating to some, what many don’t realize is just how accessible it is thanks to the democratization of resources: video courses, eBooks, Stack Overflow, GitHub, hackathons, meetups, etc., most of which are free and open. What is required is dedication, as well as hard and smart work. Thankfully, this is something I can perform quite well.  
 
 Data science is a relatively new career trajectory that merges statistics, business logic, and programming knowledge. This makes it a quite a difficult challenge, especially for a non-technical person like myself. A lot of people that transition into the field seem to be engineers or PHDs. They either already know how to program, have an extensive math background, or both. Having said that, there is still a sizable amount of people from non-technical backgrounds that have had successful careers.  
 
-<b>Time to first job matters most.</b> The sooner I am in a team working on actual data science projects, the sooner I’ll learn about it. I’ll be working on real problems, problems that sometimes classes can't teach that don’t always have to do with statistical complexity. I’ll have management invested in me and I’ll see what it really means to do practical data science.   
+<b>Time to first job matters most.</b>
+The sooner I am in a team working on actual data science projects, the sooner I’ll learn about it. I’ll be working on real problems, problems that sometimes classes can't teach that don’t always have to do with statistical complexity. I’ll have management invested in me and I’ll see what it really means to do practical data science.   
 
 <b>Project focused learning will land me a job faster than the academic route.</b> According Dan Becker, a Data Scientist at Kaggle that has overseen the recruitment of hundreds of people in the field, the quickest way to be hired as a data scientist is to build projects and showcase them to employers. This is because we learn much faster by trying and building something that solves a real problem. It is for me the most efficient and motivating way to learn. It is when you truly understand why certain math concepts are important that you remember them best. 
 
@@ -79,7 +82,7 @@ A cheaper and faster way is to make my own curriculum through a combination of M
 
 I believe this is one of the field’s greatest strengths. Countless studies have found that diverse teams perform better. I just cannot wait to work with PHDs, engineers and other incredibly smart people. Man is that exciting! 
 
-## Next Steps
+### Next Steps
 
 This is what my plan looks like in a few bullet points. I’ll be learning data science full time and using the resources I list below. 
 
@@ -97,14 +100,18 @@ This is what my plan looks like in a few bullet points. I’ll be learning data 
 
 Now, below are all the resources I have gathered to complete my data science training. This list will continue to be updated as I continue to discover more. 
 
-## Resources
+
+### Resources
 
 <b>Curriculum</b>
+
 - http://datasciencemasters.org/ - A ton of amazing resources to complement my learnings. Must read for anyone planning to learn data science on their own.  
 - <a href="https://learn.lambdaschool.com/syllabus/ds">Lambda school</a> – This page details everything that they teach in data science at Lambda School. I’ll be using this page to check if I have any holes in the curriculum I am creating for myself.  
 
 <b>Online courses</b>
+
 <b>Programming and data science</b>
+
 - <a href="https://rmotr.com/data-science-python-course">RMOTR</a> – I recommend starting with RMOTR because it is focused on learning python fundamentals and data science libraries. Good teachers and community with a final project that you can add to your portfolio.  
 - <a href="https://www.udacity.com/course/data-scientist-nanodegree--nd025">Udacity Data Science Nanodegree</a> – This program is focused on building practical data science projects such as recommendation engines, creating an image classifier, customer segments, etc.  
 - <a href="https://www.udacity.com/course/data-engineer-nanodegree--nd027">Udacity Data Engineering Nanodegree</a> – I believe it is important to know the basics of data modeling with PostgreSQL, Cloud data warehousing as well as big data ecosystem with Spark. 
@@ -113,6 +120,7 @@ Now, below are all the resources I have gathered to complete my data science tra
 - <a href="https://www.fast.ai/">Fast.ai</a> – Focused on teaching machine learning and deep learning. This MOOC requires good programming knowledge. I intend to follow some classes later on since I’ve heard excellent feedback and it is recommended by a lot of people.  
 
 <b>Linear Algebra, statistics and calculus</b>
+
 - <a href="https://www.khanacademy.org/math/">Khanacademy’s</a> linear algebra, calculus, and statistics videos are all fine places to start. Books and videos in this list can complement your learning. 
 
 <b>Books</b>
@@ -127,7 +135,7 @@ Now, below are all the resources I have gathered to complete my data science tra
     - <a href="http://themlbook.com/">The hundred-page machine learning book</a> – All you need to know about machine learning in 100 pages.  
 
 <b>Youtube Channels – My top 3 for data science</b>
-- <a href="https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw">3blue1brown</a>3blue1brown - One of the best YouTube channels to get a good intuition of complicated mathematical concepts.  
+- <a href="https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw">3blue1brown</a> - One of the best YouTube channels to get a good intuition of complicated mathematical concepts.  
 
 - <a href="https://www.youtube.com/channel/UCOjD18EJYcsBog4IozkF_7w">PyData</a> – Get access to an incredible number of videos at different PyData conferences. From tutorials to practical examples, there is really a ton of good stuff.   
 
