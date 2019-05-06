@@ -3,44 +3,5 @@ layout: default
 title: Home
 ---
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ site.baseurl }}{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
-
-    <br />
-
-    ![how to become a data scientist](https://julienbeaulieu.github.io/public/how_to_become_a_data_scientist.png)
-
-    <br />
-
-    I am an aspiring Data Scientist currently looking for a job. This article is about how I am transitioning into the field coming from a non-technical business background. In writing this, I hope to give the motivation and inspiration to people in similar situations to take on this journey as well. 
-
-    I'll first share some background about myself, why and how I chose this career. I explain the path I chose to pursue my education, as well as lessons learned. Finally, I’ll share some resources that I think have been essential in getting a toehold in Data Science. 
-    
-    
-  </div>
-  {% endfor %}
-</div>
-
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}/">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
+- <a href="https://julienbeaulieu.github.io/2019/05/06/transitionning-into-data-science-non-technical-background/">Transitionning into Data Science from a Non-Technical Background</a>
 
