@@ -5,7 +5,7 @@ title: A framework for setting and attaining your personal goals
 
 <br />
 
-![measure what matters](https://julienbeaulieu.github.io/public/measure-what-matters-john-doerr.PNG)
+![measure what matters](https://julienbeaulieu.github.io/public/measure-what-matters-john-doerr.png)
 
 <br />
 
