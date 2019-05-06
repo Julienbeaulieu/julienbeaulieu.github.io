@@ -40,6 +40,7 @@ I agree with his opinion that academic credentials are important but not necessa
 ### 10 lessons learned during my time learning Data Science 
 
 <b>There is a great opportunity for me in this field as someone from a non-technical background.</b> 
+
 What I mean is that my unique background can play into my advantage since there are less people in the field with my business experience and perspective. As a marketing professional, I am innately customer-focused, always asking the questions, who’s it for, what’s it for, and how can I get people excited about it and spread the word. I also understand the importance of stakeholders, always thinking about how much impact my initiatives will have on the bottom line.  
 
 I also had the opportunity to work in an agile environment in a startup. Lean production and iteration cycles, constant improvement and prioritization are all concepts I apply in my day to day work.  
@@ -47,11 +48,13 @@ I also had the opportunity to work in an agile environment in a startup. Lean pr
 I believe that this background that can be effectively used and applied in data science, and that these are skills that are typically lacking in the field.  
 
 <b>Data science is difficult but not inaccessible.</b>
+
 While data science may seem intimidating to some, what many don’t realize is just how accessible it is thanks to the democratization of resources: video courses, eBooks, Stack Overflow, GitHub, hackathons, meetups, etc., most of which are free and open. What is required is dedication, as well as hard and smart work. Thankfully, this is something I can perform quite well.  
 
 Data science is a relatively new career trajectory that merges statistics, business logic, and programming knowledge. This makes it a quite a difficult challenge, especially for a non-technical person like myself. A lot of people that transition into the field seem to be engineers or PHDs. They either already know how to program, have an extensive math background, or both. Having said that, there is still a sizable amount of people from non-technical backgrounds that have had successful careers.  
 
 <b>Time to first job matters most.</b>
+
 The sooner I am in a team working on actual data science projects, the sooner I’ll learn about it. I’ll be working on real problems, problems that sometimes classes can't teach that don’t always have to do with statistical complexity. I’ll have management invested in me and I’ll see what it really means to do practical data science.   
 
 <b>Project focused learning will land me a job faster than the academic route.</b> According Dan Becker, a Data Scientist at Kaggle that has overseen the recruitment of hundreds of people in the field, the quickest way to be hired as a data scientist is to build projects and showcase them to employers. This is because we learn much faster by trying and building something that solves a real problem. It is for me the most efficient and motivating way to learn. It is when you truly understand why certain math concepts are important that you remember them best. 
