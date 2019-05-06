@@ -85,11 +85,11 @@ This is what my plan looks like in a few bullet points. I’ll be learning data 
 
 - Learn the minimum necessary for an interesting and practical project (Kaggle competitions, Data for Good, personal projects) and join a MOOC that is focused on building projects. In my case I enrolled in Udacity’s Data Science Nanodegree program which seems fantastic! Check out their syllabus.  
 
-- Showcase my projects widely (GitHub, Kaggle, Reddit community, friends, contacts, etc). Get feedback! 
+    - Showcase my projects widely (GitHub, Kaggle, Reddit community, friends, contacts, etc). Get feedback! 
 
-- Improve them based on feedback and traction or interest. 
+    - Improve them based on feedback and traction or interest. 
 
-- Learn more theory as needed. 
+    - Learn more theory as needed. 
 
 - Projects can be an interesting starting point for networking – Find people interested in it, or that have worked on similar projects and have a discussion. Talk to potential employers about them too. 
 
