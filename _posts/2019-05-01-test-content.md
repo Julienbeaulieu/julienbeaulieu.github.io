@@ -101,33 +101,68 @@ Now, below are all the resources I have gathered to complete my data science tra
 
 <b>Curriculum</b>
 - http://datasciencemasters.org/ - A ton of amazing resources to complement my learnings. Must read for anyone planning to learn data science on their own.  
-- [https://learn.lambdaschool.com/syllabus/ds](Lambda school) – This page details everything that they teach in data science at Lambda School. I’ll be using this page to check if I have any holes in the curriculum I am creating for myself.  
-<b>Online courses</b>
+- <a href="https://learn.lambdaschool.com/syllabus/ds">Lambda school</a> – This page details everything that they teach in data science at Lambda School. I’ll be using this page to check if I have any holes in the curriculum I am creating for myself.  
 
+<b>Online courses</b>
 <b>Programming and data science</b>
+- <a href="https://rmotr.com/data-science-python-course">RMOTR</a> – I recommend starting with RMOTR because it is focused on learning python fundamentals and data science libraries. Good teachers and community with a final project that you can add to your portfolio.  
+- <a href="https://www.udacity.com/course/data-scientist-nanodegree--nd025">Udacity Data Science Nanodegree</a> – This program is focused on building practical data science projects such as recommendation engines, creating an image classifier, customer segments, etc.  
+- <a href="https://www.udacity.com/course/data-engineer-nanodegree--nd027">Udacity Data Engineering Nanodegree</a> – I believe it is important to know the basics of data modeling with PostgreSQL, Cloud data warehousing as well as big data ecosystem with Spark. 
+- <a href="https://www.udacity.com/course/data-structures-and-algorithms-nanodegree--nd256">Udacity Data Structures and Algorithms Nanodegree</a> – Extremely important class for any Data Scientist.  
+- <a href="https://www.udemy.com/web-scraping-with-python-beautifulsoup/">Web scrapping with Beautiful Soup</a> – Teaches you how to create your own dataset by scraping the Web. There are also free videos on YouTube as well as good articles on the subject. 
+- <a href="https://www.fast.ai/">Fast.ai</a> – Focused on teaching machine learning and deep learning. This MOOC requires good programming knowledge. I intend to follow some classes later on since I’ve heard excellent feedback and it is recommended by a lot of people.  
 
 <b>Linear Algebra, statistics and calculus</b>
+- <a href="https://www.khanacademy.org/math/">Khanacademy’s</a> linear algebra, calculus, and statistics videos are all fine places to start. Books and videos in this list can complement your learning. 
 
 <b>Books</b>
+- Python 
+    - <a href="https://automatetheboringstuff.com/">Automate the boring stuff with python</a> – Many people have recommended this book and the online reviews are great. 
+- Statistics 
+    - <a href="https://www.amazon.com/Practical-Statistics-Data-Scientists-Essential/dp/1491952962">Practical Statistics for Data Scientists: 50 Essential Concepts</a> – Good overview of the math required for data science.  
+- Linear Algebra 
+    - <a href="https://www.amazon.com/gp/product/0536667470">Linear Algebra</a> - Solid intro to linear algebra.  
+- Data Science 
+    - <a href="https://www.oreilly.com/library/view/data-science-for/9781449374273/">Data Science of Business</a>Data Science of Business – Very good book to get a good understanding of data science in the context of a business. Helps understand data mining techniques in use today.  
+    - <a href="http://themlbook.com/">The hundred-page machine learning book</a> – All you need to know about machine learning in 100 pages.  
 
 <b>Youtube Channels – My top 3 for data science</b>
+- <a href="https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw">3blue1brown</a>3blue1brown - One of the best YouTube channels to get a good intuition of complicated mathematical concepts.  
+
+- <a href="https://www.youtube.com/channel/UCOjD18EJYcsBog4IozkF_7w">PyData</a> – Get access to an incredible number of videos at different PyData conferences. From tutorials to practical examples, there is really a ton of good stuff.   
+
+- <a href="https://www.youtube.com/channel/UCxX9wt5FWQUAAz4UrysqK9A">CS Dojo</a> - Python & machine learning class. Good content worth checking out.  
 
 <b>Machine learning data sets for personal projects</b>
+- <a href="https://www.kaggle.com/">Kaggle</a>
+- <a href="https://toolbox.google.com/datasetsearch">Google</a> 
+- <a href="https://registry.opendata.aws/">Amazon</a> 
+- <a href="https://msropendata.com/">Microsoft</a> 
+- <a href="https://www.fast.ai/">Awesome public datasets</a> 
+- For real life data, check NGOs and non-profits as well as <a href="https://dataforgood.ca/">data for good</a> 
+- Scrape the web with Beautiful Soup for a good dataset.   
 
 <b>Conferences</b>
+- Kaggle Career Con – Next career con will be in April 2020. Entirely online and worth checking out.  
+- PyCon – Tutorials, talks, events, from the greatest minds. Relatively cheap too. 
+- NIPS – Machine learning conference help every December.  
 
 <b>Newsletters</b>
+- <a href="https://www.fast.ai/">Awesome public datasets</a>Data science weekly - Sign up to this amazing newsletter that provides a lot of different quality articles about data science every week.  
 
 <b>Podcasts</b>
+- <a href="https://lexfridman.com/ai/">Artificial intelligence</a> – Probably the most interesting podcast on AI, machine learning and data. Interviews with popular people such as Guido Van Rossum - the creator of Python, Yoshua Bengio, Eric Weinstein, etc.  
+- <a href="http://partiallyderivative.com/">Partially derivative</a> – There are no more episodes, but you can still listen to the old ones most of which are still relevant and very informative.  
+- <a href="http://dataskeptic.com/podcast?limit=10&offset=0">Data skeptic</a> – Weekly content about statistics, machine learning through tutorials and interviews.  
 
 <b>Communities</b>
-- DataTau - an aggregator of data science content where people can upvote the best selection of data science content. 
-- Machine learning subreddit  
-- Data is beautiful subreddit – Redditors posts cool apps and visualizations they’ve build and a lot of them are inspiring. Sometimes they even post their GitHub!  
-- Kaggle’s online forums 
-- KDNuggets  
-- Meetup.com – Join meetups in your city! 
-- Evenbrite – Go to events near you.  
+- <a href="http://www.datatau.com/">DataTau</a> - an aggregator of data science content where people can upvote the best selection of data science content. 
+- <a href="https://www.reddit.com/r/MachineLearning/">Machine learning subreddit</a>  
+- <a href="https://www.reddit.com/r/dataisbeautiful">Data is beautiful subreddit</a> – Redditors posts cool apps and visualizations they’ve build and a lot of them are inspiring. Sometimes they even post their GitHub!  
+- <a href="https://www.kaggle.com/discussion">Kaggle’s online forums</a> 
+- <a href="https://www.kdnuggets.com/">KDNuggets</a>  
+- <a href="https://www.meetup.com/">Meetup.com</a> – Join meetups in your city! 
+- <a href="https://www.eventbrite.com/">Evenbrite</a> – Go to events near you.  
 
 While I have officially began my journey towards becoming a data scientist, there won’t ever be an endpoint. Due to the rapid pace of development in this industry, I believe data scientist are on a never-ending journey of continuous learning. I hope this article has been useful to those of you considering a career change and for those who are deciding on how you’ll transition.  
 
