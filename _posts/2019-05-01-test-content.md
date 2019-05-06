@@ -9,9 +9,7 @@ I am an aspiring Data Scientist currently looking for a job. This article is abo
 I will first share some background about myself, why and how I chose this career. I will then explain the path I chose to pursue my education, as well as lessons learned. Finally, I’ll share some resources that I think have been essential in getting a toehold in Data Science. 
 
 Feel free to skip directly to the parts you are most interested in. 
-  
-  
-  
+
 
 ## Why do I want to Become a Data Scientist? 
 
