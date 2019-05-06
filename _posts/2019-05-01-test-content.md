@@ -2,6 +2,7 @@
 layout: post
 title: Transitionning into Data Science from a Non-Technical Background 
 ---
+![how to become a data scientist](https://github.com/Julienbeaulieu/julienbeaulieu.github.io/blob/master/public/how_to_become_a_data_scientist.png "How to Become a Data Scientist")
 
 I am an aspiring Data Scientist currently looking for a job. This article is about how I am transitioning into the field coming from a non-technical business background. In writing this, I hope to give the motivation and inspiration to people in similar situations to take on this journey as well. 
 
@@ -10,7 +11,7 @@ I will first share some background about myself, why and how I chose this career
 Feel free to skip directly to the parts you are most interested in. 
 </br>
 </br>
-### Why do I want to Become a Data Scientist? 
+## Why do I want to Become a Data Scientist? 
 
 I am a geek at heart and I have long been fascinated by the world of technology, science, and video games. While coding was something I was interested in, I never really considered a career in it. 
 
@@ -21,7 +22,7 @@ Data Science is currently a hot career, so I naturally wanted to make sure it wa
 So far, I have been consistently blown away by the number and power of tools already at a data scientist’s disposal, constantly cementing the notion that this is the career for me. To quote Andrew Ng, Data Science and deep learning is “the new electricity”.  The deeper I get, the more I understand where he's coming from, and the more I want to share my insights into this exciting and high impact field with anyone who may be in the situation I was in so recently. 
 </br>
 </br>
-### How I Plan on Becoming a Data Scientist  
+## How I Plan on Becoming a Data Scientist  
 
 Changing careers requires a lot of time, effort and money, so it’s important to carefully and meticulously evaluate all possible options.  
 
@@ -40,7 +41,7 @@ I like James Kobielus’ insight in his article <a href="https://www.ibmbigdatah
 I agree with his opinion that academic credentials are important but not necessary for high-quality Data Science (or simply to get a job). The core aptitudes – curiosity, intellectual agility, statistical fluency, research stamina, scientific rigor, a skeptical nature – that distinguish the best data scientists are all things you can acquire on the job, and by working smart. 
 </br>
 </br>
-### 10 lessons learned during my time learning Data Science 
+## 10 lessons learned during my time learning Data Science 
 
 <b>There is a great opportunity for me in this field as someone from a non-technical background.</b> 
 
@@ -89,7 +90,7 @@ A cheaper and faster way is to make my own curriculum through a combination of M
 I believe this is one of the field’s greatest strengths. Countless studies have found that diverse teams perform better. I just cannot wait to work with PHDs, engineers and other incredibly smart people. Man is that exciting! 
 </br>
 </br>
-### Next Steps
+## Next Steps
 
 This is what my plan looks like in a few bullet points. I’ll be learning Data Science full time and using the resources I list below. 
 
@@ -108,7 +109,7 @@ This is what my plan looks like in a few bullet points. I’ll be learning Data 
 
 </br>
 </br>
-### Resources
+## Resources
 Bbelow are all the resources I have gathered to complete my Data Science training. This list will continue to be updated as I continue to discover more. 
 
 <b>Curriculum</b>
