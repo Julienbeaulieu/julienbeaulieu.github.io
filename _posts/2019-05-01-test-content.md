@@ -10,7 +10,7 @@ I will first share some background about myself, why and how I chose this career
 
 Feel free to skip directly to the parts you are most interested in. 
 
-
+<br />
 ## Why do I want to Become a Data Scientist? 
 
 I am a geek at heart and I have long been fascinated by the world of technology, science, and video games. While coding was something I was interested in, I never really considered a career in it. 
@@ -21,9 +21,9 @@ Data Science is currently a hot career, so I naturally wanted to make sure it wa
 
 So far, I have been consistently blown away by the number and power of tools already at a data scientist’s disposal, constantly cementing the notion that this is the career for me. To quote Andrew Ng, Data Science and deep learning is “the new electricity”.  The deeper I get, the more I understand where he's coming from, and the more I want to share my insights into this exciting and high impact field with anyone who may be in the situation I was in so recently. 
 
-
+<br />
 ## How I Plan on Becoming a Data Scientist  
-<br>
+
 Changing careers requires a lot of time, effort and money, so it’s important to carefully and meticulously evaluate all possible options.  
 
 There are three different approaches to learning data science that I have been considering:  
