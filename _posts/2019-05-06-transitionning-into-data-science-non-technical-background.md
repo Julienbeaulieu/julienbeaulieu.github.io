@@ -2,7 +2,7 @@
 layout: post
 title: Transitionning into Data Science from a Non-Technical Background 
 ---
-![how to become a data scientist]({{ site.url }}/public/how_to_become_a_data_scientist.png)
+![how to become a data scientist](https://julienbeaulieu.github.io/public/how_to_become_a_data_scientist.png)
 
 I am an aspiring Data Scientist currently looking for a job. This article is about how I am transitioning into the field coming from a non-technical business background. In writing this, I hope to give the motivation and inspiration to people in similar situations to take on this journey as well. 
 
