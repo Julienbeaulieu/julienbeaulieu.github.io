@@ -3,7 +3,7 @@ layout: post
 title: A framework for setting and attaining your personal goals 
 ---
 
-This year, for the first time, I have decided to write down the things I want to do and accomplish and to track my progress. After spending a lot of time thinking of what I want to do in life, what my long-term goals and dreams are, I now want to find a framework to help me achieve my goals in the most effective way possible. I am usually pretty good at sticking to my resolutions, and if I say I’m going to do something, I usually do it. But one issue I currently have is this: it is now the end of the year and I have trouble determining if the past year was a success or not. I think is it! Maybe? But to what extent? Wouldn’t it be great if I could look back and see where I have succeeded and failed, and to what degree? This way, I could use that data for personal improvement and to make even better objectives and an improved goal-reaching system for next year. Doing so is important to me because it will help get me closer to my life goals. I am referring to life goals at large, not just professionally speaking. This includes health, family & girlfriend related goals, reading and writing, hobbies, etc.  
+This year, for the first time, I have decided to write down the things I want to accomplish and to track my progress. After spending a lot of time thinking of what I want to do in life, what my long-term goals and dreams are, I now want to find a framework to help me achieve my goals in the most effective way possible. I am usually pretty good at sticking to my resolutions, and if I say I’m going to do something, I usually do it. But one issue I currently have is this: it is now the end of the year and I have trouble determining if the past year was a success or not. I think is it! Maybe? But to what extent? Wouldn’t it be great if I could look back and see where I have succeeded and failed, and to what degree? This way, I could use that data for personal improvement and to make even better objectives and an improved goal-reaching system for next year. Doing so is important to me because it will help get me closer to my life goals. I am referring to life goals at large, not just professionally speaking. This includes health, family & girlfriend related goals, reading and writing, hobbies, etc.  
 
 This initiative was triggered following a book I recently read: <a href="https://www.amazon.com/Measure-What-Matters-Google-Foundation/dp/0525536221">Measure What Matters</a>. The author John Doerr describes a popular management system used by companies like Google, Intel or Bill & Melinda Gates Foundation, to keep track of business objectives and increase the odds they’ll succeed at achieving them. The method they describe in the book are OKRs, which stands for Objective, Key Results. I love the approach, and thought that some of the principles would nicely apply to my own life.   
 
@@ -45,8 +45,7 @@ OKR is a system used in a business context, and since I’ve decided to take som
 
 ### Goals should be adaptable 
 
-> “If the ladder is not leaning against the right wall, every step we take just gets us to the wrong place faster.” 
-Steven Covey 
+> “If the ladder is not leaning against the right wall, every step we take just gets us to the wrong place faster.” Steven Covey 
 
 Goals should be adaptable by nature. They’re meant to be guardrails, not chains or blinders. As I track and review my objectives, I can choose to update an objective, start a new one or stop pursuing one entirely if the context has change. There is no point spending time on something that isn’t relevant anymore. Best is to discard it and put my focus elsewhere. I plan to review my goals every three months.
 
@@ -74,6 +73,8 @@ Every process requires trial and error. This is my first iteration of creating a
 As I iterate through different goal setting systems, improving them and fitting them to my needs, I will find the formula that works best for me.  
 
 Even the most successful companies don’t get it right the first time either. “<i>An organization may need up to four or five quarterly cycles to fully embrace the system, and even more than that to build mature goal muscle.</i>” John Doerr.  
+
+If you are interested in trying, I put together a Google spreadsheet template where you can list your OKRs. Check it out <a href="https://docs.google.com/spreadsheets/d/1KUPTNNB78ZOrR8OyTC5EirrOW_6yJZvSyfYzZhFGnMs/edit?usp=sharing">here</a>. The template is based off my own goals but I didn't include them all for privacy reasons.   
 
 Still haven’t thought about your goals? Don’t worry it’s never too late to start. New Years is just an excuse. Goal setting is ongoing, and I encourage you to start now.  
 
