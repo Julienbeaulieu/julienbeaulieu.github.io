@@ -241,4 +241,4 @@ While I have officially began my journey towards becoming a data scientist, ther
 
 Feel free to reach out to me on <a href="https://www.linkedin.com/in/julienbeaulieu/">LinkedIn</a> for all things Data Science, I’d love to chat. 
 
-<div class="sharethis-inline-share-buttons"></div>
+
