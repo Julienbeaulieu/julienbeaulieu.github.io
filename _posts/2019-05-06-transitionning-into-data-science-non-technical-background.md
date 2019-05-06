@@ -240,3 +240,5 @@ Below are all the resources I have gathered to complete my Data Science training
 While I have officially began my journey towards becoming a data scientist, there won’t ever be an endpoint. Due to the rapid pace of development in this industry, I believe data scientist are on a never-ending journey of continuous learning. I hope this article has been useful to those of you considering a career change and for those who are deciding on how you’ll transition.  
 
 Feel free to reach out to me on <a href="https://www.linkedin.com/in/julienbeaulieu/">LinkedIn</a> for all things Data Science, I’d love to chat. 
+
+<div class="sharethis-inline-share-buttons"></div>
