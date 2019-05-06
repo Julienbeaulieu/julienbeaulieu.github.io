@@ -2,11 +2,15 @@
 layout: post
 title: Transitionning into Data Science from a Non-Technical Background 
 ---
+<br />
+
 ![how to become a data scientist](https://julienbeaulieu.github.io/public/how_to_become_a_data_scientist.png)
+
+<br />
 
 I am an aspiring Data Scientist currently looking for a job. This article is about how I am transitioning into the field coming from a non-technical business background. In writing this, I hope to give the motivation and inspiration to people in similar situations to take on this journey as well. 
 
-I will first share some background about myself, why and how I chose this career. I will then explain the path I chose to pursue my education, as well as lessons learned. Finally, I’ll share some resources that I think have been essential in getting a toehold in Data Science. 
+I'll first share some background about myself, why and how I chose this career. I explain the path I chose to pursue my education, as well as lessons learned. Finally, I’ll share some resources that I think have been essential in getting a toehold in Data Science. 
 
 Feel free to skip directly to the parts you are most interested in. 
 
@@ -18,7 +22,7 @@ I am a geek at heart and I have long been fascinated by the world of technology,
 
 After a masters in e-commerce at a business school and a few stints at various online marketing companies, I joined GSoft which is a startup based in Montreal. Aside from being a great place to work, GSoft had a keen interest in keeping its employees and products abreast of the cutting-edge technologies, particularly AI. As such, they hosted hackathons and training events, always focused on the power of data and how best to use it to drive the business forward. These events woke up the engineer in me I'd never known was there. It was at that point that I developed a passion for data. I decided I wanted to learn how to code and to pursue a career in Data Science.  
 
-Data Science is currently a hot career, so I naturally wanted to make sure it wasn’t just hype and that it was truly for me. I started to do extensive research by reading a lot of articles, books, speaking to data scientists, and going to events. This finally culminated in my taking a consulting role in the more data driven part of the business at a bank all while I pursued a more formal education in data technology. I enrolled in an online bootcamp at <a href="https://rmotr.com/data-science-python-course">Rmotr</a>, which is focused on programming in Python and learning the Python libraries for Data Science.  
+Data Science is currently a hot career, so I naturally wanted to make sure it wasn’t just hype and that it was truly for me. I started to do extensive research by reading a lot of articles, books, speaking to data scientists, and going to events. This finally culminated in my taking a consulting role at a bank in the more data driven part of the business, all while pursuing online education in Data Science. I enrolled in a bootcamp at <a href="https://rmotr.com/data-science-python-course">Rmotr</a>, which is focused on programming in Python and learning the Python libraries for Data Science.  
 
 So far, I have been consistently blown away by the number and power of tools already at a data scientist’s disposal, constantly cementing the notion that this is the career for me. To quote Andrew Ng, Data Science and deep learning is “the new electricity”.  The deeper I get, the more I understand where he's coming from, and the more I want to share my insights into this exciting and high impact field with anyone who may be in the situation I was in so recently. 
 
@@ -30,7 +34,7 @@ Changing careers requires a lot of time, effort and money, so it’s important t
 
 There are three different approaches to learning data science that I have been considering:  
 
-* Option 1 – Get a job as a data analyst – which would be easier to get into - and learn Data Science on the job and/or on the side. There is a difference between a data analyst and a data scientist. If you’re confused about the differences, read XYZ which is a great summary. Fundamentally, however, a data analyst does X while a data scientist does Y. 
+* Option 1 – Get a job as a data analyst – which would be easier to get into - and learn Data Science on the job and/or on the side. There is a difference between a data analyst and a data scientist. If you’re confused about the differences, read <a href="https://www.springboard.com/blog/data-analyst-vs-data-scientist/">this article</a> which is a great summary. Fundamentally, however, a data analyst examines large data sets to identify trends, develop charts, and create visual presentations to help businesses make more strategic decisions. Data scientist design and construct new models using machine learning. These models are expected to engender an organization’s software with product features that predict and explain; making applications adaptive.  
 
 * Option 2 - Bottom-up approach. Learn the math, statistics and programming first, then move on to more complex machine learning subjects. All traditional university programs fall into this bucket, although you can certainly decide to learn this way on your own as well.  
 
@@ -46,9 +50,9 @@ I agree with his opinion that academic credentials are important but not necessa
 
 <br />
 
-## 10 lessons learned during my time learning Data Science 
+## Lessons learned during my time learning Data Science 
 
-<br />
+
 
 <b>1. There is a great opportunity for me in this field as someone from a non-technical background.</b> 
 
@@ -56,7 +60,7 @@ What I mean is that my unique background can play into my advantage since there 
 
 I also had the opportunity to work in an agile environment in a startup. Lean production and iteration cycles, constant improvement and prioritization are all concepts I apply in my day to day work.  
 
-I believe that this background that can be effectively used and applied in Data Science, and that these are skills that are typically lacking in the field. 
+I believe that this background that can be effectively used and applied in Data Science, and that these are skills that are typically harder to find in the field. 
 
 <br />
 
@@ -70,7 +74,7 @@ Data Science is a relatively new career trajectory that merges statistics, busin
 
 <b>3. Time to first job matters most.</b>
 
-The sooner I am in a team working on actual Data Science projects, the sooner I’ll learn about it. I’ll be working on real problems, problems that sometimes classes can't teach that don’t always have to do with statistical complexity. I’ll have management invested in me and I’ll see what it really means to do practical Data Science.  
+The sooner I am in a team working on actual Data Science projects, the sooner I’ll learn about it. I’ll be working on real problems, problems that sometimes classes can't teach because they don’t just have to do with statistical complexity. I’ll have management invested in me and I’ll see what it really means to do practical Data Science.  
 
 <br />
 
@@ -89,9 +93,9 @@ One key concept to have in mind while doing this is to build the minimum viable 
 
 <b>5. Time and Money.</b> 
 
-Another important reason behind my decision is that getting a college degree is expensive and takes a very long time. I am fortunate enough to live in Montreal where there are cheap, relatively fast and quality options. Unfortunately, none have all three at the same time. The Masters in Management in Analytics at McGill University is only a year, but costs 45,000 CAD. Data Science graduate degree at Montreal’s School of Commerce is only 6000$ thanks to government subsidies but takes about 1.5 to 2 years to complete and I could only start in August or January.  
+Another important reason behind my decision is that getting a college degree is expensive and takes a very long time. I am fortunate enough to live in Montreal where there are cheap, relatively fast and quality options. Unfortunately, none have all three at the same time.  <a href="https://mcgill.ca/desautels/programs/mma">The Masters in Management in Analytics at McGill University</a> is only a year, but costs 45,000 CAD. Data Science graduate degree at <a href="https://www.hec.ca/en/programs/masters/master-data-science-business-analytics/index.html">Montreal’s School of Commerce</a> is only 6000$ thanks to government subsidies but takes about 1.5 to 2 years to complete and I could only start in August or January.  
 
-This leaves me with online options (moving cities is not an option at this point). Lambda School seems to have a fantastic program – I have talked to many alumni and they all gave excellent feedback on the school. However, I am not eligible for their financing options because I don’t live in the US. Therefore, it’s 26,000 CAD to join the program.  
+This leaves me with online options (moving cities is not an option at this point). <a href="https://lambdaschool.com/courses/data-science/">Lambda School</a> seems to have a fantastic program – I have talked to many alumni and they all gave excellent feedback on the school. However, I am not eligible for their financing options because I don’t live in the US. Therefore, it’s 26,000 CAD to join the program.  
 
 A cheaper and faster way is to make my own curriculum through a combination of MOOCs, bootcamps, free online resources, books meetups and competitions. See my list of resources I am using at the end of the article.  
 
@@ -144,7 +148,7 @@ I believe this is one of the field’s greatest strengths. Countless studies hav
 
 This is what my plan looks like in a few bullet points. I’ll be learning Data Science full time and using the resources I list below. 
 
-- Learn the minimum necessary for an interesting and practical project (Kaggle competitions, Data for Good, personal projects) and join a MOOC that is focused on building projects. In my case I enrolled in Udacity’s Data Science Nanodegree program which seems fantastic! Check out their syllabus.  
+- Learn the minimum necessary for an interesting and practical project (Kaggle competitions, Data for Good, personal projects) and join a MOOC that is focused on building projects. In my case I enrolled in Udacity’s Data Science Nanodegree program which seems fantastic! <a href="https://d20vrrgs8k4bvw.cloudfront.net/documents/en-US/Data+Scientist+Nanodegree+Syllabus.pdf">Check out their syllabus.</a>  
 
     - Showcase my projects widely (GitHub, Kaggle, Reddit community, friends, contacts, etc). Get feedback! 
 
@@ -210,9 +214,9 @@ Below are all the resources I have gathered to complete my Data Science training
 - Scrape the web with Beautiful Soup for a good dataset.   
 
 <b>Conferences</b>
-- Kaggle Career Con – Next career con will be in April 2020. Entirely online and worth checking out.  
-- PyCon – Tutorials, talks, events, from the greatest minds. Relatively cheap too. 
-- NIPS – Machine learning conference help every December.  
+- <a href="https://www.kaggle.com/c/career-con-2019">Kaggle Career Con</a> – Next career con will be in April 2020. Entirely online and worth checking out.  
+- <a href="https://us.pycon.org/2019/about/">PyCon</a> – Tutorials, talks, events, from the greatest minds. Relatively cheap too. 
+- <a href="https://nips.cc/">NIPS</a> – Machine learning conference help every December.  
 
 <b>Newsletters</b>
 - <a href="http://datascienceweekly.org">Data Science Weekly</a> - Sign up to this amazing newsletter that provides a lot of different quality articles about Data Science every week.  
