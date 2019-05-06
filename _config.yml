@@ -8,8 +8,8 @@ permalink:           pretty
 title:               Julien Beaulieu
 tagline:             'Aspiring Data Scientist'
 description:         'I am Julien Beaulieu, an aspiring data scientist. Sometimes I like to write. Contact me to have a chat'
-url:                 https://julienbeaulieu.github.io
-baseurl:             'https://julienbeaulieu.github.io'
+url:                 https://blog.julienbeaulieu.com
+baseurl:             'https://blog.julienbeaulieu.com'
 paginate:            5
 
 # About/contact
