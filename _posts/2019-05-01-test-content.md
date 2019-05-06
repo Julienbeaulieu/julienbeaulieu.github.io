@@ -11,6 +11,7 @@ I will first share some background about myself, why and how I chose this career
 Feel free to skip directly to the parts you are most interested in. 
 
 <br />
+
 ## Why do I want to Become a Data Scientist? 
 
 I am a geek at heart and I have long been fascinated by the world of technology, science, and video games. While coding was something I was interested in, I never really considered a career in it. 
@@ -22,6 +23,7 @@ Data Science is currently a hot career, so I naturally wanted to make sure it wa
 So far, I have been consistently blown away by the number and power of tools already at a data scientist’s disposal, constantly cementing the notion that this is the career for me. To quote Andrew Ng, Data Science and deep learning is “the new electricity”.  The deeper I get, the more I understand where he's coming from, and the more I want to share my insights into this exciting and high impact field with anyone who may be in the situation I was in so recently. 
 
 <br />
+
 ## How I Plan on Becoming a Data Scientist  
 
 Changing careers requires a lot of time, effort and money, so it’s important to carefully and meticulously evaluate all possible options.  
@@ -40,7 +42,8 @@ I like James Kobielus’ insight in his article <a href="https://www.ibmbigdatah
 
 > “There’s yet another trend that will alleviate any talent gap: the democratization of Data Science. While I agree wholeheartedly with Raden’s statement that ‘the crème-de-la-crème of data scientists will fill roles in academia, technology vendors, Wall Street, research and government,’ I think he’s understating the extent to which autodidacts – the self-taught, uncredentialed, data-passionate people – will come to play a significant role in many organizations’ Data Science initiatives.” 
 
-I agree with his opinion that academic credentials are important but not necessary for high-quality Data Science (or simply to get a job). The core aptitudes – curiosity, intellectual agility, statistical fluency, research stamina, scientific rigor, a skeptical nature – that distinguish the best data scientists are all things you can acquire on the job, and by working smart. 
+I agree with his opinion that academic credentials are important but not necessary for high-quality Data Science (or simply to get a job). The core aptitudes – curiosity, intellectual agility, statistical fluency, research stamina, scientific rigor, a skeptical nature – that distinguish the best data scientists are all things you can acquire on the job, and by working smart.
+
 <br />
 
 ## 10 lessons learned during my time learning Data Science 
