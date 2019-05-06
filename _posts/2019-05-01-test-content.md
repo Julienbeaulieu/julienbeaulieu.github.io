@@ -11,6 +11,7 @@ I will first share some background about myself, why and how I chose this career
 Feel free to skip directly to the parts you are most interested in. 
 
 
+
 ## Why do I want to Become a Data Scientist? 
 
 I am a geek at heart and I have long been fascinated by the world of technology, science, and video games. While coding was something I was interested in, I never really considered a career in it. 
