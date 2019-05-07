@@ -6,22 +6,22 @@
     </li>
     <li class="reddit">
       <a href="http://www.reddit.com/submit?url={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&title={{ page.title | default:"" | uri_escape }}" target="_blank">
-        {% include social/share-icon-reddit.svg %}
+        {% include social/reddit.svg %}
       </a>
     </li>
     <li class="hn">
       <a href="http://news.ycombinator.com/submitlink?u={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&t={{ page.title | default:"" | uri_escape}}" target="_blank">
-        {% include social/share-icon-hn.svg %}
+        {% include social/ycombinator.svg.svg %}
       </a>
     </li>
     <li class="twitter">
       <a href="https://twitter.com/intent/tweet?via=Julien_Beaulieu&url={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&text={{ page.title | default:"" | uri_escape}}" target="_blank">
-        {% include social/share-icon-twitter.svg %}
+        {% include social/twitter.svg %}
       </a>
     </li>
     <li class="linkedin">
       <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&title={{ page.title | default:"" | uri_escape}}" target="_blank">
-        {% include social/share-icon-linkedin.svg %}
+        {% include social/linkedin.svg %}
       </a>
     </li>
   </ul>
