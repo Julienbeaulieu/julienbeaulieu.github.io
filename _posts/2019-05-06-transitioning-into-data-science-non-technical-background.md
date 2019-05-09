@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Transitionning into Data Science from a Non-Technical Background 
+title: Transitioning into Data Science from a Non-Technical Background 
 ---
 <br />
 
