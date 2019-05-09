@@ -185,6 +185,7 @@ Below are all the resources I have gathered to complete my Data Science training
 <b>Linear Algebra, statistics and calculus</b>
 
 - <a href="https://www.khanacademy.org/math/">Khanacademy’s</a> linear algebra, calculus, and statistics videos are all fine places to start. Books and videos in this list can complement your learning. 
+ - <a href="https://brilliant.org">Brilliant.org</a>. The factor that separates Brilliant from any other website is the variety of original and beautiful problems it offers. The points system serves as an encouraging factor for solving more problems. Must try! They have free courses. 
 
 <b>Books</b>
 - Python 
