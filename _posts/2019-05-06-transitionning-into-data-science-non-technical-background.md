@@ -110,7 +110,7 @@ There are so many good learning options out there, so many great lectures and vi
 
 <b>7. Creating a network.</b>
 
-This is definitely something a school will give you that (most) online classes won’t. One way I make up for this is to simply reach out to people over lunch or coffee. It’s been going great so far. It’s surprising the number of people who are happy to take some time out of their schedule and help out. Also, it’s important that I continue networking at local Data Science events and go to conferences.
+This is definitely something a school will give you that (most) online classes won’t. One way I make up for this is to simply reach out to people over lunch or coffee. It’s been going great so far. It’s surprising the number of people who are happy to take some time out of their schedule and help out. Also, it’s important that I continue networking at local Data Science events and going to conferences.
 
 <br />
 
@@ -194,7 +194,7 @@ Below are all the resources I have gathered to complete my Data Science training
 - Linear Algebra 
     - <a href="https://www.amazon.com/gp/product/0536667470">Linear Algebra</a> - Solid intro to linear algebra.  
 - Data Science 
-    - <a href="https://www.oreilly.com/library/view/data-science-for/9781449374273/">Data Science of Business</a>Data Science of Business – Very good book to get a good understanding of Data Science in the context of a business. Helps understand data mining techniques in use today.  
+    - <a href="https://www.oreilly.com/library/view/data-science-for/9781449374273/">Data Science of Business</a> – Very good book to get a good understanding of Data Science in the context of a business. Helps understand data mining techniques in use today.  
     - <a href="http://themlbook.com/">The hundred-page machine learning book</a> – All you need to know about machine learning in 100 pages.  
 
 <b>Youtube Channels – My top 3 for data science</b>
