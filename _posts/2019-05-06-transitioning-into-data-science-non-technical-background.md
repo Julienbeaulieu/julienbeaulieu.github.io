@@ -131,7 +131,7 @@ My favorite and most effective way to learn is to surround myself with all thing
 
 <b>10. Math.</b>
 
-My approach to math is as follows: I need to know the science and math behind what’s going on with data or else I’ll be extremely limited in what I can learn. Math will be increasingly important for me the more I advance my career. The tools and tech will continue to change rapidly, but the underlying math will not. Having said this, you don’t need an extensive foundation in math to begin working on projects. 
+My approach to math is as follows: I need to know the science and math behind what’s going on with data or else I’ll be extremely limited in what I can learn and understand. Math will be increasingly important for me the more I advance my career. The tools and tech will continue to change rapidly, but the underlying math will not. There is a minimal amount of math knowledge that is required to persue Data Science effectively. That is a combination of linear algebra, calulus, probability and statistics. Having said this, you don’t need an extensive foundation in math to begin working on projects. 
 
 <br />
 
