@@ -176,6 +176,7 @@ Below are all the resources I have gathered to complete my Data Science training
 <b>Programming and Data Science</b>
 
 - <a href="https://rmotr.com/data-science-python-course">RMOTR</a> – I recommend starting with RMOTR because it is focused on learning python fundamentals and Data Science libraries. Good teachers and community with a final project that you can add to your portfolio.  
+- <a href="https://www.udacity.com/course/data-analyst-nanodegree--nd002">Udacity's Data Analyst Nanodegree</a> – With this program you'll learn to use Python, SQL, and statistics to uncover insights, communicate critical findings, and create data-driven solutions. Great place to start! Do not attempt the Data Science Nanodegree before completing this program unless you're already proficient in stats, probability, and python. 
 - <a href="https://www.udacity.com/course/data-scientist-nanodegree--nd025">Udacity Data Science Nanodegree</a> – This program is focused on building practical Data Science projects such as recommendation engines, creating an image classifier, customer segments, etc.  
 - <a href="https://www.udacity.com/course/data-engineer-nanodegree--nd027">Udacity Data Engineering Nanodegree</a> – I believe it is important to know the basics of data modeling with PostgreSQL, Cloud data warehousing as well as big data ecosystem with Spark. 
 - <a href="https://www.udacity.com/course/data-structures-and-algorithms-nanodegree--nd256">Udacity Data Structures and Algorithms Nanodegree</a> – Extremely important class for any data scientist.  
@@ -184,8 +185,10 @@ Below are all the resources I have gathered to complete my Data Science training
 
 <b>Linear Algebra, statistics and calculus</b>
 
+- <a href="https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/">Linear Algebra</a> with Prof. Gilbert Strang from MIT. I can't recommend this lecture enough to get started with linear algebra. Prof. Gilbert Strang is a brilliant teacher that makes learning math fascinating. I went from not understanding linear algebra at all with other resources to loving it thanks to him.
+- <a href="https://ocw.mit.edu/resources/res-18-005-highlights-of-calculus-spring-2010/index.htm">The big picture of Calculus</a> with Prof. Gilbert Strang. I am also a fan of his videos on calculus which are focused on the applications of calculus. So much better than any class I've ever had in school. 
+- <a href="https://www.udacity.com/course/data-analyst-nanodegree--nd002">Udacity's Data Analyst Nanodegree</a> is really great for giving you the basics of statistics and probability. Must see before getting into machine learning. 
 - <a href="https://www.khanacademy.org/math/">Khanacademy’s</a> linear algebra, calculus, and statistics videos are all fine places to start. Books and videos in this list can complement your learning. 
- - <a href="https://brilliant.org">Brilliant.org</a>. The factor that separates Brilliant from any other website is the variety of original and beautiful problems it offers. The points system serves as an encouraging factor for solving more problems. Must try! They have free courses. 
 
 <b>Books</b>
 - Python 
