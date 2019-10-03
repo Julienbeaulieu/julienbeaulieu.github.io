@@ -416,7 +416,7 @@ lgb.plot_importance(clf, figsize=(15,20), max_num_features=50)
 
 
 
-![png](https://julienbeaulieu.github.io/public/output_45_1.png)
+![png](https://julienbeaulieu.github.io/public/fraud-detection-output/output_45_1.png)
 
 
 From the feature importance plot, we know that the following features are important and worth looking at in detail:
@@ -475,7 +475,7 @@ sns.countplot(data=df_train, y= 'isFraud')
 
 
 
-![png](https://julienbeaulieu.github.io/public/output_53_1.png)
+![png](https://julienbeaulieu.github.io/public/fraud-detection-output/output_53_1.png)
 
 
 
@@ -509,7 +509,7 @@ sns.pairplot(df_sample[['card1', 'card2', 'card3', 'card5']])
 
 
 
-![png](https://julienbeaulieu.github.io/public/output_57_1.png)
+![png](https://julienbeaulieu.github.io/public/fraud-detection-output/output_57_1.png)
 
 
 Not much can be interpreted other than 'card3' and 'card5' are dominated by one value.
@@ -539,7 +539,7 @@ plt.title('Card6 Variable')
 
 
 
-![png](fraud-detection-output/output_59_1.png)
+![png](https://julienbeaulieu.github.io/public/fraud-detection-output/output_59_1.png)
 
 
 These variables will definitely be One Hot Encoded to make sure we're capturing all of their influence. 
@@ -563,7 +563,7 @@ plt.xlabel('log values');
 ```
 
 
-![png](fraud-detection-output/output_64_0.png)
+![png](https://julienbeaulieu.github.io/public/fraud-detection-output/output_64_0.png)
 
 
 ### Distribution of fraudulent VS non fraudulent transaction amounts
@@ -594,7 +594,7 @@ plt.title('Transaction is NOT Fraudulent');
 ```
 
 
-![png](fraud-detection-output/output_66_0.png)
+![png](https://julienbeaulieu.github.io/public/fraud-detection-output/output_66_0.png)
 
 
 There doesn't seem to be a big different in distributions betweem fraudulent and non fraudulent amounts. 
@@ -640,7 +640,7 @@ plt.show()
 ```
 
 
-![png](fraud-detection-output/output_73_0.png)
+![png](https://julienbeaulieu.github.io/public/fraud-detection-output/output_73_0.png)
 
 
 Let's have a closer look at 'C10', 'C8' and 'C4'. 
@@ -660,7 +660,7 @@ g.map_offdiag(plt.scatter)
 
 
 
-![png](fraud-detection-output/output_75_1.png)
+![png](https://julienbeaulieu.github.io/public/fraud-detection-output/output_75_1.png)
 
 
 'C10', 'C8' and 'C4' seem to be very close to each other. Maybe we can test removing 1 or 2 of them to limit colinearity (unless we'll only be doing tree based methods which doesn't care about colinearity much).  
@@ -684,7 +684,7 @@ plt.title('P_emaildomain distribution - Top 10')
 
 
 
-![png](fraud-detection-output/output_78_1.png)
+![png](https://julienbeaulieu.github.io/public/fraud-detection-output/output_78_1.png)
 
 
 
@@ -703,7 +703,7 @@ plt.title('R_emaildomain distribution - Top 10')
 
 
 
-![png](fraud-detection-output/output_79_1.png)
+![png](https://julienbeaulieu.github.io/public/fraud-detection-output/output_79_1.png)
 
 
 A lot of these email addresses can be grouped to limit the number of category for these variables (hotmail.com + outlook.com + msn.com = microsoft).  
@@ -2188,7 +2188,7 @@ lgb.plot_importance(clf, figsize=(15,20), max_num_features=30)
 
 
 
-![png](fraud-detection-output/output_149_1.png)
+![png](https://julienbeaulieu.github.io/public/fraud-detection-output/output_149_1.png)
 
 
 
@@ -2210,7 +2210,7 @@ fi.plot('cols', 'feature-importances', figsize=(10,6), legend=False);
 ```
 
 
-![png]fraud-detection-output/(output_152_0.png)
+![png](https://julienbeaulieu.github.io/public/fraud-detection-output/output_152_0.png)
 
 
 ## 11.2 Keep features only with importance > 80
