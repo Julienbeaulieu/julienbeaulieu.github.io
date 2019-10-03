@@ -1,12 +1,10 @@
 
----
-layout: post
-title: Applying Fastai Best Practices to a Kaggle Competition 
----
 
 # [Kaggle competition: IEEE-CIS Fraud Detection](https://www.kaggle.com/c/ieee-fraud-detection/overview) 
 
 Can we detect fraud from customer transactions? Lessons from my first competition.
+
+Link to the notebook: https://github.com/Julienbeaulieu/fraud-detection-kaggle-competition.
 
 # 1. Motivation
 
