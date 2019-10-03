@@ -1,13 +1,8 @@
 
 ---
-
 layout: post
-title: Applying Fastai best practices to a Kaggle competition  
-
+title: A framework for setting and attaining your personal goals 
 ---
-
-
-
 
 # [Kaggle competition: IEEE-CIS Fraud Detection](https://www.kaggle.com/c/ieee-fraud-detection/overview) 
 
@@ -74,9 +69,8 @@ Here is the high-level summary of my different submissions:
 ---
 📣**Insights**
 
-Note: I'll be supplementing this notebook with an 📣**Insights** section where I share techniques I learned from Fastai course as well best practices collected from reading Kaggle discussions and kernels. 
+> Note: I'll be supplementing this notebook with an 📣**Insights** section where I share techniques I learned from Fastai course as well best practices collected from reading Kaggle discussions and kernels. 
 
----
 
 # 4. Importing the libraries and reading the dataset
 
@@ -117,7 +111,7 @@ from sklearn.metrics import roc_curve, roc_auc_score, auc
 📣 **Insights**:
 - Putting a exclamation point at the beginning of a cell allows us to write command line code. I used this to install new libraries when needed straight from the notebook (such as feather) and for other useful commands like `ls`.
 - The following function `display_all` is copy-pasted from Fastai. Very practical for when we're visually assessing our dataframes since it allows us to view as many columns and rows of a DataFrame as we want. I used it all the time throughout this project.
----
+
 
 
 ```python
@@ -207,7 +201,6 @@ A lot of our variables are currently stored as strings, which is inefficient, an
 📣**Insights**: 
 
 `train_cats` and `apply_cats` are very useful functions taken from Fastai. Using them allows us to use all of the columns of our dataset, instead of having to discard them because they wouldn't be in the right format. We therefore have more information to work with. 
-___
 
 
 ```python
@@ -238,10 +231,10 @@ We'll apply the steps in the title using functions. These were taken from Fastai
 2. `fix_missing`: Impute missing data in a column of `df` with the median, and add a `{col_name}_na` column related to the NaN values. The column will show a `0` for rows that didn't have NaN values, and show a `1` if the data was missing.
 3. `proc_df`: Takes a data frame, splits off the response variable (y), and changes the df into an entirely numeric dataframe by calling `numericalize()` which converts the category columns to their matching category codes. For each column of df which is not in skip_flds nor in ignore_flds, NaN values are replaced by the median value of the column (using `fix_missing()`).
     
-    Returns: [x, y, nas]
-        x: x is the transformed version of df. x will not have the response variable and is entirely numeric.
-        y: y is the response variable
-        nas: returns a dictionary of which NaNs it created, and the associated median.
+    Returns: `[x, y, nas]` 
+    - `x`: x is the transformed version of df. x will not have the response variable and is entirely numeric.
+    - `y`: y is the response variable
+    - `nas`: returns a dictionary of which NaNs it created, and the associated median.
 
 
 ```python
@@ -327,7 +320,7 @@ df_test, _, nas = proc_df(df_test, na_dict=nas, max_n_cat=8)
 📣**Insights**: 
 
 `proc_df`, `numericalize` and `fix_missing` allow us to use all columns in our dataframe for our model. We're also getting extra columns with potentially very good information: for each column that contained a NaN value, we are creating a new function telling us where the NaN value was. If these columns end up being useless, they will get cleaned afterwards. 
-___
+
 
 With just very little effort, our dataframe is already ready to for training.
 
@@ -341,7 +334,6 @@ Therefore, we create the validation set with a sequential set of rows instead of
 
 
 2. For large datasets, when finding the best hyperparameters and deciding which features to keep, we should first work on a sample of our dataframe so that the training time is reduced. This allows us to test more at a fraction of the time. Only once we think we have a good model should we can try it on the whole data set. 
-___
 
 **Training and validation set function on all the data**
 
@@ -410,12 +402,6 @@ lgb.plot_importance(clf, figsize=(15,20), max_num_features=50)
 
 
 
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x18fff013240>
-
-
-
-
 ![png](https://julienbeaulieu.github.io/public/fraud-detection-output/output_45_1.png)
 
 
@@ -440,7 +426,7 @@ I recognize that in a real world scenario, a big chunk of the effort would be ne
 📣**Insights**: 
 
 When dealing with a lot of data, it can be hard to visualize all the points on a graph. We can create a sampling function to deal with this issue. 
-___
+
 
 
 ```python
@@ -470,7 +456,6 @@ sns.countplot(data=df_train, y= 'isFraud')
 
 
 
-    <matplotlib.axes._subplots.AxesSubplot at 0x18fb473f630>
 
 
 
@@ -504,7 +489,6 @@ sns.pairplot(df_sample[['card1', 'card2', 'card3', 'card5']])
 
 
 
-    <seaborn.axisgrid.PairGrid at 0x18fb4c84908>
 
 
 
@@ -534,7 +518,6 @@ plt.title('Card6 Variable')
 
 
 
-    Text(0.5, 1.0, 'Card6 Variable')
 
 
 
@@ -599,14 +582,8 @@ plt.title('Transaction is NOT Fraudulent');
 
 There doesn't seem to be a big different in distributions betweem fraudulent and non fraudulent amounts. 
 
-## 7.4 Transaction amount over time
 
-
-```python
-plt.plot(data=df_train, x='TransactionDT', y='TransactionAmt')
-```
-
-## 7.5 'Cxx' columns
+## 7.4 'Cxx' columns
 
 We saw that some Cxx columns were important. Since they are only numeric, the only useful interpretation we could make is looking at their correlation and their distance from each other using en dendrogram
 
@@ -615,7 +592,7 @@ We saw that some Cxx columns were important. Since they are only numeric, the on
 📣**Insights**: 
 
 With hierarchical clustering, a neat feature is being able to visualize the distance between each point. This is called a dendrogram. You can find the code for it below. 
-___
+
 
 
 ```python
@@ -655,7 +632,6 @@ g.map_offdiag(plt.scatter)
 
 
 
-    <seaborn.axisgrid.PairGrid at 0x18fb5d01dd8>
 
 
 
@@ -665,7 +641,7 @@ g.map_offdiag(plt.scatter)
 
 'C10', 'C8' and 'C4' seem to be very close to each other. Maybe we can test removing 1 or 2 of them to limit colinearity (unless we'll only be doing tree based methods which doesn't care about colinearity much).  
 
-## 7.6 P_emaildomain and R_emaildomain
+## 7.5 P_emaildomain and R_emaildomain
 
 
 ```python
@@ -679,7 +655,6 @@ plt.title('P_emaildomain distribution - Top 10')
 
 
 
-    Text(0.5, 1.0, 'P_emaildomain distribution - Top 10')
 
 
 
@@ -698,7 +673,6 @@ plt.title('R_emaildomain distribution - Top 10')
 
 
 
-    Text(0.5, 1.0, 'R_emaildomain distribution - Top 10')
 
 
 
@@ -708,7 +682,7 @@ plt.title('R_emaildomain distribution - Top 10')
 
 A lot of these email addresses can be grouped to limit the number of category for these variables (hotmail.com + outlook.com + msn.com = microsoft).  
 
-## 7.7 Device Info
+## 7.6 Device Info
 
 
 ```python
@@ -742,7 +716,7 @@ df_train.DeviceInfo.value_counts()[:20]
 
 
 
-## 7.8 Id_31 (browser versions)
+## 7.7 Id_31 (browser versions)
 
 
 ```python
@@ -981,7 +955,7 @@ df_train.shape
 I had tried submitting my results without this step. It turns out I scored 0.001 higher when I _didn't_ do this step. I guess the methodology I apply later on cleans out useless columns without needing to clean beforehand.
 
 I am still doing this step for good measure because I end up with a slightly smaller dataframe which is preferable. 
-___
+
 
 ## 8.3 Extracting value from existing columns
 
@@ -1536,7 +1510,7 @@ There are two very important ways to be more efficient with our time when workin
 2. Reduce the memory usage of our data frame so that every time we run a model it goes faster. 
  
 > Note: Feather format does not support saving columns in Float16. Therefore, we can't save with feather after running the reduce memory function.  
-___
+
 
 ## 9.1 Saving & Loading with Feather 
 
@@ -2172,7 +2146,7 @@ dvalid = lgb.Dataset(X_valid, label=y_valid)
 📣 **Insights**
 
 We can improve the model by removing all the columns that have a feature importance under a specified number. By removing them and training the model again with the same parameters, we end up with a (slightly) better AUC score. 
-___
+
 
 
 ```python
@@ -2182,8 +2156,6 @@ lgb.plot_importance(clf, figsize=(15,20), max_num_features=30)
 
 
 
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x18fff42fcf8>
 
 
 
@@ -2546,7 +2518,7 @@ The reference for the following code and explanations can be found here: https:/
 For an excellent article on stacking and ensembling, refer to the de-facto Must read article: [Kaggle Ensembling Guide](https://mlwave.com/kaggle-ensembling-guide/).
 
 In a nutshell stacking uses as a first-level (base), the predictions of a few basic classifiers and then uses another model at the second-level to predict the output from the earlier first-level predictions. Stacking has been responsible for many Kaggle competition wins. 
-___
+
 
 Here is a very interesting extract of a paper of the creator of stacking: Wolpert (1992) Stacked Generalization:
 
