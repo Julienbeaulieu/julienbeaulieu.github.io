@@ -1,8 +1,5 @@
 
----
-layout: post
-title: Applying Fastai Best Practices to a Kaggle Competition 
----
+
 
 # [Kaggle competition: IEEE-CIS Fraud Detection](https://www.kaggle.com/c/ieee-fraud-detection/overview) 
 
