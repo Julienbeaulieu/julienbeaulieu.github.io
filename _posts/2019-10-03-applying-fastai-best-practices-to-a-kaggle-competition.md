@@ -2,7 +2,7 @@
 
 Can we detect fraud from customer transactions? Lessons from my first competition.
 
-Link to the notebook: https://github.com/Julienbeaulieu/fraud-detection-kaggle-competition.
+Link to the notebook [on GitHub](https://github.com/Julienbeaulieu/fraud-detection-kaggle-competition).
 
 # 1. Motivation
 
