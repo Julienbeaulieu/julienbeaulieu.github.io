@@ -1,7 +1,9 @@
 
 ---
+
 layout: post
 title: Applying Fastai best practices to a Kaggle competition  
+
 ---
 
 
@@ -11,7 +13,7 @@ title: Applying Fastai best practices to a Kaggle competition
 
 Can we detect fraud from customer transactions? Lessons from my first competition.
 
-# Motivation
+# 1. Motivation
 
 
 After having spent a lot of time taking data science classes, I was eager to start practicing on a real dataset and to enter a Kaggle competition. I am thankful that I did because in the process, I learned a lot of things that aren't covered in those classes. Techniques like stratified cross validation, increasing the memory efficiency of my dataset, model stacking and blending, were all new to me.   
@@ -22,7 +24,7 @@ Even though my ranking was nothing impressive (top 60%), I now understand what i
 
 I am sharing my solution, methodology and a bunch of efficient helper functions as a way to anchor these learnings and for beginners who want to get better.
 
-# About this dataset
+# 2. About this dataset
 
 In this competition we are predicting the probability that an online transaction is fraudulent, as denoted by the binary target `isFraud`. The data comes from [Vesta Corporation's](https://trustvesta.com/) real-world e-commerce transactions and contains a wide range of features from device type to product features.
 
@@ -37,7 +39,7 @@ The data is broken into two files: identity and transaction, which are joined by
 Submissions are evaluated on area under the ROC curve between the predicted probability and the observed target.
 
 
-# Methodology
+# 3. Methodology
 
 **1. Quick cleaning and modeling**.
 When starting off with a dataset with as many columns as this one (over 400), we'll want to quickly run it through an ensemble learner, forgoing any exploratory data analysis and feature engineering at the beginning. Once the model is fit to the data, we'll have a look at the features which are the most important using LGBM's feature_importances() method. 
@@ -76,7 +78,7 @@ Note: I'll be supplementing this notebook with an 📣**Insights** section where
 
 ---
 
-# Importing the libraries and reading the dataset
+# 4. Importing the libraries and reading the dataset
 
 
 ```python
@@ -85,10 +87,7 @@ Note: I'll be supplementing this notebook with an 📣**Insights** section where
 
 %matplotlib inline
 ```
-
-    The autoreload extension is already loaded. To reload it, use:
-      %reload_ext autoreload
-    
+   
 
 
 ```python
@@ -112,12 +111,12 @@ from sklearn.model_selection import KFold, TimeSeriesSplit, StratifiedKFold
 from sklearn.metrics import roc_curve, roc_auc_score, auc
 ```
 
-## Loading the data
+## 4.1 Loading the data
 
 ---
 📣 **Insights**:
 - Putting a exclamation point at the beginning of a cell allows us to write command line code. I used this to install new libraries when needed straight from the notebook (such as feather) and for other useful commands like `ls`.
-- `display_all` function is copy-pasted from Fastai. Very practical for when we're visually assessing our dataframes since it allows us to view as many columns and rows of a DataFrame as we want. I used it all the time throughout this project.
+- The following function `display_all` is copy-pasted from Fastai. Very practical for when we're visually assessing our dataframes since it allows us to view as many columns and rows of a DataFrame as we want. I used it all the time throughout this project.
 ---
 
 
@@ -159,7 +158,7 @@ def display_all(df):
         display(df)
 ```
 
-## Merge our dataframes
+## 4.2 Merge our dataframes
 
 
 ```python
@@ -194,9 +193,9 @@ df_train.shape, df_test.shape
 
 
 
-# Quick Cleaning and Modeling
+# 5. Quick Cleaning and Modeling
 
-## Convert strings to pandas categories
+## 5.1 Convert strings to pandas categories
 
 A lot of our variables are currently stored as strings, which is inefficient, and doesn't provide the numeric coding required to run our models. Therefore, we create `train_cats` function to convert strings to pandas categories. This will also allow us to OneHotEncode some of these categories later on. 
 
@@ -232,7 +231,7 @@ train_cats(df_train)
 apply_cats(df_test)
 ```
 
-## Clean NaN values, apply OneHotEncoding and create new columns based on the NaN values
+## 5.2 Clean NaN values, apply OneHotEncoding and create new columns based on the NaN values
 
 We'll apply the steps in the title using functions. These were taken from Fastai and slighty simplified for our purposes. Let's review them one by one. 
 1. `numericalize`: Changes a categorical type column from text to its integer codes so that it can be used by our model.
@@ -332,7 +331,7 @@ ___
 
 With just very little effort, our dataframe is already ready to for training.
 
-## Training and creating a validation set with timeseries data
+## 5.3 Training and creating a validation set with timeseries data
 
 ---
 📣**Insights**: 
@@ -376,7 +375,7 @@ print(F'X_train: {len(X_train)}, X_valid: {len(X_valid)}, y_train: {len(y_train)
     X_train: 500000, X_valid: 90540, y_train: 500000, y_valid: 90540
     
 
-# Base LGBM model and feature importance
+# 6. Base LGBM model and feature importance
 
 
 ```python
@@ -399,7 +398,7 @@ dvalid = lgb.Dataset(X_valid, label=y_valid)
     Wall time: 4min 27s
     
 
-## Model interpretation
+## 6.1 Model interpretation
 Without doing much we don't get a great score. But what we're interested in are the features that have the most importance so focus on them and get more insights. 
 
 Let's use LightGBM's plot_importance method to plot the top 50 features that have the most impact.
@@ -417,7 +416,7 @@ lgb.plot_importance(clf, figsize=(15,20), max_num_features=50)
 
 
 
-![png](fraud-detection-output/output_45_1.png)
+![png](https://julienbeaulieu.github.io/public/output_45_1.png)
 
 
 From the feature importance plot, we know that the following features are important and worth looking at in detail:
@@ -431,7 +430,7 @@ From the feature importance plot, we know that the following features are import
 
 There are more but these are the main ones we'll look at.
 
-# Exploratory Data Analysis
+# 7. Exploratory Data Analysis
 
 > Note: I will not go very deep into EDA since this is not the focus of this notebook. I will provide a few examples as to how EDA prompted feature engineering decision that were made on the dataset as well as some basic visualizations.  
 
@@ -458,7 +457,7 @@ df_sample = get_sample(df_train, 500)
 df_train['isFraud'] = df_train_og['isFraud']
 ```
 
-## Target variable: IsFraud
+## 7.1 Target variable: IsFraud
 
 Only **20,663** or **3.5%** of transactions were fraudulent. 
 
@@ -476,7 +475,7 @@ sns.countplot(data=df_train, y= 'isFraud')
 
 
 
-![png](fraud-detection-output/output_53_1.png)
+![png](https://julienbeaulieu.github.io/public/output_53_1.png)
 
 
 
@@ -493,7 +492,7 @@ df_train.isFraud.value_counts()
 
 
 
-## Cards
+## 7.2 Cards
 
 Let's start by visualizing the relationships and distributions of our numerical Cards variables.
 
@@ -510,7 +509,7 @@ sns.pairplot(df_sample[['card1', 'card2', 'card3', 'card5']])
 
 
 
-![png](fraud-detection-output/output_57_1.png)
+![png](https://julienbeaulieu.github.io/public/output_57_1.png)
 
 
 Not much can be interpreted other than 'card3' and 'card5' are dominated by one value.
@@ -545,7 +544,7 @@ plt.title('Card6 Variable')
 
 These variables will definitely be One Hot Encoded to make sure we're capturing all of their influence. 
 
-## TransactionAMT 
+## 7.3 TransactionAMT 
 
 As we'll see below, taking the log of the transaction amount really helps interpretation.
 
@@ -600,14 +599,14 @@ plt.title('Transaction is NOT Fraudulent');
 
 There doesn't seem to be a big different in distributions betweem fraudulent and non fraudulent amounts. 
 
-## Transaction amount over time
+## 7.4 Transaction amount over time
 
 
 ```python
 plt.plot(data=df_train, x='TransactionDT', y='TransactionAmt')
 ```
 
-## 'Cxx' columns
+## 7.5 'Cxx' columns
 
 We saw that some Cxx columns were important. Since they are only numeric, the only useful interpretation we could make is looking at their correlation and their distance from each other using en dendrogram
 
@@ -666,7 +665,7 @@ g.map_offdiag(plt.scatter)
 
 'C10', 'C8' and 'C4' seem to be very close to each other. Maybe we can test removing 1 or 2 of them to limit colinearity (unless we'll only be doing tree based methods which doesn't care about colinearity much).  
 
-## P_emaildomain and R_emaildomain
+## 7.6 P_emaildomain and R_emaildomain
 
 
 ```python
@@ -709,7 +708,7 @@ plt.title('R_emaildomain distribution - Top 10')
 
 A lot of these email addresses can be grouped to limit the number of category for these variables (hotmail.com + outlook.com + msn.com = microsoft).  
 
-## Device Info
+## 7.7 Device Info
 
 
 ```python
@@ -743,7 +742,7 @@ df_train.DeviceInfo.value_counts()[:20]
 
 
 
-## Id_31 (browser versions)
+## 7.8 Id_31 (browser versions)
 
 
 ```python
@@ -779,11 +778,11 @@ df_train_og.id_31.value_counts()[:20]
 
 Both `DeviceInfo` and `Id_31` can be split in order to harness more information.
 
-# Feature Engineering
+# 8. Feature Engineering
 
 Now that we're going to build a serious model, let's first have a look at what we're dealing with in terms of null values in our data set. 
 
-## Import our data once again to apply feature engineering
+## 8.1 Import our data once again to apply feature engineering
 
 
 ```python
@@ -807,7 +806,7 @@ df_train = df_train.set_index('TransactionID')
 df_test = df_test.set_index('TransactionID')
 ```
 
-## Identifying and quantifying null values
+## 8.2 Identifying and quantifying null values
 
 
 ```python
@@ -984,7 +983,7 @@ I had tried submitting my results without this step. It turns out I scored 0.001
 I am still doing this step for good measure because I end up with a slightly smaller dataframe which is preferable. 
 ___
 
-## Extracting value from existing columns
+## 8.3 Extracting value from existing columns
 
 Based on our findings in the EDA phase of the analysis, our dataframe has columns which can be cleaned up and split in order to extract more usefull information. 
 > Note: every change we make to `df_train` also has to be made to `df_test`.
@@ -1498,7 +1497,7 @@ df_train.shape, df_test.shape
 
 
 
-## Apply the cleaning functions so that our new DataFrames are ready for training
+## 8.4 Apply the cleaning functions so that our new DataFrames are ready for training
 
 
 ```python
@@ -1525,7 +1524,7 @@ df_train_copy = df_train.copy()
 df_test_copy = df_test.copy()
 ```
 
-# Reducing Memory Usage and Saving Progress
+# 9. Reducing Memory Usage and Saving Progress
 
 ---
 📣 **Insights**
@@ -1539,7 +1538,7 @@ There are two very important ways to be more efficient with our time when workin
 > Note: Feather format does not support saving columns in Float16. Therefore, we can't save with feather after running the reduce memory function.  
 ___
 
-## Saving & Loading with Feather 
+## 9.1 Saving & Loading with Feather 
 
 **Save and import the fully cleaned and feature engineered dataset.**
 
@@ -1617,7 +1616,7 @@ df_train.shape, df_test.shape
 
 
 
-## Reduce memory usage
+## 9.2 Reduce memory usage
 
 
 ```python
@@ -2026,13 +2025,13 @@ reduce_mem_usage(df_test)
 df_train.info(verbose=True)
 ```
 
-# LGBM Hyperparameter Tuning
+# 10. LGBM Hyperparameter Tuning
 
 I tested a few models such as XGBoost, RandomForests and AdaBoost. LGBM was the one that yielded the best results and is the one I  will be demonstrating here.
 
 Let's apply grid search to find the best parameters. 
 
-## Grid Search
+## 10.1 Grid Search
 
 > Note: My approach was to grid search a few hyperparameters to get a general idea of what works best. I then fine tuned the hyperparameters one by one fitting the model and comparing at the AUC score.  
 
@@ -2094,7 +2093,7 @@ search.fit(X_train, y_train)
 
 
 
-## Using the best model
+## 10.2 Using the best model
 
 These are the parameters I am using for the model. Note: they are a combination of hyperparameters taken from a public kernel in Kaggle and some that I have found myself. 
 
@@ -2165,9 +2164,9 @@ dvalid = lgb.Dataset(X_valid, label=y_valid)
     Wall time: 28min 47s
     
 
-# Feature Selection with Feature Importance
+# 11. Feature Selection with Feature Importance
 
-## Feature importance
+## 11.1 Feature importance
 
 ---
 📣 **Insights**
@@ -2214,7 +2213,7 @@ fi.plot('cols', 'feature-importances', figsize=(10,6), legend=False);
 ![png]fraud-detection-output/(output_152_0.png)
 
 
-## Keep features only with importance > 80
+## 11.2 Keep features only with importance > 80
 
 
 ```python
@@ -2299,7 +2298,7 @@ clf = lgb.train(params, dtrain, 10000, valid_sets = [dtrain, dvalid], verbose_ev
     [1657]	training's auc: 1	valid_1's auc: 0.92653
     
 
-# Cross validation with TimeSeriesSplit and StratifiedKFold
+# 12. Cross validation with TimeSeriesSplit and StratifiedKFold
 
 The reference for the following code can be found here: https://www.kaggle.com/davidcairuz/feature-engineering-lightgbm
 
@@ -2309,7 +2308,7 @@ The results on the test set didn't end up being better than when I used my initi
 
 With more time, I would have tried different numbers of folds for each cross validation technique and submitted my results to Kaggle. I did not end up doing this for this competition however. 
 
-## Cross validation 1: TimeSeriesSplit 
+## 12.1 Cross validation 1: TimeSeriesSplit 
 
 
 ```python
@@ -2422,7 +2421,7 @@ print(f"Out of folds AUC = {roc_auc_score(y, y_oof)}")
     Out of folds AUC = 0.8295756814446366
     
 
-## Cross validation 2: StratifiedKFold
+## 12.2 Cross validation 2: StratifiedKFold
 
 
 ```python
@@ -2537,7 +2536,7 @@ print(f"Out of folds AUC = {roc_auc_score(y, y_oof)}")
     Out of folds AUC = 0.8094206984827366
     
 
-# Ensembling/Stacking models
+# 13. Ensembling/Stacking models
 
 The reference for the following code and explanations can be found here: https://www.kaggle.com/arthurtok/introduction-to-ensembling-stacking-in-python.
 
@@ -2557,7 +2556,7 @@ Here is a very interesting extract of a paper of the creator of stacking: Wolper
 
 
 
-## Helper Class
+## 13.1 Helper Class
 
 Here we'll invoke the use of Python's classes to help make it more convenient for us. 
 
@@ -2590,7 +2589,7 @@ class SklearnHelper(object):
         print(self.clf.fit(x,y).feature_importances_)
 ```
 
-## Out-of-Fold Predictions
+## 13.2 Out-of-Fold Predictions
 
 As alluded to above stacking uses predictions of base classifiers as input for training to a second-level model. However one cannot simply train the base models on the full training data, generate predictions on the full test set and then output these for the second-level training. This runs the risk of your base model predictions already having "seen" the test set and therefore overfitting when feeding these predictions.
 
@@ -2615,7 +2614,7 @@ def get_oof(clf, X_train, y_train, X_test):
     return oof_train.reshape(-1, 1), oof_test.reshape(-1, 1)
 ```
 
-## Generating our base first-level models
+## 13.3 Generating our base first-level models
 
 Let's prepare 3 learning models as our first level classification: Random Forest, Extra Trees, Gradient Boosting. 
 
@@ -2666,7 +2665,7 @@ X_train = df_train.values # Creates an array of the train data
 X_test = df_test.values # Creats an array of the test data
 ```
 
-## Train our classifiers and generate our first level prediction
+## 13.4 Train our classifiers and generate our first level prediction
 
 We now feed the training and test data into our 5 base classifiers and use the Out-of-Fold prediction function we defined earlier to generate our first level predictions.
 
@@ -2678,7 +2677,7 @@ et_oof_train, et_oof_test = get_oof(et, X_train, y_train, X_test) # Extra Trees
 gb_oof_train, gb_oof_test = get_oof(gb,X_train, y_train, X_test) # Gradient Boost
 ```
 
-## Second-level predictions from the first-level output
+## 13.5 Second-level predictions from the first-level output
 
 
 We are having as our new columns the first-level predictions from our earlier classifiers and we train the next classifier on this.
@@ -2946,7 +2945,7 @@ clf = lgb.train(params, dtrain, 10000, valid_sets = [dtrain, dvalid], verbose_ev
 
 I wasn't able to get a good AUC score using this technique. This is because I had too few base models and that they weren't very good to begin with.  
 
-# Easy ensembling with weighted average
+# 14. Easy ensembling with weighted average
 
 **Easy ensembling**: the most basic and convenient way to ensemble is to ensemble Kaggle submission CSV files. We only need the predictions on the test set for these methods — no need to retrain a model. This makes it a quick way to ensemble already existing model predictions. Here we'll use a simple weighted average of our best submissions. 
 
@@ -3075,7 +3074,7 @@ blend
 blend.to_csv('julienbeaulieu_submission26.csv', index=False)
 ```
 
-# Producing the Submission file
+# 15. Producing the Submission file
 
 
 ```python
@@ -3189,7 +3188,7 @@ submit
 submit.to_csv('julienbeaulieu_submission24.csv', index=False)
 ```
 
-# Limitations and going further
+# 16. Limitations and going further
 
 This notebook was created thanks for a lot of other notebooks, forum discussion and code from the Introduction to Machine Learning for Coders Fastai course. 
 
