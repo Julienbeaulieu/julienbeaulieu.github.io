@@ -11,7 +11,7 @@ After having spent a lot of time taking data science classes, I was eager to sta
 
 I also applied techniques learnt in Fastai's Intro to machine learning course which I'll comment on throughout the notebook. I highly recommend this course if you are learning like me. 
 
-Even though my ranking was nothing impressive (top 60%), I now understand what it takes to create a state of the art kernel and have learned the tools to do so intelligently and efficiently. 
+Even though my ranking was nothing impressive (top 45%), I now understand what it takes to create a state of the art kernel and have learned the tools to do so intelligently and efficiently. 
 
 I am sharing my solution, methodology and a bunch of efficient helper functions as a way to anchor these learnings and for beginners who want to get better.
 
@@ -52,15 +52,18 @@ The models I tested were RandomForests, XGBoost, and LightGBM.
 I tried several cross validation techniques such as Stratification and TimeSeriesSplit, neither of which beat my single model LGBM, but it was a great learning experience to code it. 
 I discovered several powerful ensemble techniques which are used by top Kaggle contenders: stacking, blending, averaging our least correlated submissions, etc. I wasn't able to increase my performance much using these techniques, but again I learned a lot by trying. The performance wasn't great because I didn't create enough high performing differentiated models that I would stack together. After a little bit of testing, I realized that this would have consumed a lot of time, for maybe a slight increase in performance. My goal with this competition was to get an overview of how a competition works, not spend weeks fine tuning a few models. I am convinced that with more time I could have gotten better results. 
 
-Here is the high-level summary of my different submissions:
+**Here is the high-level summary of my different submissions:**
 
-- Base features with stock LGBM: 0.8934
-- Add LGBM hyperparameter tuning: 0.9337 (+0.0403)
-- Add feature selection: 0.9350 (+0.0013)
-- Use TimeSeriesSplit crossvalidation: 0.9241 (-0.0109)
-- Use Stratified crossvalidation: 0.9300 (-0.0050 vs top score)
-- Stack 3 tree based models for level 1, LGBM for level 2: 0.8793 (-0.0557 vs top score) (base models weren't optimized which explains the poor performance)
-- Use a weighted average on my top submissions: 0.9365 (+0.0015) - Best and final result. 
+- Base features with stock LGBM: 0.87236
+- All engineered features with stock : 0.89821 (+0.02585)
+- All engineered features with LGBM hyperparameter tuning: 0.91394 (+0.02176)
+- Add feature selection: 0.91401 (+0.0007) - Best and final score. Rank: 2916/6438
+- Use TimeSeriesSplit crossvalidation: 0.89926 (-0.01476)
+- Use Stratified crossvalidation: 0.90473 (-0.00929 vs top score)
+- Stack 3 tree based models for level 1, LGBM for level 2: 0.85597 (-0.05804 vs top score) (base models weren't optimized which explains the poor performance)
+- Use a weighted average on my top submissions: 0.91145 (-0.00256) - Wasn't actually my top submissions because my best ones were submitted right before the deadline - I think I could have gotten a better score with this weighted average. 
+
+It's quite obvious cross validation didn't work very well. This is because we are dealing with time series data.
 
 ---
 📣**Insights**
@@ -2265,6 +2268,12 @@ clf = lgb.train(params, dtrain, 10000, valid_sets = [dtrain, dvalid], verbose_ev
     Early stopping, best iteration is:
     [1657]	training's auc: 1	valid_1's auc: 0.92653
     
+
+---
+📣 **Insights**
+
+For the real submission to Kaggle I trained the model with the same parameters as above with the importance difference that I didn't include a validation set. The training was therefore done on the entire data. 
+
 
 # 12. Cross validation with TimeSeriesSplit and StratifiedKFold
 
