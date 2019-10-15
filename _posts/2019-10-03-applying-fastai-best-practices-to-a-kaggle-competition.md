@@ -15,6 +15,16 @@ Even though my ranking was nothing impressive (top 45%), I now understand what i
 
 I am sharing my solution, methodology and a bunch of efficient helper functions as a way to anchor these learnings and for beginners who want to get better.
 
+Topics covered in the notebook:
+- Fastai helper functions to clean and numericalize a data set.
+- A function to reduce the memory usage of your DataFrame.
+- A methodology to quickly run a model to gain a better understanding of our dataset
+- How Exploratory Data Analysis informs our feature engineering decisions
+- Feature selection using LGBM's ` feature_importance` attribute.
+- Crossvalidation for TimeSeriesSplit and StratifiedKFold with LGBM
+- The code and helper functions for stacking and ensembling models
+- Fastai tips and tricks throughout the notebook
+
 # 2. About this dataset
 
 In this competition we are predicting the probability that an online transaction is fraudulent, as denoted by the binary target `isFraud`. The data comes from [Vesta Corporation's](https://trustvesta.com/) real-world e-commerce transactions and contains a wide range of features from device type to product features.
@@ -33,10 +43,12 @@ Submissions are evaluated on area under the ROC curve between the predicted prob
 # 3. Methodology
 
 **1. Quick cleaning and modeling**.
-When starting off with a dataset with as many columns as this one (over 400), we'll want to quickly run it through an ensemble learner, forgoing any exploratory data analysis and feature engineering at the beginning. Once the model is fit to the data, we'll have a look at the features which are the most important using LGBM's feature_importances() method. 
-This will allow us to concentrate our efforts on only the most important features instead of spending time looking at features with little to no predictive power. 
+
+When starting off with a dataset with as many columns as this one (over 400), we first run it through an ensemble learner - LGBM - forgoing any exploratory data analysis and feature engineering at the beginning. Once the model is fit to the data, we have a look at the features which are the most important using LGBM's feature_importances attribute. 
+This allows us to concentrate our efforts on only the most important features instead of spending time looking at features with little to no predictive power. 
 
 **2. Understand the data with EDA**.
+
 Once we've filtered our columns, we'll look at the ones with the highest importance. The findings in this analysis will guide our feature engineering efforts in the next section. Some questions we'll want to answer:
 - How are the top features related to our target variable? 
 - What are their distributions like if we plot them with histograms and countplots?  
@@ -45,31 +57,34 @@ Once we've filtered our columns, we'll look at the ones with the highest importa
 - etc.
 
 **3. Feature engineering**.
+
 Once we understand our data, we can start creating new columns by splitting up current ones, transforming them to change their scale or looking at their mean, combining new ones to create interactions, and much more. 
 
 **4. Train different models, fit them to the training data with cross validation, and perform model stacking and/or blending**.
-The models I tested were RandomForests, XGBoost, and LightGBM. 
-I tried several cross validation techniques such as Stratification and TimeSeriesSplit, neither of which beat my single model LGBM, but it was a great learning experience to code it. 
-I discovered several powerful ensemble techniques which are used by top Kaggle contenders: stacking, blending, averaging our least correlated submissions, etc. I wasn't able to increase my performance much using these techniques, but again I learned a lot by trying. The performance wasn't great because I didn't create enough high performing differentiated models that I would stack together. After a little bit of testing, I realized that this would have consumed a lot of time, for maybe a slight increase in performance. My goal with this competition was to get an overview of how a competition works, not spend weeks fine tuning a few models. I am convinced that with more time I could have gotten better results. 
 
-**Here is the high-level summary of my different submissions:**
+The models I tested were RandomForests, XGBoost, and LightGBM. 
+
+I tried several cross validation techniques such as Stratification and TimeSeriesSplit, neither of which beat my single model LGBM, but it was a great learning experience to code it. 
+I also discovered several powerful ensemble techniques which are used by top Kaggle contenders: stacking, blending, averaging our least correlated submissions, etc.  
+
+**Here is the high-level summary of the scores of my different Kaggle competition submissions:**
 
 - Base features with stock LGBM: 0.87236
 - All engineered features with stock : 0.89821 (+0.02585)
 - All engineered features with LGBM hyperparameter tuning: 0.91394 (+0.02176)
-- Add feature selection: 0.91401 (+0.0007) - Best and final score. Rank: 2916/6438
-- Use TimeSeriesSplit crossvalidation: 0.89926 (-0.01476)
+- Add feature selection: 0.91401 (+0.0007) - **This was my best score. Rank: 2916/6438**
+- Use TimeSeriesSplit crossvalidation: 0.89926 (-0.01476 vs top score)
 - Use Stratified crossvalidation: 0.90473 (-0.00929 vs top score)
-- Stack 3 tree based models for level 1, LGBM for level 2: 0.85597 (-0.05804 vs top score) (base models weren't optimized which explains the poor performance)
-- Use a weighted average on my top submissions: 0.91145 (-0.00256) - Wasn't actually my top submissions because my best ones were submitted right before the deadline - I think I could have gotten a better score with this weighted average. 
-
-It's quite obvious cross validation didn't work very well. This is because we are dealing with time series data.
+- Stack 3 tree base models for level 1, and use a LGBM for level 2: 0.85597 (-0.05804 vs top score) (base models weren't optimized as much as I wanted, which explains the poor performance)
+- Use a weighted average on my top submissions: 0.91145 (-0.00256) - (I think I could have optmized this and gotten a better score)
 
 ---
 📣**Insights**
 
 > Note: I'll be supplementing this notebook with an 📣**Insights** section where I share techniques I learned from Fastai course as well best practices collected from reading Kaggle discussions and kernels. 
 
+
+---
 
 # 4. Importing the libraries and reading the dataset
 
@@ -3167,7 +3182,7 @@ submit.to_csv('julienbeaulieu_submission24.csv', index=False)
 
 # 16. Limitations and going further
 
-This notebook was created thanks for a lot of other notebooks, forum discussion and code from the Introduction to Machine Learning for Coders Fastai course. 
+This notebook was created thanks for a lot of other notebooks, forum discussion threads and code from the Introduction to Machine Learning for Coders Fastai course. 
 
 While my final score for this competition wasn't great, I am convinced that with more effort I could have improved it.
 
