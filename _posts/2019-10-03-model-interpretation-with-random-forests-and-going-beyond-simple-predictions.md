@@ -3,8 +3,8 @@ In this post I share four different ways of making predictions more interpretabl
 I use a common data set - [Teleco Customer Churn](https://www.kaggle.com/blastchar/telco-customer-churn) - because it is simple and illustrates a classic business problem about growth.  
 
 I will dive into the following methods:
-- [Feature Importance](#https://julienbeaulieu.github.io/2019/10/16/model-interpretation-with-random-forests-and-going-beyond-simple-predictions/#1.-Feature-Importance)
-- [Tree interpreter](#https://julienbeaulieu.github.io/2019/10/16/model-interpretation-with-random-forests-and-going-beyond-simple-predictions/#2.-Tree-Interpreter)
+- Feature Importance
+- <a href="https://julienbeaulieu.github.io/2019/10/16/model-interpretation-with-random-forests-and-going-beyond-simple-predictions/#Importance">Tree interpreter</a>
 - [Partial dependence](#https://julienbeaulieu.github.io/2019/10/16/model-interpretation-with-random-forests-and-going-beyond-simple-predictions/#3.-Partial-Dependence)
 - [Confidence based on tree variance](#https://julienbeaulieu.github.io/2019/10/16/model-interpretation-with-random-forests-and-going-beyond-simple-predictions/#4.-Confidence-Based-on-Tree-Variance)
 
@@ -15,7 +15,7 @@ These learnings are a summary of the material used in Fastai's course [Introduct
 For the full notebook and code, [checkout my repo on GitHub](https://github.com/Julienbeaulieu/model-interpretation-with-random-forests)
 
 
-## 1. Feature Importance
+## <div id="Importance">1. Feature Importance</div>
 
 **<u>What is it used for?</u>**
 
