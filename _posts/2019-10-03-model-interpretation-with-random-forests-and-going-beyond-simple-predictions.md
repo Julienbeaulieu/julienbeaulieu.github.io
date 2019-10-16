@@ -123,7 +123,7 @@ Other features worth looking at: `PaymentMethod_Eletronic Check`, `InternetServi
 
 ## 2. Tree Interpreter 
 
-<u>**What is it used for?**</u>
+**<u>What is it used for?</u>**
 
 Let's say a company has built a model that predicts the likelihood of a customer churning within the next month. 
 
@@ -135,14 +135,14 @@ While calculating feature importance is a great way to get a sense of what has t
 
 This is exactly what the tree interpreter library allows us to do. Every prediction can be presented as a sum of feature contributions, showing how the features lead to a particular prediction. 
 
-<u>**Use case**</u>
+**<u>Use case</u>**
 
 This opens up a lot of opportunities in practical machine learning and data science tasks:
 
 - Explain to a manager why a particular prediction is made.
 - Debug models when results are unexpected.
 
-<u>**How is it calculated?**</u>
+**<u>How is it calculated?</u>**
 
 Using tree interpreter, each prediction is decomposed into 3 components: prediction, bias, and feature contribution. 
 - The prediction: from the Random Forest.
@@ -152,7 +152,7 @@ Using tree interpreter, each prediction is decomposed into 3 components: predict
 In other words, for a dataset with `n` features, each prediction on the dataset is decomposed as `prediction = bias + feature_1_contribution + feature_2_contribution + ... + feature_n_contribution`.
 
 
-<u>**Important notes**</u>
+**<u>Important notes</u>**
 
 - These insights are very useful inside a production environment. 
 - We can use tree interpreter alongside managers and subject matter experts to test a few observations and check if the model looks intuitive and makes sense. 
@@ -246,19 +246,19 @@ Given this information, maybe we're interested in putting some effort in retaini
 
 ## 3. Partial Dependence
 
-<u>**What is it used for?**</u>
+**<u>What is it used for?</u>**
 
 With partial dependence, we want to know the relationship between a feature and the target variable all other things being equal. In other words, we consider only the feature under consideration to be varying, ensuring all the other features remain constant. Thus we cut out the noise from other dependent variables, removing any collinearity, and get a better understanding of the true nature of interactions of each feature with the target variable.
 
 
-<u>**Use case**</u>
+**<u>Use case</u>**
 
 - Understand the true nature between variables and go past the limitations of simple univariate or bivariate plots.  
 - Understand interactions between 2 variables and the target variable by plotting their relationship.
 
 Examples of both are shown below. 
 
-<u>**How is this calculated?**</u>
+**<u>How is this calculated?</u>**
 
 Example of a partial dependence plot with the pdp library. The x axis is `MonthlyCharges` and the y axis is the probability of churn:
 
@@ -271,7 +271,7 @@ Example of a partial dependence plot with the pdp library. The x axis is `Monthl
 - We plot the resulting values to understand the trend behind the way the target variable varies with this particular feature and for each row we are looking at.
 
 
-<u>**Analysis**</u>
+**<u>Analysis</u>**
 
 In the following analysis, we will look at getting a better understanding of the relationships between:
 - `MonthlyCharges` and `Churn`
@@ -486,7 +486,7 @@ Here is a quick refresher of how Random Forests work:
 
 
 
-<u>**Use case**</u>
+**<u>Use case</u>**
 
 With confidence based on tree variance, we are interested in two things: 
 1. Analyzing single observation interpretations. We take one row, one observation, and check how confident we are about it. To do so we check how much variance is there in the prediction of all our trees in the Random Forest.
@@ -495,7 +495,7 @@ With confidence based on tree variance, we are interested in two things:
 2. Groups of observations we are unconfident about. 
 >__Example__: When someone has a `Contract` of type `Month-to-month`, we're never confident about our predictions. 
 
-<u>**How is it calculated?**</u>
+**<u>How is it calculated?</u>**
 
 As alluded to earlier, rather than taking the mean as our prediction, what if we took the standard deviation of the predictions of the trees?
 
@@ -503,7 +503,7 @@ If it's high, then each tree is giving us a very diff estimate of this observati
 
 Therefore, **the standard deviation of the predictions gives us some understanding of how confident we are of this prediction.** 
 
-<u>**Important notes**</u>
+**<u>Important notes</u>**
 
 - We might be less confident in our prediction if we haven't seen many observations that are similar to the one we're interested in. If that's the case, then we wouldn't expect any of our trees to have a path which is designed to help us predict the observation we're interested in. As such, we would expect that when we pass that observation through our different trees, it is going to end up in different places with different predictions.  
 - This does not exist in scikit learn or any other library so we have to build it. 
