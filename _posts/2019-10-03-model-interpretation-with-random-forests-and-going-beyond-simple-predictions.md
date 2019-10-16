@@ -17,24 +17,24 @@ For the full notebook and code, [checkout my repo on GitHub](https://github.com/
 
 ## 1. Feature Importance
 
-<u>**What is it used for?**</u>
+**<u>What is it used for?</u>**
 
 Understanding which features have the most impact on our model.
 
-<u>**Use case**</u>
+**<u>Use case</u>**
 
 - Feature selection: We can eliminate from our model the features which had very low to no importance at all. Removing features in this  way usually results in a better prediction in our model. Always test if this is the case. 
 - Exploratory data analysis: Once we know the most important features, we can focus on understanding these features in much more depth. We should visualize their distribution, see how they are related to each other, and to the target variable, as well as other EDA methods. 
 - Data collection: Once you know which features best predicts something, we can focus on better collecting those variables for future observations. 
 
-<u>**How is it calculated?**</u>
+**<u>How is it calculated?</u>**
 
 1. Take a feature of our DataFrame and randomly shuffle its values - this feature is now useless in terms of predicting power. 
 2. We then look at the score we are interested in (RMSE, R^2, etc) and see how it was impacted after the shuffling. 
 3. We keep track of the new score, and repeat the process for all features and scores. 
 4. To calculate the importance of a feature, we take the difference between the initial model's score, and score after having shuffled the feature. Repeat for all features. 
 
-<u>**Important notes**</u>
+**<u>Important notes</u>**
 
 - The attribute `important_features` is given by default in almost all tree based models. However, this is applicable to __all__ models if we code the process ourselves. 
 - This is calculated without needing to retrain our Random Forest each time. We are simply calculating predictions which makes it convenient and easy to use.   
