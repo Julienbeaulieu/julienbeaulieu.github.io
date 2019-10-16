@@ -1,5 +1,3 @@
-# Model Interpretation with Random Forests - Going Beyond Simple Predictions
-
 In this post I share four different ways of making predictions more interpretable in a business context using LGBM and Random Forest. The goal is to go beyond using a model solely to get the best possible predictions, and to focus on gaining insights that can be used by analysts and decision makers in order to change the behavior of how a company does business, marketing, how they sell their product, etc.
 
 I use a common data set - [Teleco Customer Churn](https://www.kaggle.com/blastchar/telco-customer-churn) - because it is simple and illustrates a classic business problem about growth.  
@@ -63,19 +61,7 @@ telecom_cust.head()
       <th>tenure</th>
       <th>PhoneService</th>
       <th>MultipleLines</th>
-      <th>InternetService</th>
-      <th>OnlineSecurity</th>
       <th>...</th>
-      <th>DeviceProtection</th>
-      <th>TechSupport</th>
-      <th>StreamingTV</th>
-      <th>StreamingMovies</th>
-      <th>Contract</th>
-      <th>PaperlessBilling</th>
-      <th>PaymentMethod</th>
-      <th>MonthlyCharges</th>
-      <th>TotalCharges</th>
-      <th>Churn</th>
     </tr>
   </thead>
   <tbody>
@@ -89,19 +75,7 @@ telecom_cust.head()
       <td>1</td>
       <td>No</td>
       <td>No phone service</td>
-      <td>DSL</td>
-      <td>No</td>
       <td>...</td>
-      <td>No</td>
-      <td>No</td>
-      <td>No</td>
-      <td>No</td>
-      <td>Month-to-month</td>
-      <td>Yes</td>
-      <td>Electronic check</td>
-      <td>29.85</td>
-      <td>29.85</td>
-      <td>No</td>
     </tr>
     <tr>
       <td>1</td>
@@ -113,19 +87,7 @@ telecom_cust.head()
       <td>34</td>
       <td>Yes</td>
       <td>No</td>
-      <td>DSL</td>
-      <td>Yes</td>
       <td>...</td>
-      <td>Yes</td>
-      <td>No</td>
-      <td>No</td>
-      <td>No</td>
-      <td>One year</td>
-      <td>No</td>
-      <td>Mailed check</td>
-      <td>56.95</td>
-      <td>1889.5</td>
-      <td>No</td>
     </tr>
     <tr>
       <td>2</td>
@@ -137,19 +99,7 @@ telecom_cust.head()
       <td>2</td>
       <td>Yes</td>
       <td>No</td>
-      <td>DSL</td>
-      <td>Yes</td>
       <td>...</td>
-      <td>No</td>
-      <td>No</td>
-      <td>No</td>
-      <td>No</td>
-      <td>Month-to-month</td>
-      <td>Yes</td>
-      <td>Mailed check</td>
-      <td>53.85</td>
-      <td>108.15</td>
-      <td>Yes</td>
     </tr>
     <tr>
       <td>3</td>
@@ -161,19 +111,7 @@ telecom_cust.head()
       <td>45</td>
       <td>No</td>
       <td>No phone service</td>
-      <td>DSL</td>
-      <td>Yes</td>
       <td>...</td>
-      <td>Yes</td>
-      <td>Yes</td>
-      <td>No</td>
-      <td>No</td>
-      <td>One year</td>
-      <td>No</td>
-      <td>Bank transfer (automatic)</td>
-      <td>42.30</td>
-      <td>1840.75</td>
-      <td>No</td>
     </tr>
     <tr>
       <td>4</td>
@@ -185,19 +123,7 @@ telecom_cust.head()
       <td>2</td>
       <td>Yes</td>
       <td>No</td>
-      <td>Fiber optic</td>
-      <td>No</td>
       <td>...</td>
-      <td>No</td>
-      <td>No</td>
-      <td>No</td>
-      <td>No</td>
-      <td>Month-to-month</td>
-      <td>Yes</td>
-      <td>Electronic check</td>
-      <td>70.70</td>
-      <td>151.65</td>
-      <td>Yes</td>
     </tr>
   </tbody>
 </table>
@@ -261,19 +187,7 @@ df_trn
       <th>gender_Male</th>
       <th>gender_nan</th>
       <th>Partner_No</th>
-      <th>Partner_Yes</th>
-      <th>Partner_nan</th>
       <th>...</th>
-      <th>Contract_Two year</th>
-      <th>Contract_nan</th>
-      <th>PaperlessBilling_No</th>
-      <th>PaperlessBilling_Yes</th>
-      <th>PaperlessBilling_nan</th>
-      <th>PaymentMethod_Bank transfer (automatic)</th>
-      <th>PaymentMethod_Credit card (automatic)</th>
-      <th>PaymentMethod_Electronic check</th>
-      <th>PaymentMethod_Mailed check</th>
-      <th>PaymentMethod_nan</th>
     </tr>
   </thead>
   <tbody>
@@ -287,19 +201,7 @@ df_trn
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
-      <td>0</td>
       <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
     </tr>
     <tr>
       <td>1</td>
@@ -311,19 +213,7 @@ df_trn
       <td>1</td>
       <td>0</td>
       <td>1</td>
-      <td>0</td>
-      <td>0</td>
       <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
     </tr>
     <tr>
       <td>2</td>
@@ -335,19 +225,7 @@ df_trn
       <td>1</td>
       <td>0</td>
       <td>1</td>
-      <td>0</td>
-      <td>0</td>
       <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
     </tr>
     <tr>
       <td>3</td>
@@ -359,19 +237,7 @@ df_trn
       <td>1</td>
       <td>0</td>
       <td>1</td>
-      <td>0</td>
-      <td>0</td>
       <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
     </tr>
     <tr>
       <td>4</td>
@@ -383,33 +249,9 @@ df_trn
       <td>0</td>
       <td>0</td>
       <td>1</td>
-      <td>0</td>
-      <td>0</td>
       <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
     </tr>
     <tr>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
       <td>...</td>
       <td>...</td>
       <td>...</td>
@@ -431,19 +273,7 @@ df_trn
       <td>1</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
-      <td>0</td>
       <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
     </tr>
     <tr>
       <td>7039</td>
@@ -455,19 +285,7 @@ df_trn
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
-      <td>0</td>
       <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
     </tr>
     <tr>
       <td>7040</td>
@@ -479,19 +297,7 @@ df_trn
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
-      <td>0</td>
       <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
     </tr>
     <tr>
       <td>7041</td>
@@ -503,19 +309,7 @@ df_trn
       <td>1</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
-      <td>0</td>
       <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
     </tr>
     <tr>
       <td>7042</td>
@@ -527,19 +321,7 @@ df_trn
       <td>1</td>
       <td>0</td>
       <td>1</td>
-      <td>0</td>
-      <td>0</td>
       <td>...</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
     </tr>
   </tbody>
 </table>
@@ -612,6 +394,7 @@ dvalid = lgb.Dataset(X_valid, label=y_valid)
 
 
     
+    Output:
     [1436]	training's auc: 0.869882	valid_1's auc: 0.842856
     Wall time: 3.71 s
     
@@ -626,29 +409,6 @@ lgb.plot_importance(clf, figsize=(10,10), max_num_features=30)
 
 ![png](https://julienbeaulieu.github.io\public\telco-churn-output\output_22_1.png)
 
-
-
-```python
-# Create a function to get feature importance
-def feature_importance(df, m):
-    fi = pd.DataFrame({'cols': df.columns, 'feature-importances': m.feature_importance(importance_type='split')})\
-                        .sort_values(by='feature-importances', ascending=False)
-    return fi
-
-fi = feature_importance(df_trn, clf)
-```
-
-We can visualize the distribution of feature importance. Only 3 are very important, and some have little to no importance at all.
-
-
-```python
-fi.plot('cols', 'feature-importances', figsize=(10,6), legend=False);
-```
-
-
-![png](https://julienbeaulieu.github.io\public\telco-churn-output\output_25_0.png)
-
-
 ## Keep features with importance > 100 only 
 
 Let's get rid of the features that had low to no importance at all to make our DataFrame simpler. This also increased our accuracy by 0.1. 
@@ -656,6 +416,9 @@ Let's get rid of the features that had low to no importance at all to make our D
 
 ```python
 # Keep only the columns with over 80 importance
+fi = pd.DataFrame({'cols': df.columns, 'feature-importances': m.feature_importance(importance_type='split')})\
+                        .sort_values(by='feature-importances', ascending=False)
+
 df_keep = fi[fi['feature-importances'] > 100]
 
 df_trn = df_trn[df_keep.cols]
@@ -665,6 +428,7 @@ df_trn.shape
 
 
 
+    Output: 
     (7043, 38)
 
 
@@ -672,7 +436,7 @@ df_trn.shape
 ## **Interpretation**
 
 Three features really stand out: ` MonthlyCharges`, `TotalCharges` and `tenure`. We should make sure to deeply analyze them.
-Other features worth looking at: `PaymentMethod_Eletronic Check`, `InternetService_Fiber_optic`, `PaperlessBilling_No`, etc.. all the way down to at least `PaperlessBilling_Yes`. 
+Other features worth looking at: `PaymentMethod_Eletronic Check`, `InternetService_Fiber_optic`, and `PaperlessBilling_No`.
 
 ## 2. Tree Interpreter 
 
@@ -728,51 +492,22 @@ prediction_test = model_rf.predict(X_valid)
 print(metrics.accuracy_score(y_valid, prediction_test))
 ```
 
+    Output: 
     0.7927608232789212
     
 
-## Fetch the values of a row from our data
+## Fetch the values and contributions of each feature of a row
 
 
 ```python
 from treeinterpreter import treeinterpreter as ti
 
 # Get the values of the columns of the row at index 3
-row = X_valid.values[None,3]; row
-```
+row = X_valid.values[None,3]
 
-
-
-
-
-    array([[ 50.15,   2.  , 286.  ,   1.  ,   0.  ,   0.  ,   0.  ,   1.  ,   0.  ,   1.  ,   1.  ,   1.  ,
-              0.  ,   0.  ,   0.  ,   0.  ,   0.  ,   1.  ,   0.  ,   1.  ,   1.  ,   1.  ,   1.  ,   0.  ,
-              1.  ,   1.  ,   0.  ,   0.  ,   0.  ,   1.  ,   1.  ,   0.  ,   0.  ,   0.  ,   1.  ,   0.  ,
-              0.  ,   0.  ]])
-
-
-
-## Find the contributions of each feature for that row
-
-
-```python
 # Pass our random forest model and our row to treeinterpreter.predict()
 prediction, bias, contributions = ti.predict(model_rf, row)
 
-# Get our prediction of churn for this customer, as well as the bias
-prediction[0], bias[0]
-```
-
-
-
-
-
-    (array([0.60347, 0.39653]), array([0.73607, 0.26393]))
-
-
-
-
-```python
 # Sort the features based on their contributions
 idxs = np.argsort(contributions[0][:][:,1])
 
@@ -781,9 +516,8 @@ idxs = np.argsort(contributions[0][:][:,1])
 [o for o in zip(df_trn.columns[idxs], X_valid.iloc[4][idxs], contributions[0][:][idxs,1])]
 ```
 
-
-
-
+```
+    Output: 
     [('InternetService_Fiber optic', 1.0, -0.055946763569011834),
      ('MonthlyCharges', 73.65, -0.03085270244048489),
      ('OnlineBackup_No', 1.0, -0.02587489259682273),
@@ -802,47 +536,7 @@ idxs = np.argsort(contributions[0][:][:,1])
      ('OnlineSecurity_No', 1.0, 0.05019770357328585),
      ('Contract_Month-to-month', 1.0, 0.07450000863313583),
      ('tenure', 1.0, 0.14946106977749185)]
-
-
-
-## Verify that prediction = bias + feature contributions
-
-
-```python
-# sum of our contributions
-contributions[0][:][:,1].sum() 
 ```
-
-
-
-
-    0.13259928529016457
-
-
-
-
-```python
-# The sum of our contributions + the bias should equal our prediction
-contributions[0][:][:,1].sum() + bias[0][1]
-```
-
-
-
-
-    0.3965270453185636
-
-
-
-
-```python
-prediction[0][1]
-```
-
-
-
-
-    0.3965270453185635
-
 
 
 ## Interpretation
@@ -885,7 +579,7 @@ Examples of both are shown below.
 
 Example of a partial dependence plot with the pdp library. The x axis is `MonthlyCharges` and the y axis is the probability of churn:
 
-<img src="https://julienbeaulieu.github.io\public\telco-churn-output\monthlycharges-partial-dependance-plot.png">
+![png](https://julienbeaulieu.github.io\public\telco-churn-output\monthlycharges-partial-dependance-plot.png)
 
 - In a partial dependance plot, every blue line represents one row in our dataset (one customer). The black line represents the average of all the blue lines.
 
@@ -942,7 +636,7 @@ ax.set_title('Distribution of monthly charges by churn')
 
 
 
-![png](output_52_1.png)
+![png](https://julienbeaulieu.github.io\public\telco-churn-output\output_52_1.png)
 
 
 Looking at the distributions of Churned and Not Churned customers, we can see that higher `MonthlyCharges` seem to correlate with higher churn.
@@ -964,7 +658,7 @@ plot_pdp('MonthlyCharges')
 
 
 
-![png](output_56_0.png)
+![png](https://julienbeaulieu.github.io\public\telco-churn-output\output_56_0.png)
 
 
 ### Partial Dependence Plot Interpretation
@@ -983,7 +677,7 @@ plot_pdp('MonthlyCharges', clusters=5)
 ```
 
 
-![png](output_58_0.png)
+![png](https://julienbeaulieu.github.io\public\telco-churn-output\output_58_0.png)
 
 
 When `Monthly Charges` is over 65$, there are two groups of customers that are negatively affected. There are also 2 other groups that are not affected. 
@@ -1002,7 +696,7 @@ sns.violinplot(data=telecom_cust.iloc[rand_sample], x='Churn', y='tenure')
 
 
 
-![png](output_62_1.png)
+![png](https://julienbeaulieu.github.io\public\telco-churn-output\output_62_1.png)
 
 
 Looking at the lower part of the blue violin plot (churned customers), one could think that there is a positive correlation with how recent a customer is and the churn likelihood. 
@@ -1017,7 +711,7 @@ plot_pdp('tenure')
 ```
 
 
-![png](output_65_0.png)
+![png](https://julienbeaulieu.github.io\public\telco-churn-output\output_65_0.png)
 
 
 ### Partial dependance plot interpretation
@@ -1038,7 +732,7 @@ plot_pdp(['Contract_Month-to-month', 'Contract_One year', 'Contract_Two year'], 
 ```
 
 
-![png](output_69_0.png)
+![png](https://julienbeaulieu.github.io\public\telco-churn-output\output_69_0.png)
 
 
 This shows that all else being equal, `One_year` and `Two_year` contracts reduces the chances that a customer will churn. 
@@ -1053,7 +747,7 @@ pdp.pdp_interact_plot(p, feats)
 ```
 
 
-![png](output_72_0.png)
+![png](https://julienbeaulieu.github.io\public\telco-churn-output\output_72_0.png)
 
 
 ### Interaction interpretation
@@ -1086,7 +780,7 @@ plot_fi(fi[:30]);
 ```
 
 
-![png](output_77_0.png)
+![png](https://julienbeaulieu.github.io\public\telco-churn-output\output_77_0.png)
 
 
 ### Interpretation
@@ -1105,7 +799,8 @@ If we're putting out an algorithm which is making big decisions that could cost 
 
 Here is a quick refresher of how Random Forests work:
 
-<img src="data/randomforest.png" width="500" height="600">
+![png](https://julienbeaulieu.github.io\public\telco-churn-output\randomforest.png)
+
 
 
 **Use cases**
@@ -1154,19 +849,6 @@ preds = np.stack([t.predict_proba(X_valid)[:,1] for t in model_rf.estimators_])
 
 `np.stack` is used to concatenate our predictions to a new axis. Our **rows** are the results/predictions for each tree. We made a Random Forest of `n_estimators=1000` so we'll have 1000 rows. Our **columns** are the results of each observation of our original dataset. We're using `X_valid` which has 1409 rows, so we'll have 1409 columns.
 
-
-```python
-# sanity check - preds columns should match X_valid rows. pred rows should be 1000
-preds.shape, X_valid.shape
-```
-
-
-
-
-    ((1000, 1409), (1409, 38))
-
-
-
 ## Confidence for a specific observation
 
 ### Prediction and confidence for row [0]
@@ -1180,7 +862,8 @@ np.mean(preds[:,0]), np.std(preds[:,0])
 
 
 
-    (0.07035324476925504, 0.061121408081270756)
+    Output: 
+    (0.0703, 0.0611)
 
 
 
@@ -1199,7 +882,8 @@ np.mean(preds[:,3]), np.std(preds[:,3])
 
 
 
-    (0.3965270453185636, 0.17151672341662344)
+    Output: 
+    (0.3965, 0.1715)
 
 
 
@@ -1328,7 +1012,7 @@ x.Contract.value_counts().plot.barh();
 ```
 
 
-![png](output_100_0.png)
+![png](https://julienbeaulieu.github.io\public\telco-churn-output\output_100_0.png)
 
 
 ### Actual Churn, our churn prediction, and the prediction standard deviation for all Contract types
@@ -1406,7 +1090,7 @@ contract_summary.plot('Contract', 'Churn', 'barh', xlim=(0,0.5));
 ```
 
 
-![png](output_105_0.png)
+![png](https://julienbeaulieu.github.io\public\telco-churn-output\output_105_0.png)
 
 
 ### Plot our predictions with confidence intervals
@@ -1417,7 +1101,7 @@ contract_summary.plot('Contract', 'pred', 'barh', xerr='pred_std', alpha=0.6, xl
 ```
 
 
-![png](output_107_0.png)
+![png](https://julienbeaulieu.github.io\public\telco-churn-output\output_107_0.png)
 
 
 ### **Contract Variable Interpretation**
@@ -1438,7 +1122,7 @@ x.MultipleLines.value_counts().plot.barh();
 ```
 
 
-![png](output_111_0.png)
+![png](https://julienbeaulieu.github.io\public\telco-churn-output\output_111_0.png)
 
 
 ### Actual Churn, our churn prediction, and the prediction standard deviation for all Line types
@@ -1514,7 +1198,7 @@ MultipleLines_summary.plot('MultipleLines', 'Churn', 'barh', xlim=(0,0.5));
 ```
 
 
-![png](output_115_0.png)
+![png](https://julienbeaulieu.github.io\public\telco-churn-output\output_115_0.png)
 
 
 ### Plot our predictions with confidence intervals
@@ -1525,7 +1209,7 @@ MultipleLines_summary.plot('MultipleLines', 'pred', 'barh', xerr='pred_std', alp
 ```
 
 
-![png](output_117_0.png)
+![png](https://julienbeaulieu.github.io\public\telco-churn-output\output_117_0.png)
 
 
 ### **MultipleLines Variable Interpretation**
