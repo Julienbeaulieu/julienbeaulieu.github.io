@@ -21,8 +21,6 @@ This initiative was triggered following a book I recently read: <a href="https:/
 
 Therefore, I have decided to take a methodological approach to defining and writing down my objectives as an experiment, hoping that this will increase my chances of succeeding at them. I am sharing a framework that was influenced by the book, but also influenced by the work I do as a marketer specializing in growth, data analytics and conversion rate optimization.  
 
-<br />
-
 ## Why set objectives in the first place?  
 
 Defining objectives for my personal life has helped surface what is important for me to achieve and has helped me think about my future, as well as things I want to accomplish. It also helps channel my efforts in determining what I should be working on instead of blindly starting the year and focusing on things that don’t matter. Objectives point us in the direction we want to go and impel us to make hard choices.  
@@ -30,8 +28,6 @@ Defining objectives for my personal life has helped surface what is important fo
 > “It is our choices... that show what we truly are, far more than our abilities” J.K Rowling* 
 
 I anticipate that having clear, specific, ambitious objectives will produce a higher level of productivity, will create clarity and increase my engagement towards reaching those goals. 
-
-<br />
 
 ## Definition of OKRs and leading principles 
 
@@ -50,8 +46,6 @@ OKR is a system used in a business context, and since I’ve decided to take som
 3. <b>Share my goals with friends and colleagues.</b> This will make me accountable. It will create <a href="https://seths.blog/2017/05/tension-vs-fear/">tension</a> and push me to stay engaged and motivated because now people are looking.  
 
 > “In one California study, people who recorded their goals and sent weekly progress reports to a friend - [two integral OKR features] - attained 43 percent more of their objectives than those who merely thought about goals without sharing them”. John Doerr 
-
-<br />
 
 ## Other things to consider during the process 
 
