@@ -30,13 +30,11 @@ I agree with his opinion that academic credentials are important but not necessa
 
 ## 10 Lessons learned during my time learning Data Science 
 
-### 1. There is a great opportunity for me in this field as someone from a non-technical background
+### 1. There is a great opportunity for me in this field as someone from a business background
 
-What I mean is that my unique background can play into my advantage since there are less people in the field with my business experience and perspective. As a marketing professional, I am innately customer-focused, always asking the questions, who’s it for, what’s it for, and how can I get people excited about it and spread the word. I also understand the importance of stakeholders, always thinking about how much impact my initiatives will have on the bottom line.  
+There are typically less people in the field with experience and a perspective in business and product. I understand the dynamics of what it takes to build a great product that produces desirable business outcomes. I am always asking myself who’s it for, what’s it for, how can I get people excited about it. Lean production and iteration cycles, constant improvement and prioritization are all concepts I intend to apply in my data science projects.  
 
-I also had the opportunity to work in an agile environment in a startup. Lean production and iteration cycles, constant improvement and prioritization are all concepts I intend to apply for data science projects.  
-
-I believe that this background can be effectively leverage and applied in Data Science, and that it is a skillset that is typically hard to find in the field. 
+I believe that this background can be effectively leveraged and applied in the field, and that it is a skillset that is typically hard to find in the field. 
 
 ### 2. Data Science is difficult but not inaccessible
 
