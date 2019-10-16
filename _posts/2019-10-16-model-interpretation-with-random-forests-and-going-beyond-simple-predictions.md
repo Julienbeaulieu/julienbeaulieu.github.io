@@ -3,10 +3,10 @@ In this post I share four different ways of making predictions more interpretabl
 I use a common data set - [Teleco Customer Churn](https://www.kaggle.com/blastchar/telco-customer-churn) - because it is simple and illustrates a classic business problem about growth.  
 
 I will dive into the following methods:
-- [Feature Importance](#1.-Feature-Importance)
-- [Tree interpreter](#2.-Tree-Interpreter)
-- [Partial dependence](#3.-Partial-Dependence)
-- [Confidence based on tree variance](#4.-Confidence-Based-on-Tree-Variance)
+- [Feature Importance](#1-feature-importance)
+- [Tree interpreter](#2-tree-interpreter)
+- [Partial dependence](#3-partial-dependence)
+- [Confidence based on tree variance](#4-confidence-based-on-tree-variance)
 
 I will apply them to our dataset, explain what they are, their use case, how they are calculated, and interpret all the results.  
 
