@@ -4,7 +4,7 @@ Can we detect fraud from customer transactions? Lessons from my first competitio
 
 Link to the notebook [on GitHub](https://github.com/Julienbeaulieu/fraud-detection-kaggle-competition).
 
-## 1. Motivation
+## Motivation
 
 
 After having spent a lot of time taking data science classes, I was eager to start practicing on a real dataset and to enter a Kaggle competition. I am thankful that I did because in the process, I learned a lot of things that aren't covered in those classes. Techniques like stratified cross validation, increasing the memory efficiency of my dataset, model stacking and blending, were all new to me.   
@@ -25,7 +25,7 @@ Topics covered in the notebook:
 - The code and helper functions for stacking and ensembling models
 - Fastai tips and tricks throughout the notebook
 
-## 2. About this dataset
+## About this dataset
 
 In this competition we are predicting the probability that an online transaction is fraudulent, as denoted by the binary target `isFraud`. The data comes from [Vesta Corporation's](https://trustvesta.com/) real-world e-commerce transactions and contains a wide range of features from device type to product features.
 
@@ -40,14 +40,14 @@ The data is broken into two files: identity and transaction, which are joined by
 Submissions are evaluated on area under the ROC curve between the predicted probability and the observed target.
 
 
-## 3. Methodology
+## Methodology
 
-### 3.1 Quick cleaning and modeling
+### 1. Quick cleaning and modeling
 
 When starting off with a dataset with as many columns as this one (over 400), we first run it through an ensemble learner - LGBM - forgoing any exploratory data analysis and feature engineering at the beginning. Once the model is fit to the data, we have a look at the features which are the most important using LGBM's feature_importances attribute. 
 This allows us to concentrate our efforts on only the most important features instead of spending time looking at features with little to no predictive power. 
 
-### 3.2 Understand the data with EDA
+### 2. Understand the data with EDA
 
 Once we've filtered our columns, we'll look at the ones with the highest importance. The findings in this analysis will guide our feature engineering efforts in the next section. Some questions we'll want to answer:
 - How are the top features related to our target variable? 
@@ -56,11 +56,11 @@ Once we've filtered our columns, we'll look at the ones with the highest importa
 - Are there any features that we can split into multiple columns or simplify in any way?
 - etc.
 
-### 3.3 Feature engineering
+### 3. Feature engineering
 
 Once we understand our data, we can start creating new columns by splitting up current ones, transforming them to change their scale or looking at their mean, combining new ones to create interactions, and much more. 
 
-### 3.4 Train different models, fit them to the training data, at use cross validation
+### 4. Train different models, fit them to the training data, and use cross validation
 
 The models I tested were RandomForests, XGBoost, and LightGBM. 
 
@@ -68,7 +68,7 @@ I tried several cross validation techniques such as Stratification and TimeSerie
 I also discovered several powerful ensemble techniques which are used by top Kaggle contenders: stacking, blending, averaging our least correlated submissions, etc.  
 
 
-### 3.5 Ensembling/Stacking models
+### 5. Ensembling/Stacking models
 
 For an excellent article on stacking and ensembling, refer to the de-facto Must read article: [Kaggle Ensembling Guide](https://mlwave.com/kaggle-ensembling-guide/). For the code, refer to [this Kaggle guide](https://www.kaggle.com/arthurtok/introduction-to-ensembling-stacking-in-python) or my notebook which is based off of these 2 resources. 
 
@@ -82,7 +82,7 @@ Here is a very interesting extract of a paper of the creator of stacking: Wolper
 
 Despite this technique being very powerful, I failed to get a better submission score for myself. This is because my base models were not optimized enough. 
 
-### High-level summary of the scores of my Kaggle competition submissions
+## High-level summary of the scores of my Kaggle competition submissions
 
 - Base features with stock LGBM: 0.87236
 - All engineered features with stock : 0.89821 (+0.02585)
@@ -94,7 +94,7 @@ Despite this technique being very powerful, I failed to get a better submission 
 - Use a weighted average on my top submissions: 0.91145 (-0.00256) - (I think I could have optmized this and gotten a better score)
 
 
-## 6. Limitations and going further
+## Limitations and going further
 
 This notebook was created thanks for a lot of other notebooks, forum discussion threads and code from the Introduction to Machine Learning for Coders Fastai course. 
 
