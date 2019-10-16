@@ -474,7 +474,7 @@ Adding this interaction has allowed us to get a new feature with the highest imp
 
 ## 4. Confidence Based on Tree Variance
 
-<u>**What is it used for?**</u>
+**<u>What is it used for?</u>**
 
 This tells us the *relative* confidence of our predictions by taking the __standard deviation of the predictions of our trees__, instead of using the mean of all the trees in our Random Forest. In other words, for rows where the trees of our Random Forest give very different predictions, we would want to be more cautious of using those results compared to cases where they are more consistent. 
 
