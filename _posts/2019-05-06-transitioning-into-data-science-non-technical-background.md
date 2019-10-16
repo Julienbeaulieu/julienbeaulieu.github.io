@@ -14,8 +14,6 @@ I'll first share some background about myself, why and how I chose this career. 
 
 Feel free to skip directly to the parts you are most interested in. 
 
-<br />
-
 ## Why do I want to Become a Data Scientist? 
 
 I am a geek at heart and I have long been fascinated by the world of technology, science, and video games. While coding was something I was interested in, I never really considered a career in it. 
@@ -30,13 +28,9 @@ I like James Kobielus’ insight in his article <a href="https://www.ibmbigdatah
 
 I agree with his opinion that academic credentials are important but not necessary for high-quality Data Science (or simply to get a job). The core aptitudes – curiosity, intellectual agility, statistical fluency, research stamina, scientific rigor, a skeptical nature – that distinguish the best data scientists are all things you can acquire on the job, and by working smart.
 
-<br />
-
 ## 10 Lessons learned during my time learning Data Science 
 
-
-
-<b>1. There is a great opportunity for me in this field as someone from a non-technical background.</b> 
+### 1. There is a great opportunity for me in this field as someone from a non-technical background
 
 What I mean is that my unique background can play into my advantage since there are less people in the field with my business experience and perspective. As a marketing professional, I am innately customer-focused, always asking the questions, who’s it for, what’s it for, and how can I get people excited about it and spread the word. I also understand the importance of stakeholders, always thinking about how much impact my initiatives will have on the bottom line.  
 
@@ -44,23 +38,17 @@ I also had the opportunity to work in an agile environment in a startup. Lean pr
 
 I believe that this background can be effectively leverage and applied in Data Science, and that it is a skillset that is typically hard to find in the field. 
 
-<br />
-
-<b>2. Data Science is difficult but not inaccessible.</b>
+### 2. Data Science is difficult but not inaccessible
 
 While Data Science may seem intimidating to some, what many don’t realize is just how accessible it is thanks to the democratization of resources: video courses, eBooks, Stack Overflow, GitHub, hackathons, meetups, etc., most of which are free and open. What is required is dedication, motivation, as well as hard and smart work. Thankfully, this is something I can perform quite well.  
 
 Data Science is a relatively new career trajectory that merges statistics, business logic, and programming knowledge. This makes it a quite a difficult challenge, especially for a non-technical person like myself. A lot of people that transition into the field seem to be engineers or PHDs. They either already know how to program, have an extensive math background, or both. Having said that, there is still a sizable amount of people from non-technical backgrounds that have had successful careers.  
 
-<br />
-
-<b>3. Time to first job matters most.</b>
+### 3. Time to first job matters most
 
 The sooner I am in a team working on actual Data Science projects, the sooner I’ll learn about it. I’ll be working on real problems, problems that sometimes classes can't teach because they don’t just have to do with statistical complexity. I’ll have management invested in me and I’ll see what it really means to do practical Data Science.  
 
-<br />
-
-<b>4. Project focused learning will land me a job faster than the academic route.</b> 
+### 4. Project focused learning will land me a job faster than the academic route
 
 According Dan Becker, a data scientist at Kaggle that has overseen the recruitment of hundreds of people in the field, the quickest way to be hired as a data scientist is to build projects and showcase them to employers. This is because we learn much faster by trying and building something that solves a real problem. It is for me the most efficient and motivating way to learn. It is when you truly understand why certain math concepts are important that you remember them best. 
 
@@ -68,53 +56,33 @@ It also sends a signal: I am showing that I am interested and passionate enough 
 
 From what I have gathered, employers don’t really care that much if you know how to program or know math. They would rather see what problems I have identified and created a solution for and how passionate I am about the work. They want to see how I can apply what I've learned to their specific needs, and how that translates in terms of added value and bottom line. 
 
-<br />
-
-
-<b>5. Time and Money.</b> 
+### 5. Time and Money
 
 Another important reason behind my decision is that getting a college degree is expensive and takes a very long time. I am fortunate enough to live in Montreal where there are cheap, relatively fast and quality options. Unfortunately, none have all three qualities at the same time.   
 
 For a motivated self starter like myself, a better approach is to make create my own curriculum through a combination of online courses,books, Kaggle competitions, personal projects, meetups and competitions. See my list of resources I am using at the end of the article.
 
-<br />
-
-
-<b>6. Creating a network.</b>
+### 6. Creating a network
 
 This is definitely something a school will give you that (most) online classes won’t. One way I make up for this is to simply reach out to people over lunch or coffee. It’s been going great so far. It’s surprising the number of people who are happy to take some time out of their schedule and help out. Also, it’s important that I continue networking at local Data Science events and going to conferences.
 
-<br />
-
-
-<b>7. Understanding what the best way for me to learn is and making the most of it.</b>
+### 7. Understanding what the best way for me to learn is and making the most of it
 
 I know my weaknesses and strengths when it comes to learning. I’ve been learning things on the side and on my own time for as long as I can remember. Given that I am an auto didact and that I have truely found my passion in data science, I know that I have the discipline to teach myself math and to code outside of a classroom or a work environment. Therefore, I know I am getting into something that I can succeed in and complete. 
 
-<br />
-
-
-<b>8. Immersing myself in the community.</b>
+### 8. Immersing myself in the community
 
 My favorite and most effective way to learn is to surround myself with all things Data Science. This is done by subscribing to Data Science newsletters, reading articles and books, listening to podcasts, watching videos on YouTube, taking advantage of sites like <a href="https://www.meetup.com/">Meetup</a> and <a href="https://www.eventbrite.com/">Eventbrite</a> by attending all and any Data Science events, finding online communities on reddit, Slack, and LinkedIn and joining them. 
 
-<br />
-
-
-<b>9. Math.</b>
+### 9. Math
 
 My approach to math is as follows: I need to know the science and math behind what’s going on with data or else I’ll be extremely limited in what I can learn and understand. Math will be increasingly important for me the more I advance my career. My goal is to be able to read almost any paper and understand all of it. The tools and tech will continue to change rapidly, but the underlying math will not. There is a minimal amount of math knowledge that is required to persue Data Science effectively. That is a combination of linear algebra, calulus, probability and statistics. Having said this, you don’t need an extensive foundation in math to begin working on projects. 
 
-<br />
-
-
-<b>10. Diversity.</b>
+### 10. Diversity
 
 One last thing I’ll mention about the field that really appeals to me: there is an incredible diversity of the people in Data Science; more so than in any other technical field I know as a matter of fact. Data scientists come from the widest variety of backgrounds; from mathematics, physics, economy, engineering, to business and social sciences. These are people from all over the world, men and women alike.  
 
 I believe this is one of the field’s greatest strengths. Countless studies have found that diverse teams perform better. I just cannot wait to work with PHDs, engineers and other incredibly smart people. Man is that exciting! 
-
-<br />
 
 ## Next Steps
 
@@ -131,8 +99,6 @@ This is what my plan looks like in a few bullet points. I’ll be learning Data 
 - Projects can be an interesting starting point for networking – Find people interested in it, or that have worked on similar projects and have a discussion. Talk to potential employers about them too. 
 
 - Repeat these steps to create a portfolio.
-
-<br />
 
 ## Resources
 
@@ -211,7 +177,6 @@ Below are all the resources I have gathered to complete my Data Science training
 - <a href="https://www.meetup.com/">Meetup.com</a> – Join meetups in your city! 
 - <a href="https://www.eventbrite.com/">Evenbrite</a> – Go to events near you.  
 
-<br />
 
 While I have officially began my journey towards becoming a data scientist, there won’t ever be an endpoint. Due to the rapid pace of development in this industry, I believe data scientist are on a never-ending journey of continuous learning. I hope this article has been useful to those of you considering a career change and for those who are deciding on how you’ll transition.  
 

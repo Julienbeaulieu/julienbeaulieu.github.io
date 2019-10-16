@@ -9,7 +9,13 @@ title: A framework for setting and attaining your personal goals
 
 <br />
 
-This year, for the first time, I have decided to write down the things I want to accomplish and to track my progress. After spending a lot of time thinking of what I want to do in life, what my long-term goals and dreams are, I now want to find a framework to help me achieve my goals in the most effective way possible. I am usually pretty good at sticking to my resolutions, and if I say I’m going to do something, I usually do it. But one issue I currently have is this: it is now the end of the year and I have trouble determining if the past year was a success or not. I think is it! Maybe? But to what extent? Wouldn’t it be great if I could look back and see where I have succeeded and failed, and to what degree? This way, I could use that data for personal improvement and to make even better objectives and an improved goal-reaching system for next year. Doing so is important to me because it will help get me closer to my life goals. I am referring to life goals at large, not just professionally speaking. This includes health, family & girlfriend related goals, reading and writing, hobbies, etc.  
+## Keeping track of progress
+
+This year, for the first time, I have decided to write down the things I want to accomplish and to track my progress. After spending a lot of time thinking of what I want to do in life, what my long-term goals and dreams are, I now want to find a framework to help me achieve my goals in the most effective way possible. I am usually pretty good at sticking to my resolutions, and if I say I’m going to do something, I usually do it. 
+
+One issue I currently have is this: it is now the end of the year and I have trouble determining if the past year was a success or not. I think is it! Maybe? But to what extent? Wouldn’t it be great if I could look back and see where I have succeeded and failed, and to what degree? This way, I could use that data for personal improvement and to make even better objectives and an improved goal-reaching system for next year. Doing so is important to me because it will help get me closer to my life goals. I am referring to life goals at large, not just professionally speaking. This includes health, family & girlfriend related goals, reading and writing, hobbies, etc.  
+
+## Measure What Matters
 
 This initiative was triggered following a book I recently read: <a href="https://www.amazon.com/Measure-What-Matters-Google-Foundation/dp/0525536221">Measure What Matters</a>. The author John Doerr describes a popular management system used by companies like Google, Intel or Bill & Melinda Gates Foundation, to keep track of business objectives and increase the odds they’ll succeed at achieving them. The method they describe in the book are OKRs, which stands for Objective, Key Results. I love the approach, and thought that some of the principles would nicely apply to my own life.   
 
