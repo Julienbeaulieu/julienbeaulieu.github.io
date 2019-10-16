@@ -8,329 +8,12 @@ I will dive into the following methods:
 - [Partial dependence](#3.-Partial-Dependence)
 - [Confidence based on tree variance](#4.-Confidence-Based-on-Tree-Variance)
 
-I will apply them to our dataset, explain what they are, their use cases, how they are calculated, and interpret all the results.  
+I will apply them to our dataset, explain what they are, their use case, how they are calculated, and interpret all the results.  
 
 These learnings are a summary of the material used in Fastai's course [Introduction to Machine Learning for Coders](http://course18.fast.ai/ml.html).   
 
-## Imports and Loading the Data
+For the full notebook and code, [checkout my repo on GitHub](https://github.com/Julienbeaulieu/model-interpretation-with-random-forests)
 
-
-```python
-%matplotlib inline
-
-from fastai.imports import *
-from fastai.structured import * 
-from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestRegressor, RandomForestClassifier
-import lightgbm as lgb
-from IPython.display import display
-from sklearn import metrics
-import seaborn as sns
-```
-
-
-```python
-telecom_cust = pd.read_csv('data/WA_Fn-UseC_-Telco-Customer-Churn.csv')
-
-telecom_cust.head()
-```
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>customerID</th>
-      <th>gender</th>
-      <th>SeniorCitizen</th>
-      <th>Partner</th>
-      <th>Dependents</th>
-      <th>tenure</th>
-      <th>PhoneService</th>
-      <th>MultipleLines</th>
-      <th>...</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>0</td>
-      <td>7590-VHVEG</td>
-      <td>Female</td>
-      <td>0</td>
-      <td>Yes</td>
-      <td>No</td>
-      <td>1</td>
-      <td>No</td>
-      <td>No phone service</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>5575-GNVDE</td>
-      <td>Male</td>
-      <td>0</td>
-      <td>No</td>
-      <td>No</td>
-      <td>34</td>
-      <td>Yes</td>
-      <td>No</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>3668-QPYBK</td>
-      <td>Male</td>
-      <td>0</td>
-      <td>No</td>
-      <td>No</td>
-      <td>2</td>
-      <td>Yes</td>
-      <td>No</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>7795-CFOCW</td>
-      <td>Male</td>
-      <td>0</td>
-      <td>No</td>
-      <td>No</td>
-      <td>45</td>
-      <td>No</td>
-      <td>No phone service</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>9237-HQITU</td>
-      <td>Female</td>
-      <td>0</td>
-      <td>No</td>
-      <td>No</td>
-      <td>2</td>
-      <td>Yes</td>
-      <td>No</td>
-      <td>...</td>
-    </tr>
-  </tbody>
-</table>
-<p>5 rows × 21 columns</p>
-</div>
-
-
-
-## Quick Cleaning and Encoding
-
-A lot of our variables are currently stored as strings, which is inefficient, and doesn't provide the numeric coding required to run our models. Therefore, we create `train_cats` function to convert strings to pandas categories. We'll also drop the `customerID` column which will not be useful for prediction.
-
-
-```python
-def train_cats(df):
-    for n,c in df.items():
-        if is_string_dtype(c): df[n] = c.astype('category').cat.as_ordered()
-
-# Drop customerID which is not useful for prediction
-telecom_cust.drop(['customerID'], axis=1, inplace=True)
-
-# Apply train_cats
-train_cats(telecom_cust)
-```
-
-
-In order to quickly clean and numericalize our data to make it ready for training, we use a handy function from Fastai which is `proc_df`. I won't go into the details but it basically takes a data frame, splits off the response variable (y), and changes the df into an entirely numeric dataframe by converting the category columns to their matching category codes. For each column of df, NaN values are replaced by the median value of the column.
-
-Passing ` max_n_cats=5` to the function will OneHotEncode categories with 5 or less unique values.
-
-
-```python
-df_trn, y_trn, nas = proc_df(telecom_cust, 'Churn', max_n_cat=5)
-
-df_trn
-```
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>SeniorCitizen</th>
-      <th>tenure</th>
-      <th>MonthlyCharges</th>
-      <th>TotalCharges</th>
-      <th>gender_Female</th>
-      <th>gender_Male</th>
-      <th>gender_nan</th>
-      <th>Partner_No</th>
-      <th>...</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>29.85</td>
-      <td>2506</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>0</td>
-      <td>34</td>
-      <td>56.95</td>
-      <td>1467</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>0</td>
-      <td>2</td>
-      <td>53.85</td>
-      <td>158</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>0</td>
-      <td>45</td>
-      <td>42.30</td>
-      <td>1401</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>0</td>
-      <td>2</td>
-      <td>70.70</td>
-      <td>926</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <td>7038</td>
-      <td>0</td>
-      <td>24</td>
-      <td>84.80</td>
-      <td>1598</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <td>7039</td>
-      <td>0</td>
-      <td>72</td>
-      <td>103.20</td>
-      <td>5699</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <td>7040</td>
-      <td>0</td>
-      <td>11</td>
-      <td>29.60</td>
-      <td>2995</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <td>7041</td>
-      <td>1</td>
-      <td>4</td>
-      <td>74.40</td>
-      <td>2661</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <td>7042</td>
-      <td>0</td>
-      <td>66</td>
-      <td>105.65</td>
-      <td>5408</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>...</td>
-    </tr>
-  </tbody>
-</table>
-<p>7043 rows × 60 columns</p>
-</div>
-
-
-
-We now have a DataFrame that is ready for training. Let's move on to the purpose of this notebook: model interpretation. 
 
 ## 1. Feature Importance
 
@@ -338,7 +21,7 @@ We now have a DataFrame that is ready for training. Let's move on to the purpose
 
 Understanding which features have the most impact on our model.
 
-**Use cases**
+**Use case**
 
 - Feature selection: We can eliminate from our model the features which had very low to no importance at all. Removing features in this  way usually results in a better prediction in our model. Always test if this is the case. 
 - Exploratory data analysis: Once we know the most important features, we can focus on understanding these features in much more depth. We should visualize their distribution, see how they are related to each other, and to the target variable, as well as other EDA methods. 
@@ -452,7 +135,7 @@ While calculating feature importance is a great way to get a sense of what has t
 
 This is exactly what the tree interpreter library allows us to do. Every prediction can be presented as a sum of feature contributions, showing how the features lead to a particular prediction. 
 
-**Use cases**
+**Use case**
 
 This opens up a lot of opportunities in practical machine learning and data science tasks:
 
@@ -568,7 +251,7 @@ Given this information, maybe we're interested in putting some effort in retaini
 With partial dependence, we want to know the relationship between a feature and the target variable all other things being equal. In other words, we consider only the feature under consideration to be varying, ensuring all the other features remain constant. Thus we cut out the noise from other dependent variables, removing any collinearity, and get a better understanding of the true nature of interactions of each feature with the target variable.
 
 
-**Use cases**
+**Use case**
 
 - Understand the true nature between variables and go past the limitations of simple univariate or bivariate plots.  
 - Understand interactions between 2 variables and the target variable by plotting their relationship.
@@ -579,7 +262,7 @@ Examples of both are shown below.
 
 Example of a partial dependence plot with the pdp library. The x axis is `MonthlyCharges` and the y axis is the probability of churn:
 
-![png](https://julienbeaulieu.github.io\public\telco-churn-output\monthlycharges-partial-dependance-plot.png)
+![png](https://julienbeaulieu.github.io\public\telco-churn-output\monthlycharges-partial-dependance-plot.PNG)
 
 - In a partial dependance plot, every blue line represents one row in our dataset (one customer). The black line represents the average of all the blue lines.
 
@@ -780,7 +463,7 @@ plot_fi(fi[:30]);
 ```
 
 
-![png](https://julienbeaulieu.github.io\public\telco-churn-output\output_77_0.png)
+![png](https://julienbeaulieu.github.io\public\telco-churn-output\output_77_0.PNG)
 
 
 ### Interpretation
@@ -803,7 +486,7 @@ Here is a quick refresher of how Random Forests work:
 
 
 
-**Use cases**
+**Use case**
 
 With confidence based on tree variance, we are interested in two things: 
 1. Analyzing single observation interpretations. We take one row, one observation, and check how confident we are about it. To do so we check how much variance is there in the prediction of all our trees in the Random Forest.
