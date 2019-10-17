@@ -50,7 +50,7 @@ This curriculum is inspired by [OSSU's](https://github.com/ossu/computer-science
 
 ---
 
-## Math and programming primer
+## Math and Programming Primer
 
 Fundamental math and basic programming is essential for data science. I made sure I was up to speed with the following material before going further. Since I was going to spend a lot of time learning new things, I also took a class and read about learning how to learn.
 
@@ -76,8 +76,8 @@ Courses | Source | Format | Status
 [Calculus 1 & 2](https://www.khanacademy.org/math/calculus-1) | Khan Academy | Videos and Math excercises | ✔️Done
 [Version Control with Git](https://www.udacity.com/course/version-control-with-git--ud123) | Udacity | Self-paced videos | ✔️Done
 [Linux Command Line Basics](https://www.udacity.com/course/linux-command-line-basics--ud595) | Udacity | Self-paced videos | ✔️Done
-[Learning How to Learn](https://www.youtube.com.....gilbert)  |  Coursera | Self-paced videos | ✔️Done
-[Pragmatic Thinking and Learning](https://www.youtube.com.....gilbert) ❤️ |  Andy Hunt | Book | ✔️Done
+[Learning How to Learn](https://www.coursera.org/learn/learning-how-to-learn)  |  Coursera | Self-paced videos | ✔️Done
+[Pragmatic Thinking and Learning](https://pragprog.com/book/ahptl/pragmatic-thinking-and-learning) ❤️ |  Andy Hunt | Book | ✔️Done
 
 **Overview**
 - Started with fundamentals of AI to make sure data science was a route I wanted to pursue. 
