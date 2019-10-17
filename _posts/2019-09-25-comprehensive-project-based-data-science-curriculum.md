@@ -67,7 +67,7 @@ Fundamental math and basic programming is essential for data science. I made sur
 `scikit-learn`,
 `Learning how to learn`
 
-Courses | Source | Format | Status
+Resources | Source | Format | Status
 :-- | :--: | :--: | :--: | 
 [Fundamentals of AI](https://www.datacamp.com/courses/fundamentals-of-ai) ❤️ | DataCamp | Self-paced videos and coding environment | ✔️Done
 [RMOTR - Data Science](https://rmotr.com) | RMOTR | Self-paced videos and coding environment | ✔️Done
@@ -101,7 +101,7 @@ This is where I improve my coding abilities and start working on real data scien
 `Model interpretation techniques`,
 `Data structures and algorithms`,
 
-Courses | Source | Format | Status
+Resources | Source | Format | Status
 :-- | :--: | :--: | :--:
 [Data Analyst Nanodegree](https://www.udacity.com/course/data-analyst-nanodegree--nd002)  | Udacity | Self-paced videos and coding environment | ✔️Done
 [Introduction to Machine Learning Nanodegree](https://www.udacity.com/course/intro-to-machine-learning-nanodegree--nd229) | Udacity | Self-paced videos and coding | ✔️Done
@@ -134,7 +134,7 @@ Courses | Source | Format | Status
 `discrete mathematics`
 `and more`
 
-Courses | Source | Format | Status
+Resources | Source | Format | Status
 :-- | :--: | :--: | :--:
 [Essence of Linear Algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) ❤️ | YouTube | Videos | ✔️Done
 [StatQuest - Machine Learning](https://www.youtube.com/playlist?list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF) ❤️ | Youtube | Videos | In progress
@@ -161,7 +161,7 @@ Data Engineering is the foundation for the new world of Big Data. Here we learn 
 `Data lakes`
 `Data pipelines`
 
-Courses | Source | Format | Status
+Resources | Source | Format | Status
 :-- | :--: | :--: | :--:
 [Data Engineer Nanodegree](https://www.udacity.com/course/data-engineer-nanodegree--nd027) | Udacity | Self-paced videos and coding environment | Not Started
 [SQL](https://mode.com/sql-tutorial/) | Mode Analytics | Articles and exercises | In progress
@@ -182,7 +182,7 @@ After completing **every course** in Core Data Science, we can go into more comp
 `Deep reinforcement learning`,
 `Swift: deep learning basics`
 
-Courses | Source | Format | Status
+Resources | Source | Format | Status
 :-- | :--: | :--: | :--:
 [Practical Deep Learning for Coders](https://course.fast.ai/) | U of San Francisco | Online videos and projects | Not started
 [CS231n: Convolutional Neural Networks for Visual Recognition](http://cs231n.stanford.edu/)| Stanford | Online videos and projects | Not started
@@ -204,7 +204,7 @@ Here I list the projects I have been working on and will be adding new o nes as 
 `Technical writing`
 
 
-Courses | Topics 
+Projects | Topics 
 :-- | :--: 
 [Model Interpretation with Random Forests](https://julienbeaulieu.github.io/2019/10/16/model-interpretation-with-random-forests-and-going-beyond-simple-predictions/) | Decision science / Partial dependence / tree interpreter / confidence based on tree variance 
 [Kaggle competition - Fraud Detection - Using Fastai best practices ](https://github.com/Julienbeaulieu/fraud-detection-kaggle-competition) | LGBM / Model memory reduction / Ensembling and stacking / Stratified cross validation 
