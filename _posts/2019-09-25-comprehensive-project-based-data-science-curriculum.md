@@ -19,23 +19,23 @@ This curriculum is inspired by [OSSU's](https://github.com/ossu/computer-science
 
 - There is a large number of high quality resources that exist online. This curriculum includes a lot of courses from top universities (MIT, Stanford, University of San Francisco) as well as MOOCs that have been taken by millions of students.
 - Flexibility: if I find a job during this process, I can easily switch to working full time, and continue studying part time. I can also study what I find most interesting.  
-- I already have a Master's degree, even if it is in a unrelated field, and 8 years of experience working at various companies. Because of this, I feel that the self-taugh path is more efficient for me. 
-- I am a self-starter and have been learning in an auto didact way all of my life. I know that this is a path that I can complete and succeed in.  
+- I already have a Master's degree, even if it is in a unrelated field, and 8 years of experience working at various companies. Because of this, I feel that the self-taught path is more efficient for me. 
+- I am a self-starter and have been learning in an auto didactic way all of my life. I know that this is a path that I can complete and succeed in.  
 
 **My objectives with this coursework**
 - Have real world practical projects that I am passionate about that I can demonstrate to future employers.
 - Develop a strong knowledge base in math - this includes Linear algebra, calculus, statistics and probability theory. 
-- Become a good developper that can program with strong software engineer and computer science foundations.  
+- Become a good developer that can program with strong software engineer and computer science foundations.  
 - Be able to read scientific papers at the end of this curriculum and apply / redo the experiments on my own. 
-- Share my learnings through technical writing and be active in the community.
+- Share what I've learned through technical writing and be active in the community.
 
 **Organization**. The curriculum is designed as follows:
 - *Math and Programming Primer*: Get up to speed with the math and programming required for data science.
 - *Core Data Science*: Corresponds roughly to a first year of master's degree in data science if we include some of the material in Core Math. 
 - *Core Math*: Learn the math needed to understand data science at a deep and theoretical level.
 - *Data Engineering Basics*: Not many university programs teach this but I think it is an essential topic to know in order to be operational in a work environment. 
-- *Advanced Data Science*: Corresponds roughly to second year master's classes if we include some of the material in Math Foundations. Since I haven't started this section yet, it is incomplete, but the courses you will see are ones that have had the highest regards by the oneline community.   
-- *Projects*: Personal projects I have understaken to display my knowledge. 
+- *Advanced Data Science*: Corresponds roughly to second year master's classes if we include some of the material in Math Foundations. Since I haven't started this section yet, it is incomplete, but the courses you will see are ones that have had the highest regards by the online community.   
+- *Projects*: Personal projects I have undertaken to display my knowledge. 
 
 ## Curriculum
 
@@ -114,7 +114,7 @@ Resources | Source | Format | Status
 
 
 **Overview**
-- Use Python and statistics to uncover insights. Learn how to collect, wrangle, explore and visualize a dataset.
+- Use Python and statistics to uncover insights. Learn how to collect, wrangle, explore and visualize a data set.
 - Introduction to supervised, unsupervised and deep learning with practical projects for each. 
 - Introduction to common data structures and algorithms in Python with practice exercises.
 - Practical approach to Machine Learning using fastai library. Focus on ensembles methods and deep learning.
@@ -143,14 +143,14 @@ Resources | Source | Format | Status
 [Mathematics for Machine Learning](https://mml-book.github.io/) | Marc Peter | Book | In progress
 
 **Overview**
-- Get a great intuition of linear algrebra with the fantastic resource: Essence of Linear Algebra by 3Blue1Brown.
+- Get a great intuition of linear algebra with the fantastic resource: Essence of Linear Algebra by 3Blue1Brown.
 - Learn all things statistics and machine learning with Statquest. Some of the best and simplest explanations on the Web. 
 - Go deep into linear algebra with prof. Gilbert Strang's amazing lecture. 
 - Learn all the math required for machine learning with Marc Peter's (and co.) book. 
 
 ## Data Engineering Fundamentals
 
-Data Engineering is the foundation for the new world of Big Data. Here we learn to design data models, build data warehouses and data lakes, automate data pipelines, and work with massive datasets. Any good data scientist should know about data engineering. 
+Data Engineering is the foundation for the new world of Big Data. Here we learn to design data models, build data warehouses and data lakes, automate data pipelines, and work with massive data sets. Any good data scientist should know about data engineering. 
 
 **Topics covered**:
 `Data modeling`,
