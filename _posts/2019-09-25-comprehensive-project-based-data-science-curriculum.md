@@ -34,7 +34,7 @@ This curriculum is inspired by [OSSU's](https://github.com/ossu/computer-science
 - *Core Data Science*: Corresponds roughly to a first year of master's degree in data science if we include some of the material in Core Math. 
 - *Core Math*: Learn the math needed to understand data science at a deep and theoretical level.
 - *Data Engineering Basics*: Not many university programs teach this but I think it is an essential topic to know in order to be operational in a work environment. 
-- *Advanced Data Science*: Corresponds roughly to second year master's classes if we include some of the material in Math Foundations. Since I haven't started this section yet, it is incomplete, but the courses you will see are ones that have had the highest regards by the online community.   
+- *Advanced Data Science*: Corresponds roughly to second year master's classes if we include some of the material in Math Foundations & Data Engineering. Since I haven't started this section yet, it is incomplete, but the courses you will see are ones that have had the highest regards by the online community.   
 - *Projects*: Personal projects I have undertaken to display my knowledge. 
 
 ## Curriculum
@@ -191,7 +191,9 @@ Resources | Source | Format | Status
 
 ## Projects
 
-Here I list the projects I have been working on and will be adding new o nes as I advance in my curriculum.
+Here I list the projects I have been working on and will be adding new ones as I advance in my curriculum. This is probably the most important part of the curriculum in my opinion. There isn't a predefined list of projects since everyone should choose their own projects to work on based on what they find interesting. 
+
+Ex: My latest project involves ways of interpreting a model in a business context on a churn problem, in order to gain better insights and change business behavior. This is because as a former marketing professional, this is something I am very interested in. 
 
 **Topics covered**:
 `Image recognition`
