@@ -11,7 +11,10 @@
 
 ## Summary
 
-The following is a mix of project orientated learning and theory that I have studied or that I am currently studying. My curriculum is intended to be a **complete education in data science** using online materials. I am currently studying this full time.
+The following is a mix of project orientated learning and theory that I have studied or that I am currently studying in order to become a Data Scientist. My curriculum is intended to be a **complete education in data science** using online materials. I am currently studying this full time. 
+
+My goal with this education is to make a complete career change into the field and to complement my business and marketing knowledge with tools to better analyze, predict, and uncover insights about business decisions and business products. The hopes is to join a startup I care about. In terms of "machine learning tribes", or the kind of data scientist I wish to become, this roughly corresponds to [this article's](https://machinelearningmastery.com/machine-learning-tribe/) description of being a "Data Scientist Interested in Getting Better Answers to Business Questions" mixed with "General Researcher Interested in Modeling Their Problem". 
+
 
 This curriculum is inspired by [OSSU's](https://github.com/ossu/computer-science) amazing self-taught, open source education in Computer Science. 
 
@@ -23,6 +26,7 @@ This curriculum is inspired by [OSSU's](https://github.com/ossu/computer-science
 - I am a self-starter and have been learning in an auto didactic way all of my life. I know that this is a path that I can complete and succeed in.  
 
 **My objectives with this coursework**
+- 
 - Have real world practical projects that I am passionate about that I can demonstrate to future employers.
 - Develop a strong knowledge base in math - this includes Linear algebra, calculus, statistics and probability theory. 
 - Become a good developer that can program with strong software engineer and computer science foundations.  
