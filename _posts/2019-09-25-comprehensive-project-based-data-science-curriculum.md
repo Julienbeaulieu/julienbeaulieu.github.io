@@ -13,7 +13,7 @@
 
 The following is a mix of project orientated learning and theory that I have studied or that I am currently studying in order to become a Data Scientist. My curriculum is intended to be a **complete education in data science** using online materials. I am currently studying this full time. 
 
-My goal with this education is to make a complete career change into the field and to complement my business and marketing knowledge with tools to better analyze, predict, and uncover insights about business decisions and business products. The hopes is to join a startup I care about. In terms of "machine learning tribes", or the kind of data scientist I wish to become, this roughly corresponds to [this article's](https://machinelearningmastery.com/machine-learning-tribe/) description of being a "Data Scientist Interested in Getting Better Answers to Business Questions" mixed with "General Researcher Interested in Modeling Their Problem". 
+My goal with this education is to make a complete career change into the field and to complement my business and marketing knowledge with tools to better analyze, predict, and uncover insights about business decisions and business products. The hope is to join a startup I care about. In terms of "machine learning tribes", or the kind of data scientist I wish to become, this roughly corresponds to [this article's](https://machinelearningmastery.com/machine-learning-tribe/) description of being a "Data Scientist Interested in Getting Better Answers to Business Questions" mixed with "General Researcher Interested in Modeling Their Problem". 
 
 
 This curriculum is inspired by [OSSU's](https://github.com/ossu/computer-science) amazing self-taught, open source education in Computer Science. 
@@ -80,7 +80,7 @@ Resources | Source | Format | Status
 [Calculus 1 & 2](https://www.khanacademy.org/math/calculus-1) | Khan Academy | Videos and Math excercises | ✔️Done
 [Version Control with Git](https://www.udacity.com/course/version-control-with-git--ud123) | Udacity | Self-paced videos | ✔️Done
 [Linux Command Line Basics](https://www.udacity.com/course/linux-command-line-basics--ud595) | Udacity | Self-paced videos | ✔️Done
-[Learning How to Learn](https://www.coursera.org/learn/learning-how-to-learn)  |  Coursera | Self-paced videos | ✔️Done
+[Learning How to Learn](https://www.coursera.org/learn/learning-how-to-learn) ❤️ |  Coursera | Self-paced videos | ✔️Done
 [Pragmatic Thinking and Learning](https://pragprog.com/book/ahptl/pragmatic-thinking-and-learning) ❤️ |  Andy Hunt | Book | ✔️Done
 
 **Overview**
