@@ -5,51 +5,52 @@
   - [Math and programming primer](#math-and-programming-primer)
   - [Core data science](#core-data-science)
   - [Core math](#core-math)
-  - [Data engineering basics](#data-engineering-basics)
-  - [Advanced data science](#advanced-data-science)
+  - [Deep learning and advanced programming](#deep-learning-and-advanced-programming)
+  - [Data engineering](#data-engineering)
   - [Projects](#projects)
 
 ## Summary
 
-The following is a mix of project orientated learning and theory that I have studied or that I am currently studying in order to become a Data Scientist. My curriculum is intended to be a **complete education in data science** using online materials. I am currently studying this full time. 
+The following is a mix of project orientated learning and theory that I have studied or that I am currently studying in order to become a Data Scientist & a Deep Learning practitioner. My curriculum is intended to be a **complete education in data science** using online materials. I am currently studying this full time. 
 
-My goal with this education is to make a complete career change into the field and to complement my business and marketing knowledge with tools to better analyze, predict, and uncover insights about business decisions and business products. The hope is to join a startup I care about. In terms of "machine learning tribes", or the kind of data scientist I wish to become, this roughly corresponds to [this article's](https://machinelearningmastery.com/machine-learning-tribe/) description of being a "Data Scientist Interested in Getting Better Answers to Business Questions" mixed with "General Researcher Interested in Modeling Their Problem". 
-
+My goal with this education is to make a complete career change into the field and to complement my business and marketing knowledge with tools to better analyze, predict, and uncover insights about real world problems. The hope is to join a startup I care about. 
 
 This curriculum is inspired by [OSSU's](https://github.com/ossu/computer-science) amazing self-taught, open source education in Computer Science. 
 
 **Why choose a self-taught education?**
 
-- There is a large number of high quality resources that exist online. This curriculum includes a lot of courses from top universities (MIT, Stanford, University of San Francisco) as well as MOOCs that have been taken by millions of students.
-- Flexibility: if I find a job during this process, I can easily switch to working full time, and continue studying part time. I can also study what I find most interesting.  
-- I already have a Master's degree, even if it is in a unrelated field, and 8 years of experience working at various companies. Because of this, I feel that the self-taught path is more efficient for me. 
-- I am a self-starter and have been learning in an auto didactic way all of my life. I know that this is a path that I can complete and succeed in.  
+- Abundance of high quality resources: This curriculum includes a lot of courses from top universities (MIT, Stanford, University of San Francisco) as well as MOOCs that have been taken by millions of students and that have recieved outstanding reviews. 
+- Focus on state of the art techniques: rarely does a university course teach state of the art technique such as ones found in [Fastai](https://fast.ai) for example. 
+- Flexibility: easy to continue part time if I find a job during the process. 
+- Passion: I can study and work on projects that I find the most interesting instead of being bound to a particular curriculum.  
+- Existing degree & professional experience: I have 8 years of experience working at various companies and hold a Master degree. The self-taught path is more efficient for since I am already passionate about the field. 
+- Self-starter: I have been learning in an auto didactic way all of my life. I know that this is a path that I can complete and succeed in.  
 
 **My objectives with this coursework**
-- 
-- Have real world practical projects that I am passionate about that I can demonstrate to future employers.
+
+- Work on real world practical projects that I am passionate about. 
 - Develop a strong knowledge base in math - this includes Linear algebra, calculus, statistics and probability theory. 
-- Become a good developer that can program with strong software engineer and computer science foundations.  
-- Be able to read scientific papers at the end of this curriculum and apply / redo the experiments on my own. 
-- Share what I've learned through technical writing and be active in the community.
+- Become a good developer with strong software engineer and computer science foundations.  
+- Be able to read scientific papers and apply them or redo the experiments on my own. 
+- Become a Deep Learning practitioner. 
 
 **Organization**. The curriculum is designed as follows:
 - *Math and Programming Primer*: Get up to speed with the math and programming required for data science.
 - *Core Data Science*: Corresponds roughly to a first year of master's degree in data science if we include some of the material in Core Math. 
 - *Core Math*: Learn the math needed to understand data science at a deep and theoretical level.
-- *Data Engineering Basics*: Not many university programs teach this but I think it is an essential topic to know in order to be operational in a work environment. 
-- *Advanced Data Science*: Corresponds roughly to second year master's classes if we include some of the material in Math Foundations & Data Engineering. Since I haven't started this section yet, it is incomplete, but the courses you will see are ones that have had the highest regards by the online community.   
+- *Deep Learning and Advanced Programming*: Corresponds roughly to second year master degree classes with an extra focus on Deep Learning and programming. 
+- *Data Engineering Basics*: Not many university programs teach this but it is an essential to know how to be profitient un ML Ops and put a model in production.
 - *Projects*: Personal projects I have undertaken to display my knowledge. 
 
 ## Curriculum
 
-**Curriculum version**: `1.0`
+**Curriculum version**: `2.0`
 
 - [Math and programming primer](#math-and-programming-primer)
 - [Core data science](#core-data-science)
 - [Core math](#core-math)
-- [Data engineering basics](#data-engineering-basics)
-- [Advanced data science](#advanced-data-science)
+- [Deep learning and advanced programming](#deep-learning-and-advanced-programming)
+- [Data engineering](#data-engineering)
 - [Projects](#projects)
 
 ---
@@ -61,8 +62,8 @@ Fundamental math and basic programming is essential for data science. I made sur
 >Note: ❤️s represent material I particularly enjoyed. 
 
 **Topics covered**:
-`Introduction to AI`,
-`Inferential statistics`,
+`Introduction to AI` ,
+`Inferential statistics` ,
 `Descriptive statistics`,
 `Introduction to Python`,
 `Pandas`,
@@ -80,7 +81,7 @@ Resources | Source | Format | Status
 [Calculus 1 & 2](https://www.khanacademy.org/math/calculus-1) | Khan Academy | Videos and Math excercises | ✔️Done
 [Version Control with Git](https://www.udacity.com/course/version-control-with-git--ud123) | Udacity | Self-paced videos | ✔️Done
 [Linux Command Line Basics](https://www.udacity.com/course/linux-command-line-basics--ud595) | Udacity | Self-paced videos | ✔️Done
-[Learning How to Learn](https://www.coursera.org/learn/learning-how-to-learn) ❤️ |  Coursera | Self-paced videos | ✔️Done
+[A Mind for Numbers](https://barbaraoakley.com/books/a-mind-for-numbers/) ❤️ | Barbara Oakley | Book | ✔️Done
 [Pragmatic Thinking and Learning](https://pragprog.com/book/ahptl/pragmatic-thinking-and-learning) ❤️ |  Andy Hunt | Book | ✔️Done
 
 **Overview**
@@ -88,10 +89,11 @@ Resources | Source | Format | Status
 - Learned how to program in Python with RMOTR.
 - Got back to speed with math fundamentals: Inferential and descriptive statistics, Calculus. 
 - Learned how to use Git and command line basics. 
+- Learn how to learn.
 
 ## Core Data Science
 
-This is where I improve my coding abilities and start working on real data science. I am doing this module in parallel with the Math module.  
+This is where I improved my coding abilities and started working on real data science. I did this module in parallel with the Math module.  
 
 **Topics covered**:
 `Data wrangling`
@@ -109,11 +111,11 @@ Resources | Source | Format | Status
 :-- | :--: | :--: | :--:
 [Data Analyst Nanodegree](https://www.udacity.com/course/data-analyst-nanodegree--nd002)  | Udacity | Self-paced videos and coding environment | ✔️Done
 [Introduction to Machine Learning Nanodegree](https://www.udacity.com/course/intro-to-machine-learning-nanodegree--nd229) | Udacity | Self-paced videos and coding | ✔️Done
-[The Hundred-Page Machine Learning Book](http://themlbook.com/) ❤️| Andriy Burkov | Book | In progress
+[The Hundred-Page Machine Learning Book](http://themlbook.com/) ❤️| Andriy Burkov | Book | ✔️Done
 [Statistical Learning](https://online.stanford.edu/courses/sohs-ystatslearning-statistical-learning-self-paced) | Stanford | Self-paced videos and exercises | ✔️Done
-[Introduction to Statistical Learning](http://faculty.marshall.usc.edu/gareth-james/ISL/) | Gareth James | Book | In progress
+[Introduction to Statistical Learning](http://faculty.marshall.usc.edu/gareth-james/ISL/) | Gareth James | Book | Partially completed
 [Intro to Data Structures and Algorithms](https://www.udacity.com/course/data-structures-and-algorithms-in-python--ud513) | Udacity | Self-paced videos and coding environment | In Progress
-[Introduction to Machine Learning for Coders - Fastai](http://course18.fast.ai/ml)  ❤️| U of San Francisco | Online videos and projects  | In progress
+[Introduction to Machine Learning for Coders - Fastai](http://course18.fast.ai/ml)  ❤️| U of San Francisco | Online videos and projects  | ✔️Done
 
 
 
@@ -141,9 +143,9 @@ Resources | Source | Format | Status
 Resources | Source | Format | Status
 :-- | :--: | :--: | :--:
 [Essence of Linear Algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) ❤️ | YouTube | Videos | ✔️Done
-[StatQuest - Machine Learning](https://www.youtube.com/playlist?list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF) ❤️ | Youtube | Videos | In progress
-[Linear Algebra 18.06 with Gilbert Strang](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/) ❤️| MIT | Videos and homework | In progress
-[Khan Academy - Linear Algebra](https://www.khanacademy.org/math/linear-algebra) | Khan Academy | Videos and exercises | In  progress
+[StatQuest - Machine Learning](https://www.youtube.com/playlist?list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF) ❤️ | Youtube | Videos | Ongoing
+[Linear Algebra 18.06 with Gilbert Strang](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/) ❤️| MIT | Videos and homework | ✔️Done
+[Khan Academy - Linear Algebra](https://www.khanacademy.org/math/linear-algebra) | Khan Academy | Videos and exercises | ✔️Done
 [Mathematics for Machine Learning](https://mml-book.github.io/) | Marc Peter | Book | In progress
 
 **Overview**
@@ -152,7 +154,35 @@ Resources | Source | Format | Status
 - Go deep into linear algebra with prof. Gilbert Strang's amazing lecture. 
 - Learn all the math required for machine learning with Marc Peter's (and co.) book. 
 
-## Data Engineering Fundamentals
+## Deep Learning and advanced programming
+
+After completing **every course** in Core Data Science, we can move onto deep learning as well as more advanced Python. 
+
+**Topics covered**:
+`Loss functions and optimization`, 
+`Convolutional neural networks`,
+`Deep learning hardware and software`,
+`Recurrent neural networks`,
+`NLP`,
+`Generative models, U-nets`,
+`Deep reinforcement learning`,
+`Swift: deep learning basics`
+
+Resources | Source | Format | Status
+:-- | :--: | :--: | :--:
+[Practical Deep Learning for Coders - Part 1](https://course.fast.ai/) ❤️ | U of San Francisco | Online videos and projects | ✔️ Done
+[Practical Deep Learning for Coders - Part 2](https://course.fast.ai/) ❤️ | U of San Francisco | Online videos and projects | In progress
+[Deep Learning Specilization](http://https://www.deeplearning.ai/deep-learning-specialization/) ❤️ | Coursera - Andrew Ng | Online videos and projects | In progress
+[Fluent Python](http://shop.oreilly.com/product/0636920032519.do) | Luciano Ramalho | Book | In progress
+[Fastai Book](https://github.com/fastai/fastbook) | Jeremy Howard, Sylvain Gugger | Book | In progress
+
+**Overview**
+- Learn how to create state of the art models using the Fastai Library with part 1. 
+- Learn to build these models and part of the library from scratch with part 2. 
+- Complement Fastai's practical approach with Andrew Ng's theoretical one with the Deep Learning Specilization. 
+- Tackle advanced Python notions with a deep dive into data structures, functions decorators and closures, control flow, metaprogramming, etc.
+
+## Data Engineering
 
 Data Engineering is the foundation for the new world of Big Data. Here we learn to design data models, build data warehouses and data lakes, automate data pipelines, and work with massive data sets. Any good data scientist should know about data engineering. 
 
@@ -172,26 +202,6 @@ Resources | Source | Format | Status
 [Getting Started with Google Cloud Platform](https://cloud.google.com/gcp/getting-started/) ️| Google | Articles | Not started
 
 
-## Advanced Data Science
-
-After completing **every course** in Core Data Science, we can go into more complicated deep learning material such as convolutional neural nets, RNNs, GANs, etc.
-
-**Topics covered**:
-`Loss functions and optimization`, 
-`Convolutional neural networks`,
-`Deep learning hardware and software`,
-`Recurrent neural networks`,
-`NLP`,
-`Generative models`,
-`Deep reinforcement learning`,
-`Swift: deep learning basics`
-
-Resources | Source | Format | Status
-:-- | :--: | :--: | :--:
-[Practical Deep Learning for Coders](https://course.fast.ai/) | U of San Francisco | Online videos and projects | Not started
-[CS231n: Convolutional Neural Networks for Visual Recognition](http://cs231n.stanford.edu/)| Stanford | Online videos and projects | Not started
-[The Deep Learning Book](http://www.deeplearningbook.org/) | Ian Goodfellow & Yoshua Bengio | Book | Not started
-
 
 ## Projects
 
@@ -200,7 +210,9 @@ Here I list the projects I have been working on and will be adding new ones as I
 Ex: My latest project involves ways of interpreting a model in a business context on a churn problem, in order to gain better insights and change business behavior. This is because as a former marketing professional, this is something I am very interested in. 
 
 **Topics covered**:
-`Image recognition`
+`Computer vision`
+`Standardized project structure`
+`Telemetry with Tensorboard`
 `Kaggle competition`
 `Ensembling and stacking`
 `Model interpretation`
@@ -212,6 +224,8 @@ Ex: My latest project involves ways of interpreting a model in a business contex
 
 Projects | Topics 
 :-- | :--: 
+[Kaggle competition - Bengali Character recognition](https://github.com/Julienbeaulieu/kaggle-computer-vision-competition) | Computer vision / Pytorch / Standardized project structure / Mixup, Cutmix, OHEM, OneCycleLR / Tensorboard
+[Model Interpretation with SHAP - Presentation](https://docs.google.com/presentation/d/1VjHslMSY7JdHZBkDtBS3TQRkklb0Ql2NRnB-azsVFDE/edit) | SHAP library / shapley values / ICE Plots / feature interactions 
 [Model Interpretation with Random Forests](https://julienbeaulieu.github.io/2019/10/16/model-interpretation-with-random-forests-and-going-beyond-simple-predictions/) | Decision science / Partial dependence / tree interpreter / confidence based on tree variance 
 [Kaggle competition - Fraud Detection - Using Fastai best practices ](https://github.com/Julienbeaulieu/fraud-detection-kaggle-competition) | LGBM / Model memory reduction / Ensembling and stacking / Stratified cross validation 
 [Deep Learning Classifier with Pytorch](hhttps://github.com/Julienbeaulieu/Deeplearing-Image-Classifier-with-Pytorch) | Deep Learning / Transfer learning / Torchvision / Pytorch 
