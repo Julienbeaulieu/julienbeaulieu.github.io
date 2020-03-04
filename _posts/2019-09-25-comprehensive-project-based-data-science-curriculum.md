@@ -1,3 +1,5 @@
+*updated 04/03/2020: curriculum v2.0
+
 ## Contents
 
 - [Summary](#summary)
@@ -178,7 +180,7 @@ Resources | Source | Format | Status
 
 **Overview**
 - Learn how to create state of the art models using the Fastai Library with part 1. 
-- Learn to build these models and part of the library from scratch with part 2. 
+- Learn to build these models and part of the Fastai library from scratch with part 2. 
 - Complement Fastai's practical approach with Andrew Ng's theoretical one with the Deep Learning Specilization. 
 - Tackle advanced Python notions with a deep dive into data structures, functions decorators and closures, control flow, metaprogramming, etc.
 
