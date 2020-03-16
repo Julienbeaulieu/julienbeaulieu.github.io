@@ -4,9 +4,9 @@
 A few weeks ago, I joined a recurring deep learning meetup where a few experienced practitioners get together to work on different computer vision projects. Their latest endeavour was to build a pipeline in PyTorch to attempt a Kaggle competition. The competition was a multitask classification problem where the goal is to recognize different components of Bengali characters. Their approach was partly to get a good score for the competition, and mostly to build a customizable project structure and pipeline that could be reused for future deep learning projects, whether for work or personal. I loved their approach and decided to join them.
 
 This post is an attempt to summarize key concepts that could be used for any machine learning project. Specifically, I’ll be covering three main topics: 
-1. Project organization and a polished directory structure
-2. How to build a robust configuration system and experimentation framework  
-3. How to customize our model's architecture based on our configurations
+1. [Project organization and a polished directory structure](#a-polished-directory-structure)
+2. [How to build a robust configuration system and experimentation framework](#setting-up-a-robust-configuration-system-and-experimentation-framework)
+3. [How to customize our model's architecture based on our configurations](#customize-our-models-architecture-based-on-our-configuration)
 
 To give some insight of the end result of part 3, we will be able to pass in any number of hyperparameters, settings, and modules to a configuration file and have a routine that assembles the model correctly given these configurations when running our training function. I walk through all of the steps required to achieve this.  
 
@@ -247,10 +247,10 @@ def combine_cfgs(cfg_path):
     load_dotenv(find_dotenv(), verbose=True) # Load .env
 
     # Load variables
-    path_overwrite_keys = [“DATASET.PATH_DATA_RAW”,
-                          os.getenv(“DATASET.PATH_DATA_RAW”), 
-                          “GCP_KEY”,
-                          os.getenv("GCP_KEY")]
+    path_overwrite_keys = ['DATASET.PATH_DATA_RAW',
+                          os.getenv('DATASET.PATH_DATA_RAW'), 
+                          'GCP_KEY',
+                          os.getenv('GCP_KEY')]
 
     if path_overwrite_keys is not []:
         cfg_base.merge_from_list(path_overwrite_keys)
@@ -285,7 +285,7 @@ Create appropriate directories at the start of training:
 Save the config file to `results` folder:
 
 ```python
-config.dump(stream=open(os.path.join(self.results\_dir, f'config{name\_timestamp}.yaml'), 'w'))
+config.dump(stream=open(os.path.join(self.results_dir, f'config{name_timestamp}.yaml'), 'w'))
 ```
 
 
@@ -311,7 +311,7 @@ backup_fpath = os.path.join(backup_dir, "model_bak_%06d.pt" % (epoch,))
 torch.save(save_state, backup_fpath)
 ```
 Save different performance metrics in `results_dir`:
-```Python
+```python
 # Dump the traces
 perf_trace.append(
     {
@@ -378,7 +378,7 @@ In short, the Registry class extends the dictionary data structure and provides 
 (1). Registry class: creates a dictionary with a `register` function.
 
 ```python
-HEAD_REGISTRY = Registry()
+HEAD_REGISTRY=Registry()
 ```
 `HEAD_REGISTRY` is just an empty dictionary for now with an extra `.register()` method available to it. This is because the `Registry` class inherits from `dict`. 
 
@@ -439,7 +439,7 @@ Here is an example of how all this is used in our framework:
 
 ```python
 # Instantiate Registry class
-HEAD_REGISTRY = Registry()
+HEAD_REGISTRY=Registry()
 
 # Call register function - see point (2) - which takes a module name as parameter 
 @HEAD_REGISTRY.register('simple_head_module') 
