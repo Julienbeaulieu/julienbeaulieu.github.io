@@ -40,8 +40,8 @@ We need a place that allows us to manage the experiment process of evaluating mu
 
     ├── notebooks           <- Jupyter notebooks for exploration and communication
     │
-    ├── experiments         <- Trained models, predictions, experiment configs, Tensorboard logs, backups
-    │   ├─ exp01
+    ├── experiments         <- Trained models, predictions, experiment configs, Tensorboard logs, 
+    │   ├─ exp01               backups
     │   │  ├── model_backups
     │   │  ├── results
     │   │  └── tensorboard logs
@@ -62,9 +62,9 @@ Let’s have a look at the actual code structure required to build the model.
     ├── config
     │   ├── config.py                <- Default configs for the model 
     │   └── experiments
-    │       ├── exp01_config.yaml    <- Configs for a specific experiment. Overwrites default configs
-    │       └── exp02_config.yaml
-    │       xz
+    │       ├── exp01_config.yaml    <- Configs for a specific experiment. Overwrites default 
+    │       └── exp02_config.yaml       configs
+    │       
     ├── data                  
     │   ├── make_dataset.py          <- Script to generate data
     │   ├── bengali_data.py          <- Custom Pytorch Dataset, DataLoader & Collator class
@@ -86,7 +86,7 @@ Let’s have a look at the actual code structure required to build the model.
     │   │   ├── build.py
     │   │   └── simple_head.py
     │   │
-    │   └── solver                   <- Scripts for building loss function, evaluation and optimizer
+    │   └── solver                   <- Scripts for building loss function, evaluation & optimizer
     │       ├── loss
     │       │   ├── build.py
     │       │   ├── softmax_cross_entropy.py
