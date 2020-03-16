@@ -64,7 +64,7 @@ Let’s have a look at the actual code structure required to build the model.
     │   └── experiments
     │       ├── exp01_config.yaml    <- Configs for a specific experiment. Overwrites default configs
     │       └── exp02_config.yaml
-    │       
+    │       xz
     ├── data                  
     │   ├── make_dataset.py          <- Script to generate data
     │   ├── bengali_data.py          <- Custom Pytorch Dataset, DataLoader & Collator class
@@ -158,7 +158,7 @@ To achieve this we use a library called YACS, short for Yet Another Configuratio
 
 If we take a closer look at our `config` folder mentioned above, it is comprised of a default `config.py` file which uses YACS. Here is a snippet of what it looks like:
 
-```Python
+```python
 from yacs.config import CfgNode as ConfigurationNode
 
 # YACS overwrite these settings using YAML
@@ -202,7 +202,7 @@ There is a very important detail to note: while it is very straightforward to ha
 
 In the `config` folder, we also have a several YAML configs files. Each YAML file corresponds to one experiement that we've created. Here is an example:
 
-```YAML
+```yaml
 DATASET:
   RESIZE_SHAPE: (160, 160)
   AUGMENTATION:
@@ -223,7 +223,7 @@ In the experiment above, I decided to try a larger image `resize_shape` output, 
 We need a routine that overwrites default configs with the following priority: .env > YAML config > default config.
 
 We first create a function inside config.py that will make a clone of the default configuration and can be called when training:
- ```Python
+ ```python
 def get_cfg_defaults():
     """
     Get a yacs CfgNode object with default values
@@ -234,7 +234,7 @@ def get_cfg_defaults():
 ```
 
 Then we import this function in train.py and use `merge_from_file()` method to merge default configs with our YAML and .env files.
- ```Python
+ ```python
 def combine_cfgs(cfg_path):
     # Priority 3: get default configs
     cfg_base = get_cfg_defaults()    
@@ -266,7 +266,7 @@ A good experimental framework should store all the results and configurations th
 
 Create appropriate directories at the start of training: 
 
-```Python
+```python
     # Make output dir and its parents if they do not exist
     if not os.path.exists(output_path):
         os.mkdir(output_path)
@@ -284,14 +284,14 @@ Create appropriate directories at the start of training:
 
 Save the config file to `results` folder:
 
-```Python
+```python
 config.dump(stream=open(os.path.join(self.results\_dir, f'config{name\_timestamp}.yaml'), 'w'))
 ```
 
 
 Save the model state, optimizer state, scheduler state in `output_path` and create a backup of the model in `backup_dir`:
 
-```Python
+```python
 # Create save_state dict with all hyperparamater + parameters
 save_state = {
     "epoch": epoch + 1,
@@ -333,7 +333,7 @@ We can store whatever metric we find relevant and wish to look at later. These m
 
 In the final step, we add CLI functionality to be able to specify where we want everything to be saved while training with `output_path`, and from what config file we want to load configurations from: with `cfg_path`. Here is the code that does this in train.py:
 
-```Python
+```python
 if __name__ == '__main__':
     # Docopt for command line arguments
     arguments = docopt(__doc__, argv=None, help=True, version=None, options_first=False)
@@ -358,7 +358,7 @@ To repeat the context, our goal is to be able to pass in certain hyperparameters
 
 Consider the following config: 
 
-```YAML
+```yaml
 MODEL:
   HEAD:
     NAME: simple_head_module
@@ -377,12 +377,12 @@ In short, the Registry class extends the dictionary data structure and provides 
 
 (1). Registry class: creates a dictionary with a `register` function.
 
-```Python
+```python
 HEAD_REGISTRY = Registry()
 ```
 `HEAD_REGISTRY` is just an empty dictionary for now with an extra `.register()` method available to it. This is because the `Registry` class inherits from `dict`. 
 
-```Python
+```python
 # Inherits from dict
 class Registry(dict):
     '''
@@ -420,7 +420,7 @@ Given a `module_name` argument as well as an optional `module` argument, it retu
 
 `register_fn` runs `_register_generic` which looks like the following: 
 
-```Python
+```python
 def _register_generic(module_dict, module_name, module):
     assert module_name not in module_dict
     module_dict[module_name] = module
@@ -437,7 +437,7 @@ register_fn output: some_registry["module_name"] = module_function
 
 Here is an example of how all this is used in our framework: 
 
-```Python
+```python
 # Instantiate Registry class
 HEAD_REGISTRY = Registry()
 
@@ -449,7 +449,7 @@ def build_simple_pred_head(head_cfg):
 
 Function decorators are executed at import time. This means that when the code loads, Python will execute the `HEAD_REGISTRY.register('simple_head_module')` method (2). This will trigger our decorator to run and  the function `build_simple_pred_head` will be passed to `register_fn(fn)`. As a result, `HEAD_REGISTRY` dictionary will now have a new key assigned: `simple_head_module`, with a new value: `build_simple_pred_head` function - as per point (3).  
 
-```Python
+```python
 HEAD_REGISTRY = {'simple_head_module': <function __main__.build_simple_pred_head(head_cfg)>}
 ```
 This is great because it means that we now have an easy way to access this function! It is stored in our `HEAD_REGISTRY`, and can be accessed with `HEAD_REGISTRY['module_name']`. 
@@ -458,7 +458,7 @@ What does `build_simple_pred_head` function do exactly? It simply returns a `Sim
 
 The last part we need to do is to run this function in order to instantiate the `SimplePredictionHead` class. In our framework, this is done with another `build` function. 
 
-```Python
+```python
 def build_head(head_cfg):
     head_module = HEAD_REGISTRY[head_cfg['NAME']](head_cfg)
     return head_module
