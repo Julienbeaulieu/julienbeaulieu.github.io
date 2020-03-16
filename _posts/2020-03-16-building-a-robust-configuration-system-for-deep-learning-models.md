@@ -1,18 +1,16 @@
 
 ## Introduction
 
-A few weeks ago, I joined a recurring deep learning meetup where a few experienced practitioners get together to work on different computer vision projects. Their latest endeavour was to build a pipeline in PyTorch to attempt a Kaggle competition. The competition was a multitask classification problem where the goal is to recognize different components of Bengali characters. Their approach was partly to get a good score for the competition, and mostly to build a customizable project structure and pipeline that could be reused for future deep learning projects, whether for work or personal. I loved their approach and decided to join them.
+A few weeks ago, I joined a recurring deep learning meetup where a few experienced practitioners get together to work on different computer vision projects. Their latest endeavour was to build a pipeline in PyTorch to attempt a [Kaggle competition](https://www.kaggle.com/c/bengaliai-cv19). The competition was a multitask classification problem where the goal is to recognize different components of Bengali characters. Their approach was partly to get a good score for the competition, and mostly to build a customizable project structure and pipeline that could be reused for future deep learning projects, whether for work or personal. I loved their approach and decided to join them.
 
 This post is an attempt to summarize key concepts that could be used for any machine learning project. Specifically, I’ll be covering three main topics: 
 1. [Project organization and a polished directory structure](#a-polished-directory-structure)
 2. [How to build a robust configuration system and experimentation framework](#setting-up-a-robust-configuration-system-and-experimentation-framework)
-3. [How to customize our model's architecture based on our configurations](#customize-our-models-architecture-based-on-our-configuration)
+3. [How to customize our model's architecture based on a configurations file](#customize-our-models-architecture-based-on-a-configuration-file)
 
 To give some insight of the end result of part 3, we will be able to pass in any number of hyperparameters, settings, and modules to a configuration file and have a routine that assembles the model correctly given these configurations when running our training function. I walk through all of the steps required to achieve this.  
 
-All the code for this project can be found [here](https://github.com/Julienbeaulieu/kaggle-computer-vision-competition). The group effort is [here](https://gitlab.com/cvnnig/bengali.ai). 
-
-Credits: I did not write this architecture myself. I did however familiarize myself with it, rebuilt it from scratch, and contributed a bit along the way. Credit goes to my *\*wishes to stay anonymus*\* meeting partner, and to [Yang](https://www.linkedin.com/in/dryangding/), who helped standardize & automate a lot of the work and also organizes the meetups. This post was also inspired by the [Cookie Cutter Data Science](https://drivendata.github.io/cookiecutter-data-science/) project structure.
+All the code for this project can be found [here](https://github.com/Julienbeaulieu/kaggle-computer-vision-competition). The group effort is [here](https://gitlab.com/cvnnig/bengali.ai). Credits are shared at the end of the article.
 
 ## A Polished Directory Structure
 
@@ -351,7 +349,7 @@ python -m src.tools.train -o experiments/exp10 --cfg src/config/experiment
 
 That’s it! Now we can easily create multiple experiments, run them, and have everything from that experiement saved for later analysis. 
 
-## Customize our Model's Architecture Based on our Configuration
+## Customize our Model's Architecture Based on a Configuration File
 
 The following section requires some familiarity with first-class functions, function decorators and closures. 
 To repeat the context, our goal is to be able to pass in certain hyperparameters, settings and modules to a configuration file and have the code assemble the model correctly given these configs when we run our training routine.  
@@ -491,3 +489,4 @@ This means that we can create multiple heads - all with different architectures,
 
 I hope that I managed to illustrate the power of this highly customizable and flexible way to build the architecture of our model. Combined with a proper experimental framework as demonstrated above, and a neat and tidy project structure, we now have a solid framework and pipeline that can be used for any deep learning project. 
 
+*Credits: I did not write this architecture myself. I did however familiarize myself with it, rebuilt it from scratch, and contributed a bit along the way. Credit goes to my *\*wishes to stay anonymus*\* meeting partner, and to [Yang](https://www.linkedin.com/in/dryangding/), who helped standardize & automate a lot of the work and also organizes the meetups. The architecture was inspired by [Facebook Research's Detectron2](https://github.com/facebookresearch/detectron2) project. This post was also inspired by the [Cookie Cutter Data Science](https://drivendata.github.io/cookiecutter-data-science/) project structure.*
