@@ -35,9 +35,8 @@ Have you have ever found the solution to a problem (a bug, the name of something
 
 <p align="center">
     <img src="https://julienbeaulieu.github.io/public/lesser_known_facts/media/image2.png" />
-    <em>Image credit: A Mind for Numbers</em>
+    <em align="center">Image credit: A Mind for Numbers</em>
 </p>
-{% include image.html url="/images/my-cat.jpg" description="My cat, Robert Downey Jr." %}
 
 These two pinball machines represent focused (left) and diffuse (right) ways of thinking. The red line represents a thought. When we focus on something, the prefrontal cortex automatically sends out signals along neural pathways. These signals link different areas of our brain related to what we’re thinking about (represented in the image as nodes).
 
