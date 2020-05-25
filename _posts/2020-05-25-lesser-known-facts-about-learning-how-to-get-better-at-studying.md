@@ -1,11 +1,13 @@
-
-**Lesser Known Facts About Learning & How to get Better at Studying**
+---
+layout: post
+title: Lesser Known Facts About Learning & How to get Better at Studying 
+---
 
 After a year of self-studying machine learning full time using nothing but online resources, I thought I’d share some insights about learning. This is a topic I have spent a lot of time researching throughout my journey of changing careers to machine learning (my background is in business/marketing).
 
 The following is mostly based on my experience applying lessons from two books – [A mind for numbers](https://barbaraoakley.com/books/a-mind-for-numbers/), and [Pragmatic Thinking and Learning](https://pragprog.com/book/ahptl/pragmatic-thinking-and-learning).
 
-![](name//media/image1.png)
+![](https://julienbeaulieu.github.io/public/lesser_known_facts/media/image1.png)
 
 When reading books about learning, it’s easy to become overwhelmed with the flurry of techniques they throw at you. It’s nearly impossible to successfully apply everything at once. Learning about learning is just like anything else, we start off as beginners and get better and better at it with practice and over time. The goal of this article is to walk through simple steps I took to get on the path of getting better at learning.
 
@@ -31,7 +33,7 @@ How does this diffuse mode look like concretely?
 
 Have you have ever found the solution to a problem (a bug, the name of something you couldn’t remember, a math problem) come to you while you’re doing something totally unrelated to your initial task? Or sometime the next day, when you aren’t thinking about it? That’s because diffuse mode is asynchronous. It’s running as a background process, churning through old inputs, trying to dig up the information we need.
 
-![](name//media/image2.png)
+![](https://julienbeaulieu.github.io/public/lesser_known_facts/media/image2.png)
 
 These two pinball machines represent focused (left) and diffuse (right) ways of thinking. The red line represents a thought. When we focus on something, the prefrontal cortex automatically sends out signals along neural pathways. These signals link different areas of our brain related to what we’re thinking about (represented in the image as nodes).
 
@@ -39,13 +41,13 @@ The focused approach relates to intense concentration on a specific problem or c
 
 Examples of diffuse mode activities: gym, paint, shower, meditate, sleep, music, etc.
 
-**We need both for optimal learning**
+__We need both for optimal learning__
 
 Problem solving in any discipline often involves an exchange between the two fundamentally different modes. Each mode contributes to our mental engine, and for best performance, we need these two modes to work together. The volleying of information between the two modes as the brain works its way toward a conscious solution appears essential for understanding and solving problems and understanding complicated concepts.
 
 One reason for this is due to the **[Einstellung effect](https://en.wikipedia.org/wiki/Einstellung_effect): It refers to getting stuck in solving a problem or understanding a concept as a result of becoming fixated on a flawed, initial approach.** Switching modes from focused to diffuse can help free us from this effect and break that fixation. Initial ideas about problem solving can be very misleading.
 
-**The 2 modes work together, but not at the same time**
+__The 2 modes work together, but not at the same time__
 
 This is important to know because **so long as we are consciously focusing on a problem, we are blocking the diffuse mode,** and stopping it from helping us solve problems.
 
@@ -53,7 +55,7 @@ Some of my simplest and most effective learning techniques are directly related 
 
 ## Tips for better learning
 
-**Tip \#1: Taking a break from the task we’re working on**
+__Tip \#1: Taking a break from the task we’re working on__
 
 Because our brain uses two very different processes for thinking and that we toggle back and forth between these modes, it is important to focus initially, but also to **turn our focus away** from what we want to learn. We must consciously allow the diffuse mode to take over by simply doing something different. This could mean anything from taking a small break, going for a walk, sleeping, or working on a different problem. This is the best way to solve problems and come up with new ideas.
 
@@ -71,17 +73,17 @@ This means that procrastination doesn’t simply affect productivity, it also ne
 
 Last effect of procrastination I’ll mention is that is also interferes with two essential techniques for learning efficiently: 1. Recall (as opposed to passive rereading which is usually a waste of time) and 2. Spaced repetition ([great article on the subject](https://collegeinfogeek.com/spaced-repetition-memory-technique/)). I won’t get into the details of how these techniques work and why they’re essential— there are already tons of resources for that— but they absolutely should be part of your learning repertoire.
 
-**Tip \#3: A random approach, without goals nor structure, tends to give random results.**
+__Tip \#3: A random approach, without goals nor structure, tends to give random results__
 
 In previous attempts of learning new things, I have found that it's the vagueness of my learning goals that actually killed my attempts at learning. I would simply pick a course and dive right in. This time however, I spent weeks researching and refining my own [personal curriculum in machine learning](https://julienbeaulieu.github.io/2019/09/25/comprehensive-project-based-data-science-curriculum/), I created goals and milestones to reach, and a clear path to reaching them. This is a game changer as I have managed to learn machine learning without going to college.
 
-![](name//media/image3.png)
+![](https://julienbeaulieu.github.io/public/lesser_known_facts/media/image3.png)
 
-**Tip \#4: Taking responsibility for our own learning is one of the most important things we can do. **
+__Tip \#4: Taking responsibility for our own learning is one of the most important things we can do__
 
 No matter how good a given teacher or textbooks is, it’s only when we sneak off and look at other resources that we begin to see that what we learn through a single teacher or book is a partial version of the full, three-dimensional reality of the subject. In the worse case scenario, the teacher and textbook are just plain bad in the first place. This is why it is important to not put all of our faith into once source, and one format of learning. This is especially important in college: it’s still worth looking at exceptional online resources even though you may have a great teacher.
 
-**Tip \#5: Taking notes**
+__Tip \#5: Taking notes__
 
 This is a classic one but so essential to becoming organized. I take three types of notes.
 
@@ -91,7 +93,7 @@ This is a classic one but so essential to becoming organized. I take three types
 
 3\. I write down what learning techniques I am using, and ones I wish to try next. I then observe what does and doesn’t work, then try to iterate on these techniques and try different variations of them. This forces me to get better at learning.
 
-**Tip \#6: Studying with a friend**
+__Tip \#6: Studying with a friend__
 
 It’s easy to slack off if we’re venturing on something alone, with no one to hold us accountable. Countless times I have been in a motivational slump, only to bounce right back after a study session with a friend, or a simple conversation about what we’ve learned. Finding people you can study with is an incredibly important step especially if you’re not in college and don’t have classmates. Having people we can turn to in tough times, who know exactly what we’re going through because they are studying the exact same thing is not to be underestimated.
 
