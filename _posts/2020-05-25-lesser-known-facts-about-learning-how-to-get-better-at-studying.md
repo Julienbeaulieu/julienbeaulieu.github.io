@@ -17,13 +17,13 @@ First, however, I’ll shed some light about how our brain learns. I’ll then s
 
 Researchers have found that our brain has two modes of thinking that are fundamentally different: focused and diffuse mode. Understanding them and knowing how to use both is essential to learning effectively.
 
-**Focused Mode**
+<ins>**Focused Mode**</ins>
 
 Focused mode, a term coined by Barbara Oakley in her book a Mind for Numbers, is the mode we all know about. It is a highly attentive state associated with the brain’s prefrontal cortex. Whenever we turn our attention to something, we’re in focused mode. It directly involves solving problems using rational, sequential, analytical approaches and it is also responsible for language processing. We can imagine this state as a CPU that processes instructions step-by-step, in order.
 
 Examples of focused mode activities: working on a problem, programming, doing a test, reading.
 
-**Diffuse mode**
+<ins>**Diffuse mode**</ins>
 
 The second mode, **diffuse mode**, is much less known and is under used for learning. It is what happens when we relax our attention and just let our mind wander. This relaxation can allow different areas of the brain to hook up and return valuable insights while we’re “thinking” of something, and this can happen possibly days later. It is critical for intuition, problem solving, and creativity. It allows us to suddenly gain a new insight on a problem we’ve been struggling with and is associated with “big-picture” perspectives. It doesn’t do any verbal processing, and that means its results aren’t verbal, either.
 
@@ -41,13 +41,13 @@ The focused approach relates to intense concentration on a specific problem or c
 
 Examples of diffuse mode activities: gym, paint, shower, meditate, sleep, music, etc.
 
-__We need both for optimal learning__
+<ins>__We need both for optimal learning__</ins>
 
 Problem solving in any discipline often involves an exchange between the two fundamentally different modes. Each mode contributes to our mental engine, and for best performance, we need these two modes to work together. The volleying of information between the two modes as the brain works its way toward a conscious solution appears essential for understanding and solving problems and understanding complicated concepts.
 
 One reason for this is due to the **[Einstellung effect](https://en.wikipedia.org/wiki/Einstellung_effect): It refers to getting stuck in solving a problem or understanding a concept as a result of becoming fixated on a flawed, initial approach.** Switching modes from focused to diffuse can help free us from this effect and break that fixation. Initial ideas about problem solving can be very misleading.
 
-__The 2 modes work together, but not at the same time__
+<ins>__The 2 modes work together, but not at the same time__<ins>
 
 This is important to know because **so long as we are consciously focusing on a problem, we are blocking the diffuse mode,** and stopping it from helping us solve problems.
 
@@ -83,7 +83,7 @@ __Tip \#4: Taking responsibility for our own learning is one of the most importa
 
 No matter how good a given teacher or textbooks is, it’s only when we sneak off and look at other resources that we begin to see that what we learn through a single teacher or book is a partial version of the full, three-dimensional reality of the subject. In the worse case scenario, the teacher and textbook are just plain bad in the first place. This is why it is important to not put all of our faith into once source, and one format of learning. This is especially important in college: it’s still worth looking at exceptional online resources even though you may have a great teacher.
 
-__Tip \#5: Taking notes__
+__Tip \#5: Taking notes & using a proper note taking app__
 
 This is a classic one but so essential to becoming organized. I take three types of notes.
 
@@ -92,6 +92,8 @@ This is a classic one but so essential to becoming organized. I take three types
 2\. I keep a planner-journal of daily and weekly to-do’s to make sure I’m on track with those goals.
 
 3\. I write down what learning techniques I am using, and ones I wish to try next. I then observe what does and doesn’t work, then try to iterate on these techniques and try different variations of them. This forces me to get better at learning.
+
+I also highly recommend buying an iPad and using [GoodNotes app](https://www.goodnotes.com/). The app makes it substaintially better than taking notes on paper. I will 100% never go back to paper. 
 
 __Tip \#6: Studying with a friend__
 
