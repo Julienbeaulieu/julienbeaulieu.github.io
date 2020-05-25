@@ -7,7 +7,7 @@ After a year of self-studying machine learning full time using nothing but onlin
 
 The following is mostly based on my experience applying lessons from two books – [A mind for numbers](https://barbaraoakley.com/books/a-mind-for-numbers/), and [Pragmatic Thinking and Learning](https://pragprog.com/book/ahptl/pragmatic-thinking-and-learning).
 
-<div style="text-align:center"><img src="https://julienbeaulieu.github.io/public/lesser_known_facts/media/image1.png" /></div>
+<p align="center"><img src="https://julienbeaulieu.github.io/public/lesser_known_facts/media/image1.png" /></p>
 
 When reading books about learning, it’s easy to become overwhelmed with the flurry of techniques they throw at you. It’s nearly impossible to successfully apply everything at once. Learning about learning is just like anything else, we start off as beginners and get better and better at it with practice and over time. The goal of this article is to walk through simple steps I took to get on the path of getting better at learning.
 
@@ -33,7 +33,7 @@ How does this diffuse mode look like concretely?
 
 Have you have ever found the solution to a problem (a bug, the name of something you couldn’t remember, a math problem) come to you while you’re doing something totally unrelated to your initial task? Or sometime the next day, when you aren’t thinking about it? That’s because diffuse mode is asynchronous. It’s running as a background process, churning through old inputs, trying to dig up the information we need.
 
-<div style="text-align:center"><img src="https://julienbeaulieu.github.io/public/lesser_known_facts/media/image2.png" /></div>
+<p align="center"><img src="https://julienbeaulieu.github.io/public/lesser_known_facts/media/image2.png" /></p>
 
 These two pinball machines represent focused (left) and diffuse (right) ways of thinking. The red line represents a thought. When we focus on something, the prefrontal cortex automatically sends out signals along neural pathways. These signals link different areas of our brain related to what we’re thinking about (represented in the image as nodes).
 
@@ -65,7 +65,7 @@ When I was learning about the diffuse mode, I began to notice it in my daily lif
 
 Similarly, it is better to work on math or new machine learning concepts in small doses — a little every day — rather than to cram the learning within a tight period. It allows both the focused and diffuse modes the time they need to do their thing so we can understand what we’re learning. That is how solid neural structures are built.
 
-**Tip \#2: Understanding the real impact of procrastination **
+__Tip \#2: Understanding the real impact of procrastination__
 
 Now that we understand how essential diffuse mode is to learning, anything preventing it from being used should be avoided at all costs. It turns out procrastination completely blocks diffuse mode. That’s because when we procrastinate, we are leaving ourselves **only enough time** **to do superficial focused-mode learning.** If we only leave a few hours or a day before completing a task, it removes the opportunity for our diffuse mode to help.
 
@@ -77,7 +77,7 @@ __Tip \#3: A random approach, without goals nor structure, tends to give random 
 
 In previous attempts of learning new things, I have found that it's the vagueness of my learning goals that actually killed my attempts at learning. I would simply pick a course and dive right in. This time however, I spent weeks researching and refining my own [personal curriculum in machine learning](https://julienbeaulieu.github.io/2019/09/25/comprehensive-project-based-data-science-curriculum/), I created goals and milestones to reach, and a clear path to reaching them. This is a game changer as I have managed to learn machine learning without going to college.
 
-<div style="text-align:center"><img src="https://julienbeaulieu.github.io/public/lesser_known_facts/media/image3.png" /></div>
+<p align="center"><img src="https://julienbeaulieu.github.io/public/lesser_known_facts/media/image3.png" /></p>
 
 __Tip \#4: Taking responsibility for our own learning is one of the most important things we can do__
 
@@ -101,14 +101,10 @@ It’s easy to slack off if we’re venturing on something alone, with no one to
 
 ## Personal thoughts about learning
 
-I’ll finish this article with this important insight: **learning isn’t done to you; it’s something you do. **
+I’ll finish this article with this important insight: __learning isn’t done to you; it’s something you do.__
 
 Properly learning something new is hard and feels uncomfortable at first. It doesn’t work to just sit there and passively watch a bunch of YouTube videos or read a few articles (something I was a victim of). That would be too easy. To get real results we need to be consistent, committed and learn actively. Learning actively means really engaging in the material we’re studying: solving practice problems, recalling study material, testing ourselves (flash cards are your friend), explaining to others a concept we just learned, etc.
 
 This is also one of the reasons why companies that buy the standardized 1 day / 1 week training courses don’t work. They’re popular because they’re easy to purchase, it’s easy to schedule, and managers can pat themselves on the back thinking they’re investing in their employees. But if we’re not taking advantage of how our brain learns, and other techniques mentioned above, the result will be subpar.
 
 Reshaping our brain is under our control. The key is patient persistence: working knowledgeably with our brain's strengths and weaknesses. By understanding our brain's default settings— the natural way it learns and thinks— we can take advantage of this knowledge to become an expert at anything.
-
-> Luck favors the one who tries.
-
-Babara Oakley
