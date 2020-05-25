@@ -7,7 +7,7 @@ After a year of self-studying machine learning full time using nothing but onlin
 
 The following is mostly based on my experience applying lessons from two books – [A mind for numbers](https://barbaraoakley.com/books/a-mind-for-numbers/), and [Pragmatic Thinking and Learning](https://pragprog.com/book/ahptl/pragmatic-thinking-and-learning).
 
-![](https://julienbeaulieu.github.io/public/lesser_known_facts/media/image1.png)
+<div style="text-align:center"><img src="https://julienbeaulieu.github.io/public/lesser_known_facts/media/image1.png" /></div>
 
 When reading books about learning, it’s easy to become overwhelmed with the flurry of techniques they throw at you. It’s nearly impossible to successfully apply everything at once. Learning about learning is just like anything else, we start off as beginners and get better and better at it with practice and over time. The goal of this article is to walk through simple steps I took to get on the path of getting better at learning.
 
@@ -33,7 +33,7 @@ How does this diffuse mode look like concretely?
 
 Have you have ever found the solution to a problem (a bug, the name of something you couldn’t remember, a math problem) come to you while you’re doing something totally unrelated to your initial task? Or sometime the next day, when you aren’t thinking about it? That’s because diffuse mode is asynchronous. It’s running as a background process, churning through old inputs, trying to dig up the information we need.
 
-![](https://julienbeaulieu.github.io/public/lesser_known_facts/media/image2.png)
+<div style="text-align:center"><img src="https://julienbeaulieu.github.io/public/lesser_known_facts/media/image2.png" /></div>
 
 These two pinball machines represent focused (left) and diffuse (right) ways of thinking. The red line represents a thought. When we focus on something, the prefrontal cortex automatically sends out signals along neural pathways. These signals link different areas of our brain related to what we’re thinking about (represented in the image as nodes).
 
@@ -77,7 +77,7 @@ __Tip \#3: A random approach, without goals nor structure, tends to give random 
 
 In previous attempts of learning new things, I have found that it's the vagueness of my learning goals that actually killed my attempts at learning. I would simply pick a course and dive right in. This time however, I spent weeks researching and refining my own [personal curriculum in machine learning](https://julienbeaulieu.github.io/2019/09/25/comprehensive-project-based-data-science-curriculum/), I created goals and milestones to reach, and a clear path to reaching them. This is a game changer as I have managed to learn machine learning without going to college.
 
-![](https://julienbeaulieu.github.io/public/lesser_known_facts/media/image3.png)
+<div style="text-align:center"><img src="https://julienbeaulieu.github.io/public/lesser_known_facts/media/image3.png" /></div>
 
 __Tip \#4: Taking responsibility for our own learning is one of the most important things we can do__
 
@@ -107,6 +107,6 @@ This is also one of the reasons why companies that buy the standardized 1 day / 
 
 Reshaping our brain is under our control. The key is patient persistence: working knowledgeably with our brain's strengths and weaknesses. By understanding our brain's default settings— the natural way it learns and thinks— we can take advantage of this knowledge to become an expert at anything.
 
-*Luck favors the one who tries.*
+> Luck favors the one who tries.
 
 Babara Oakley
