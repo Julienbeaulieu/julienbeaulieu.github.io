@@ -189,7 +189,7 @@ Resources | Source | Format
 
 ### Data Engineering
 
-Data Engineering is the foundation for the new world of Big Data. Here we learn to design data models, build data warehouses and data lakes, automate data pipelines, and work with massive data sets. Any good data scientist should know about data engineering. 
+Data Engineering is the foundation for the new world of Big Data. Any good data scientist should know about data engineering and how to deploy models, at least at the most basic level. Very early in your training you should start deploying models from your projects online. These days, employers are looking for these skills and you'll have a better shot a scoring the job than if you only know how to create models. 
 
 **Topics covered**:
 
@@ -203,6 +203,7 @@ Resources | Source | Format
 - Learn all about built-in experiment management, unit tests, labeling, linting scripts, continuous integration/continuous development with CircleCI, model versioning, Docker and deployment with this course that truely should be way more popular than it currently is. 
 - Complement this course with Andriy's amazing Machine Learning Engineering book that will teach you about the whole life cycle of a machine learning project. 
 - Read this multi-part blog series on deploying machine learning models in an automated, reproducible, and auditable manner.
+- Go back to some of the models you have built for your projects and deploy them!
 
 ### Optional Courses
 
@@ -224,7 +225,7 @@ Resources | Source | Format
 In addition to all of the above, I suggest doing the following:
 - Subscribe to these newsletters: [Andriy Burkov](https://www.linkedin.com/in/andriyburkov/detail/recent-activity/posts/), [Deeplearning.ai's The Batch](https://www.deeplearning.ai/thebatch/), [DataScienceWeekly](https://www.datascienceweekly.org/). 
 - Regularly explore [Meetup.com](https://www.meetup.com) to see if there are meetups on topics you are interested in. Since more meetups are currently happening online, you have access to meetups accross the entire world. 
-- Attend conferences. One I highly suggest going to is [Pycon]
+- Attend conferences. One I highly suggest going to is [Pycon](https://pycon.org/), even if that means spending a bit of money to attend and travel to a hosting city. The value you'll get from it is great.
 
 ## Final Notes
 
