@@ -22,14 +22,14 @@ The following education assumes no prior knowledge of data science, programming,
 
 If you have experience with machine learning already but are looking to refine your skills, you can also use this curriculum and start directly at the Deep Learning module and hand pick what you find interesting throughout.  
 
-This curriculum does assume however that you are extremly eager to learn, are self driven, and motivated because a lot of the resources are self-paced. Completing the curriculum end to end will easily take over a year. That said, this education goes much deeper than a bootcamp and will give you more hands on experience than most Masters degree.   
+This curriculum does assume however that you are extremely eager to learn, are self driven, and motivated because a lot of the resources are self-paced. Completing the curriculum end to end will easily take over a year. That said, this education goes much deeper than a boot camp and will give you more hands on experience than most Masters degree.   
 
 This curriculum is inspired by [OSSU's](https://github.com/ossu/computer-science) amazing self-taught, open source education in Computer Science. 
 
 **Why choose a self-taught education?**
 
-- Abundance of high quality resources: This curriculum includes a lot of courses from top universities (MIT, Stanford, University of San Francisco) as well as MOOCs that have been taken by millions of students and that have recieved outstanding reviews (Deeplearning.ai, Fastai, Le Wagon). 
-- Focus on state of the art techniques: there aren't many university courses and bootcamps that teach state of the art techniques such as ones found in [Fastai](https://fast.ai) or at Standford's CS224n Deep Learning for Natural Language Processing.  
+- Abundance of high quality resources: This curriculum includes a lot of courses from top universities (MIT, Stanford, University of San Francisco) as well as MOOCs that have been taken by millions of students and that have received outstanding reviews (Deeplearning.ai, Fastai, Le Wagon). 
+- Focus on state of the art techniques: there aren't many university courses and boot camps that teach state of the art techniques such as ones found in [Fastai](https://fast.ai) or at Standford's CS224n Deep Learning for Natural Language Processing.  
 - Flexibility: easy to pursue or continue part time if you find a job during the process. 
 - Passion: You can study and work on projects that you find the most interesting instead of being bound to a particular curriculum for 2 years.  
 - Self-starter: A strong requirement is that you have a proven ability to be a self-starter. If that is you, you're in the right place.   
@@ -41,14 +41,14 @@ This curriculum is inspired by [OSSU's](https://github.com/ossu/computer-science
 - Become a good developer with solid software engineer and computer science foundations.  
 - Read scientific papers and apply them or redo the experiments on your own. 
 - Deploy models with elegant and reusable code.
-- Get hired as a data sciencitst, data analyst, or machine learning engineer.
+- Get hired as a data scientist, data analyst, or machine learning engineer.
 
 ## Curriculum
 
 
 ### Programming Primer & Learning How to Learn
 
-Knowing how to programming is essential for data science. I highly suggest learning Python basics before anything else such as enrolling in a course or bootcamp. This way, you'll make the most out of your bootcamp/course and concentrate on the data science part. Make sure you are up to speed with the following material before going further. Also, since you are about to engage in a lifetime of learning new things, I highly recommend looking at the resources related to becoming a better learner.
+Knowing how to programming is essential for data science. I highly suggest learning Python basics before anything else such as enrolling in a course or boot camp. This way, you'll make the most out of your boot camp/course and concentrate on the data science part. Make sure you are up to speed with the following material before going further. Also, since you are about to engage in a lifetime of learning new things, I highly recommend looking at the resources related to becoming a better learner.
 
 >Note: ❤️s represent material I particularly enjoyed and recommend. 
 
@@ -68,17 +68,17 @@ Resources | Source | Format
 **Overview**
 - Get an overview of what machine learning is with the "Fundamentals of AI" to make sure it a good route for you to pursue. 
 - Learn programming basics with a great platform: Codecademy.  
-- Since you're about to start an epic learning journey, make sure you know how to apply the best techniques to learn effeciently. Taking "Learning how to learn" on Coursera is a must! The book on which the course is based on, "A Mind for Numbers", and the brilliant "Pragmatic Thinking and Learning" are good complementary options too. For a quick summary of all three resource refer to [this blogpost](https://julienbeaulieu.github.io/2020/05/25/lesser-known-facts-about-learning-how-to-get-better-at-studying/). 
+- Since you're about to start an epic learning journey, make sure you know how to apply the best techniques to learn efficiently. Taking "Learning how to learn" on Coursera is a must! The book on which the course is based on, "A Mind for Numbers", and the brilliant "Pragmatic Thinking and Learning" are good complementary options too. For a quick summary of all three resource refer to [this blogpost](https://julienbeaulieu.github.io/2020/05/25/lesser-known-facts-about-learning-how-to-get-better-at-studying/). 
 
 ### Core Data Science
 
-This is where you'll improve your coding abilities, math understanding and start working on real data science problems. In this respect, I highly recommend taking what I consider is the best data science bootcamp out there: [Le Wagon](https://www.lewagon.com/data-science-course/full-time). With a heavy emphasis on practical exercices and a final project in which you get to deploy your own machine learning model, this highly intensive bootcamp will give you a big picture data science end to end: just enough theory, data wrangling, data viz, programming inside an IDE, Git, machine learning, deep learning, data engineering. 
+This is where you'll improve your coding abilities, math understanding and start working on real data science problems. In this respect, I highly recommend taking what I consider is the best data science boot camp out there: [Le Wagon](https://www.lewagon.com/data-science-course/full-time). With a heavy emphasis on practical exercises and a final project in which you get to deploy your own machine learning model, this highly intensive boot camp will give you a big picture data science end to end: just enough theory, data wrangling, data viz, programming inside an IDE, Git, machine learning, deep learning, data engineering. 
 
 Once you understand and have worked on the most important parts of data science, you'll have a better idea of what you like, what your strengths and weaknesses are, and where to head next. This is also an opportunity to build your network. 
 
 Next, check out Fastai's Introduction to Machine Learning for Coders. **I recommend only watching the first 6 lectures which emphasizes tree-based models**. This is because the rest of the videos focus on deep learning which is better covered in their more recent course, listed below. Although this content is 3 years old, don't let that discourage you from watching it: it is taught by one of the the most respected data scientist in the world - Jeremy Howard - and is full of gems.   
 
-Complement your learning with Andriy Burkov's famous The Hundred-Page Machine Learning Book to make sure you learn from another perpective, and solidify your understanding in machine learning. 
+Complement your learning with Andriy Burkov's famous The Hundred-Page Machine Learning Book to make sure you learn from another perspective, and solidify your understanding in machine learning. 
 
 **Topics covered**:
 `Data wrangling`
@@ -100,8 +100,8 @@ Resources | Source | Format
 
 
 **Overview**
-- Gain experience in the most important data science related tasks by taking Le Wagon's bootcamp. For a cheaper version look at Udacity's [Data Analyst Nanodegree](https://www.udacity.com/course/data-analyst-nanodegree--nd002) combined with Coursera's [Machine Learning Course](https://www.coursera.org/learn/machine-learning#syllabus)
-- Get a practical approach to machine learning with tree based models and model interpretation with fastai.
+- Gain experience in the most important data science related tasks by taking Le Wagon's boot camp. For a cheaper version look at Udacity's [Data Analyst Nanodegree](https://www.udacity.com/course/data-analyst-nanodegree--nd002) combined with Coursera's [Machine Learning Course](https://www.coursera.org/learn/machine-learning#syllabus)
+- Get a practical approach to machine learning with tree based models and model interpretation with Fastai.
 - Complement your learning with the very well written and concise Hundred Page Machine Learning Book.  
 
 
@@ -129,7 +129,7 @@ Resources | Source | Format
 
 ### Core Math
 
-There is obviously a lot of math envolved in machine learning. Some will say that it's not strictly necessary to go deep into math theory and that it's better to focus more on coding. While there is some truth to this, if the end goal is to read, write, implement papers, and to be a true expert in data science, then do not neglect this part. 
+There is obviously a lot of math involved in machine learning. Some will say that it's not strictly necessary to go deep into math theory and that it's better to focus more on coding. While there is some truth to this, if the end goal is to read, write, implement papers, and to be a true expert in data science, then do not neglect this part. 
 
 I have compiled a list of the best resources to both get started and to go really deep down the math rabit whole, depending on what your needs are.  
 
@@ -184,7 +184,7 @@ Resources | Source | Format
 
 **Overview**
 - Learn how to create state of the art models using the Fastai Library with part 1 of their course. I suggest taking both the Fastai course and the Deep Learning Specialization together since one is more focused on coding while the other is more focused on the theory and math behind it.
-- Both Chirs Maning's and Justin Johnson's course (he used to teach the very popular CS231n at Stanford) are world class and will give you deep insights into the worlds of NLP and computer vision. Be sure to do the assignements since they will make you code algorithms from scratch and give you solid foundations to go deeper. 
+- Both Chirs Maning's and Justin Johnson's course (he used to teach the very popular CS231n at Stanford) are world class and will give you deep insights into the worlds of NLP and computer vision. Be sure to do the assignments since they will make you code algorithms from scratch and give you solid foundations to go deeper. 
 
 
 ### Data Engineering
@@ -200,7 +200,7 @@ Resources | Source | Format
 [ML in Production - Deployment Series](https://madewithml.com/projects/1011/ml-in-production-deployment-series/) | MLinProduction | Blogpost series 
 [Machine Learning Engineering](http://www.mlebook.com/) ❤️| Andriy Burkov | Book 
 
-- Learn all about built-in experiment management, unit tests, labeling, linting scripts, continuous integration/continuous development with CircleCI, model versioning, Docker and deployment with this course that truely should be way more popular than it currently is. 
+- Learn all about built-in experiment management, unit tests, labelling, linting scripts, continuous integration/continuous development with CircleCI, model versioning, Docker and deployment with this course that truly should be way more popular than it currently is. 
 - Complement this course with Andriy's amazing Machine Learning Engineering book that will teach you about the whole life cycle of a machine learning project. 
 - Read this multi-part blog series on deploying machine learning models in an automated, reproducible, and auditable manner.
 - Go back to some of the models you have built for your projects and deploy them!
@@ -216,7 +216,7 @@ Resources | Source | Format
 [SQL](https://mode.com/sql-tutorial/) | Mode Analytics 
 
 - Learn to rebuild some Pytorch modules as well as part of the Fastai library from scratch with part 2 of the course. This is also a great lecture in api design and software engineering. 
-- If you wish to specialize in machine learning moreso than deep learning, look no further than Andrew Ng's notorious machine learning lecture at Stanford.  
+- If you wish to specialize in machine learning more so than deep learning, look no further than Andrew Ng's notorious machine learning lecture at Stanford.  
 - If SQL is important for your projects and current/future job, become an expert with this SQL tutorial. 
 
 
@@ -224,12 +224,12 @@ Resources | Source | Format
 
 In addition to all of the above, I suggest doing the following:
 - Subscribe to these newsletters: [Andriy Burkov](https://www.linkedin.com/in/andriyburkov/detail/recent-activity/posts/), [Deeplearning.ai's The Batch](https://www.deeplearning.ai/thebatch/), [DataScienceWeekly](https://www.datascienceweekly.org/). 
-- Regularly explore [Meetup.com](https://www.meetup.com) to see if there are meetups on topics you are interested in. Since more meetups are currently happening online, you have access to meetups accross the entire world. 
-- Attend conferences. One I highly suggest going to is [Pycon](https://pycon.org/), even if that means spending a bit of money to attend and travel to a hosting city. The value you'll get from it is great.
+- Regularly explore [Meetup.com](https://www.meetup.com) to see if there are meetups on topics you are interested in. Since more meetups are currently happening online, you have access to meetups across the entire world. 
+- Attend conferences. One I highly suggest going to is [Pycon](https://pycon.org/), even if that means spending a bit of money to attend and travelling to a host city. The value you'll get from it will be worth it.
 
 ## Final Notes
 
-While I do update resources found in this curriculum quite regularly, some will inevitably become outdated. As a rule of thumb, you can be sure to trust the quality of the following content if you come accross their material: 
+While I do update resources found in this curriculum quite regularly, some will inevitably become outdated. As a rule of thumb, you can be sure to trust the quality of the following content if you come across their material: 
 - All new and old courses from Deeplearning.ai
 - All computer science / machine learning courses at Standford Online
 - All courses from Fastai and Jeremy Howard specifically
