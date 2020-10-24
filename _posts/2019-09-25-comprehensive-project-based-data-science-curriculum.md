@@ -1,138 +1,144 @@
-*updated 04/03/2020: curriculum v2.0
+*updated 25/10/2020: curriculum v3.0
 
 ## Contents
 
+- [Contents](#contents)
 - [Summary](#summary)
 - [Curriculum](#curriculum)
-  - [Math and programming primer](#math-and-programming-primer)
-  - [Core data science](#core-data-science)
-  - [Core math](#core-math)
-  - [Deep learning and advanced programming](#deep-learning-and-advanced-programming)
-  - [Data engineering](#data-engineering)
-  - [Projects](#projects)
+- [Programming Primer & Learning How to Learn](#programming-primer--learning-how-to-learn)
+- [Core Data Science](#core-data-science)
+- [Core Programming](#core-programming)
+- [Core Math](#core-math)
+- [Deep Learning](#deep-learning)
+- [Data Engineering](#data-engineering)
+- [Optional Courses](#optional-courses)
+- [Extras](#extras)
+- [Final Notes](#final-notes)
 
 ## Summary
 
-The following is a mix of project orientated learning and theory that I have studied or that I am currently studying in order to become a Data Scientist & a Deep Learning practitioner. My curriculum is intended to be a **complete education in data science** using online materials. I am currently studying this full time. 
+The curriculum presented here offers a mix of best in class resources and a suggested path to complete them in order to become a data scientist. It is intended to be a **complete education in data science** using online materials and is an alternative to getting a Masters degree. All resources have been heavily researched and used by myself in my journey of becoming a Data Scientist & a Deep Learning practitioner.
 
-My goal with this education is to make a complete career change into the field and to complement my business and marketing knowledge with tools to better analyze, predict, and uncover insights about real world problems. The hope is to join a startup I care about. 
+**Who is this for?**
+
+The following education assumes no prior knowledge of data science, programming, and only assumes knowledge of basic high school math. For this reason, it is intended for anyone who is currently in a completely unrelated field that wants to fully transition careers (I used to be a digital marketer). 
+
+If you have experience with machine learning already but are looking to refine your skills, you can also use this curriculum and start directly at the Deep Learning module and hand pick what you find interesting throughout.  
+
+This curriculum does assume however that you are extremly eager to learn, are self driven, and motivated because a lot of the resources are self-paced. Completing the curriculum end to end will easily take over a year. That said, this education goes much deeper than a bootcamp and will give you more hands on experience than a Masters at university.   
 
 This curriculum is inspired by [OSSU's](https://github.com/ossu/computer-science) amazing self-taught, open source education in Computer Science. 
 
 **Why choose a self-taught education?**
 
-- Abundance of high quality resources: This curriculum includes a lot of courses from top universities (MIT, Stanford, University of San Francisco) as well as MOOCs that have been taken by millions of students and that have recieved outstanding reviews. 
-- Focus on state of the art techniques: rarely does a university course teach state of the art technique such as ones found in [Fastai](https://fast.ai) for example. 
-- Flexibility: easy to continue part time if I find a job during the process. 
-- Passion: I can study and work on projects that I find the most interesting instead of being bound to a particular curriculum.  
-- Existing degree & professional experience: I have 8 years of experience working at various companies and hold a Master degree. The self-taught path is more efficient for since I am already passionate about the field. 
-- Self-starter: I have been learning in an auto didactic way all of my life. I know that this is a path that I can complete and succeed in.  
+- Abundance of high quality resources: This curriculum includes a lot of courses from top universities (MIT, Stanford, University of San Francisco) as well as MOOCs that have been taken by millions of students and that have recieved outstanding reviews (Deeplearning.ai, Fastai, Le Wagon). 
+- Focus on state of the art techniques: there aren't many university courses and bootcamps that teach state of the art techniques such as ones found in [Fastai](https://fast.ai) or at Standford's CS224n Deep Learning for Natural Language Processing.  
+- Flexibility: easy to pursue or continue part time if you find a job during the process. 
+- Passion: You can study and work on projects that you find the most interesting instead of being bound to a particular curriculum for 2 years.  
+- Self-starter: A strong requirement is that you have a proven ability to be a self-starter. If that is you, you're in the right place.   
 
-**My objectives with this coursework**
+**Objectives with this coursework**
 
-- Work on real world practical projects that I am passionate about. 
+- Work on real world practical projects that you are passionate about. 
 - Develop a strong knowledge base in math - this includes Linear algebra, calculus, statistics and probability theory. 
-- Become a good developer with strong software engineer and computer science foundations.  
-- Be able to read scientific papers and apply them or redo the experiments on my own. 
-- Become a Deep Learning practitioner. 
-
-**Organization**. The curriculum is designed as follows:
-- *Math and Programming Primer*: Get up to speed with the math and programming required for data science.
-- *Core Data Science*: Corresponds roughly to a first year of master's degree in data science if we include some of the material in Core Math. 
-- *Core Math*: Learn the math needed to understand data science at a deep and theoretical level.
-- *Deep Learning and Advanced Programming*: Corresponds roughly to second year master degree classes with an extra focus on Deep Learning and programming. 
-- *Data Engineering Basics*: Not many university programs teach this but it is an essential to know how to be profitient un ML Ops and put a model in production.
-- *Projects*: Personal projects I have undertaken to display my knowledge. 
+- Become a good developer with solid software engineer and computer science foundations.  
+- Read scientific papers and apply them or redo the experiments on your own. 
+- Deploy models with elegant and reusable code.
+- Get hired as a data sciencitst, data analyst, or machine learning engineer.
 
 ## Curriculum
 
-**Curriculum version**: `2.0`
 
-- [Math and programming primer](#math-and-programming-primer)
-- [Core data science](#core-data-science)
-- [Core math](#core-math)
-- [Deep learning and advanced programming](#deep-learning-and-advanced-programming)
-- [Data engineering](#data-engineering)
-- [Projects](#projects)
+## Programming Primer & Learning How to Learn
 
----
+Knowing how to programming is essential for data science. I highly suggest learning Python basics before anything else such as enrolling in a course or bootcamp. This way, you'll make the most out of your bootcamp/course and concentrate on the data science part. Make sure you are up to speed with the following material before going further. Also, since you are about to engage in a lifetime of learning new things, I highly recommend looking at the resources related to becoming a better learner.
 
-## Math and Programming Primer
-
-Fundamental math and basic programming is essential for data science. I made sure I was up to speed with the following material before going further. Since I was going to spend a lot of time learning new things, I also took a class and read about learning how to learn.
-
->Note: ❤️s represent material I particularly enjoyed. 
+>Note: ❤️s represent material I particularly enjoyed and recommend. 
 
 **Topics covered**:
 `Introduction to AI` ,
-`Inferential statistics` ,
-`Descriptive statistics`,
 `Introduction to Python`,
-`Pandas`,
-`Numpy`,
-`Matplotlib`,
-`scikit-learn`,
 `Learning how to learn`
 
-Resources | Source | Format | Status
-:-- | :--: | :--: | :--: | 
-[Fundamentals of AI](https://www.datacamp.com/courses/fundamentals-of-ai) ❤️ | DataCamp | Self-paced videos and coding environment | ✔️Done
-[RMOTR - Data Science](https://rmotr.com) | RMOTR | Self-paced videos and coding environment | ✔️Done
-[Intro to Inferential Statistics](https://www.udacity.com/course/intro-to-inferential-statistics--ud201) | Udacity | Self-paced videos and Math excercises | ✔️Done
-[Intro to Descriptive Statistics](https://www.udacity.com/course/intro-to-descriptive-statistics--ud827) | Udacity | Self-paced videos and Math excercises | ✔️Done
-[Calculus 1 & 2](https://www.khanacademy.org/math/calculus-1) | Khan Academy | Videos and Math excercises | ✔️Done
-[Version Control with Git](https://www.udacity.com/course/version-control-with-git--ud123) | Udacity | Self-paced videos | ✔️Done
-[Linux Command Line Basics](https://www.udacity.com/course/linux-command-line-basics--ud595) | Udacity | Self-paced videos | ✔️Done
-[A Mind for Numbers](https://barbaraoakley.com/books/a-mind-for-numbers/) ❤️ | Barbara Oakley | Book | ✔️Done
-[Pragmatic Thinking and Learning](https://pragprog.com/book/ahptl/pragmatic-thinking-and-learning) ❤️ |  Andy Hunt | Book | ✔️Done
+Resources | Source | Format 
+:-- | :--: | :--: |  
+[Fundamentals of AI](https://www.datacamp.com/courses/fundamentals-of-ai) ❤️ | DataCamp | Self-paced videos and coding environment
+[Learn Python](https://www.codecademy.com/learn/learn-python-3) | Codecademy | Self-paced videos and coding environment
+[Learning How to Learn](https://www.coursera.org/learn/learning-how-to-learn) ❤️ | Coursera | Self-paced videos
+[A Mind for Numbers](https://barbaraoakley.com/books/a-mind-for-numbers/) | Barbara Oakley | Book |
+[Pragmatic Thinking and Learning](https://pragprog.com/book/ahptl/pragmatic-thinking-and-learning) ❤️ |  Andy Hunt | Book
 
 **Overview**
-- Started with fundamentals of AI to make sure data science was a route I wanted to pursue. 
-- Learned how to program in Python with RMOTR.
-- Got back to speed with math fundamentals: Inferential and descriptive statistics, Calculus. 
-- Learned how to use Git and command line basics. 
-- Learn how to learn.
+- Get an overview of what machine learning is with the "Fundamentals of AI" to make sure it a good route for you to pursue. 
+- Learn programming basics with a great platform: Codecademy.  
+- Since you're about to start an epic learning journey, make sure you know how to apply the best techniques to learn effeciently. Taking "Learning how to learn" on Coursera is a must! The book on which the course is based on, "A Mind for Numbers", and the brilliant "Pragmatic Thinking and Learning" are good complementary options too. For a quick summary of all three resource refer to [this blogpost](https://julienbeaulieu.github.io/2020/05/25/lesser-known-facts-about-learning-how-to-get-better-at-studying/). 
 
 ## Core Data Science
 
-This is where I improved my coding abilities and started working on real data science. I did this module in parallel with the Math module.  
+This is where you'll improve your coding abilities, math understanding and start working on real data science problems. In this respect, I highly recommend taking what I consider is the best data science bootcamp out there: [Le Wagon](https://www.lewagon.com/data-science-course/full-time). With a heavy emphasis on practical exercices and a final project in which you get to deploy your own machine learning model, this highly intensive bootcamp will give you a big picture data science end to end: just enough theory, data wrangling, data viz, programming inside an IDE, Git, machine learning, deep learning, data engineering. 
+
+Once you understand and have worked on the most important parts of data science, you'll have a better idea of what you like, what your strengths and weaknesses are, and where to head next. This is also an opportunity to build your network. 
+
+Next, check out Fastai's Introduction to Machine Learning for Coders. **I recommend only watching the first 6 lectures which emphasizes tree-based models**. This is because the rest of the videos focus on deep learning which is better covered in their more recent course, listed below. Although this content is 3 years old, don't let that discourage you from watching it: it is taught by one of the the most respected data scientist in the world - Jeremy Howard - and is full of gems.   
+
+Complement your learning with Andriy Burkov's famous The Hundred-Page Machine Learning Book to make sure you learn from another perpective, and solidify your understanding in machine learning. 
 
 **Topics covered**:
 `Data wrangling`
 `Data collection with an API`,
+`SQL`,
+`Statistical tests & experiments`,
 `Data visualization`,
-`Regular expressions`,
-`Probability theory`
-`Supervised learning`,
-`Unsupervised learning`,
-`Deep learning`,
-`Model interpretation techniques`,
-`Data structures and algorithms`,
+`Machine Learning`,
+`Deep Learning`,
+`Random Forests`,
+`Model interpretation techniques`
 
-Resources | Source | Format | Status
-:-- | :--: | :--: | :--:
-[Data Analyst Nanodegree](https://www.udacity.com/course/data-analyst-nanodegree--nd002)  | Udacity | Self-paced videos and coding environment | ✔️Done
-[Introduction to Machine Learning Nanodegree](https://www.udacity.com/course/intro-to-machine-learning-nanodegree--nd229) | Udacity | Self-paced videos and coding | ✔️Done
-[The Hundred-Page Machine Learning Book](http://themlbook.com/) ❤️| Andriy Burkov | Book | ✔️Done
-[Statistical Learning](https://online.stanford.edu/courses/sohs-ystatslearning-statistical-learning-self-paced) | Stanford | Self-paced videos and exercises | ✔️Done
-[Introduction to Statistical Learning](http://faculty.marshall.usc.edu/gareth-james/ISL/) | Gareth James | Book | Partially completed
-[Intro to Data Structures and Algorithms](https://www.udacity.com/course/data-structures-and-algorithms-in-python--ud513) | Udacity | Self-paced videos and coding environment | In Progress
-[Introduction to Machine Learning for Coders - Fastai](http://course18.fast.ai/ml)  ❤️| U of San Francisco | Online videos and projects  | ✔️Done
-
+Resources | Source | Format 
+:-- | :--: | :--: 
+[Data Science Bootcamp](https://www.lewagon.com/data-science-course/full-time) ❤️ | Le Wagon | In person / remote lectures - 9 weeks
+[Introduction to Machine Learning for Coders - Fastai](http://course18.fast.ai/ml)  ❤️ | U of San Francisco | Online videos and projects
+[The Hundred-Page Machine Learning Book](http://themlbook.com/) ❤️ | Andriy Burkov | Book
+[Fastai Book](https://github.com/fastai/fastbook) | Jeremy Howard, Sylvain Gugger | Book
 
 
 **Overview**
-- Use Python and statistics to uncover insights. Learn how to collect, wrangle, explore and visualize a data set.
-- Introduction to supervised, unsupervised and deep learning with practical projects for each. 
-- Introduction to common data structures and algorithms in Python with practice exercises.
-- Practical approach to Machine Learning using fastai library. Focus on ensembles methods and deep learning.
-- Learn SQL for data analysis.
+- Gain experience in the most important data science related tasks by taking Le Wagon's bootcamp. For a cheaper version look at Udacity's [Data Analyst Nanodegree](https://www.udacity.com/course/data-analyst-nanodegree--nd002) combined with Coursera's [Machine Learning Course](https://www.coursera.org/learn/machine-learning#syllabus)
+- Get a practical approach to machine learning with tree based models and model interpretation with fastai.
+- Complement your learning with the very well written and concise Hundred Page Machine Learning Book.  
+
+
+## Core Programming
+
+The following resources will help you become a good programmer, software engineer and give you the tools to pass those pesky technical tests that most employers send you during recruitment. I suggest reviewing this material early in your education because being a good programmer will pay off very fast. 
+
+You don't need to go through all of this material in a linear way. Review this on an as-need basis but make sure you're regularly coming back to this material. 
+
+Resources | Source | Format 
+:-- | :--: | :--: 
+[Python with Corey Schafer](https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g) ❤️ | YouTube | Videos
+[Fluent Python](http://shop.oreilly.com/product/0636920032519.do) ❤️ | Luciano Ramalho | Book
+[Coding Exercises](https://www.hackerrank.com/domains/python) | HackerRank | Coding exercises
+[Intro to Data Structures and Algorithms](https://www.udacity.com/course/data-structures-and-algorithms-in-python--ud513) | Udacity | Self-paced videos and coding environment
+[Missing Semester](https://missing.csail.mit.edu/2020/) | MIT | Self-paced videos and exercises
+
+
+**Overview**
+- If you're struggling with any programming concept, make sure you search for videos of Corey Schafer explaining the subject. His videos are always on point, clear and enlightening. 
+- Familiarize yourself with common data structures and algorithms in Python with practice exercises.
+- Complete HackerRank exercises to practice interview questions and to get better at Python.
+- Once you've nailed the basics of Python, read Fluent Python to push things further. This book will walk you through Python’s core language features and libraries, and shows you how to make your code shorter, faster, and more readable at the same time. Note: keep an eye out for the updated edition of the book which is coming soon.
+- If you still aren't comfortable with the shell, version control (Git) and debugging, watch the lectures from MIT's Missing Semester and do the exercises. Really, don't forget to do the exercises!
 
 ## Core Math
 
+There is obviously a lot of math envolved in machine learning. Some will say that it's not strictly necessary to go deep into math theory and that it's better to focus more on coding. While there is some truth to this, if the end goal is to read, write, implement papers, and to be a true expert in data science, then do not neglect this part. 
+
+I have compiled a list of the best resources to both get started and to go really deep down the math rabit whole, depending on what your needs are.  
+
 **Topics covered**:
 `Linear algebra`
-`Analytic geometry`
+`statistics`
 `Matrix decompositions`
 `Vector calculus`
 `Probability and distributions`
@@ -142,99 +148,102 @@ Resources | Source | Format | Status
 `discrete mathematics`
 `and more`
 
-Resources | Source | Format | Status
-:-- | :--: | :--: | :--:
-[Essence of Linear Algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) ❤️ | YouTube | Videos | ✔️Done
-[StatQuest - Machine Learning](https://www.youtube.com/playlist?list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF) ❤️ | Youtube | Videos | Ongoing
-[Linear Algebra 18.06 with Gilbert Strang](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/) ❤️| MIT | Videos and homework | ✔️Done
-[Khan Academy - Linear Algebra](https://www.khanacademy.org/math/linear-algebra) | Khan Academy | Videos and exercises | ✔️Done
-[Mathematics for Machine Learning](https://mml-book.github.io/) | Marc Peter | Book | In progress
+Resources | Source | Format 
+:-- | :--: | :--: 
+[Essence of Linear Algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) ❤️ | YouTube | Videos
+[StatQuest - Machine Learning](https://www.youtube.com/playlist?list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF) ❤️ | Youtube | Videos
+[Linear Algebra](https://www.khanacademy.org/math/linear-algebra) | Khan Academy | Videos and exercises
+[Linear Algebra 18.06 with Gilbert Strang](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/) ❤️| MIT | Videos and homework
+[Calculus 1 & 2](https://www.khanacademy.org/math/calculus-1) | Khan Academy | Videos and Math excercises
+[Mathematics for Machine Learning](https://mml-book.github.io/) | Marc Peter | Book
 
 **Overview**
 - Get a great intuition of linear algebra with the fantastic resource: Essence of Linear Algebra by 3Blue1Brown.
-- Learn all things statistics and machine learning with Statquest. Some of the best and simplest explanations on the Web. 
-- Go deep into linear algebra with prof. Gilbert Strang's amazing lecture. 
-- Learn all the math required for machine learning with Marc Peter's (and co.) book. 
+- Learn all things statistics and machine learning with Statquest. Josh Starmer has a gift of breaking down complex ideas into some of the best and simplest explanations on the Web.
+- Go deep into linear algebra with prof. Gilbert Strang's amazing lecture. Complement with exercises in [his book](http://math.mit.edu/~gs/linearalgebra/) which also has the solutions to all the exercises. For a simpler alternative, refer to Khan Academy. 
+- Learn all the math required for machine learning with Marc Peter (and co.)'s book (advanced). 
 
-## Deep Learning and advanced programming
+## Deep Learning
 
-After completing **every course** in Core Data Science, we can move onto deep learning as well as more advanced Python. 
+After completing the courses in Core Data Science, and with more solid foundations in programming and machine learning theory, you can move onto deep learning. 
 
 **Topics covered**:
 `Loss functions and optimization`, 
 `Convolutional neural networks`,
-`Deep learning hardware and software`,
 `Recurrent neural networks`,
+`Deep learning hardware and software`,
+`Deep learning for tabular data`,
 `NLP`,
-`Generative models, U-nets`,
-`Deep reinforcement learning`,
-`Swift: deep learning basics`
+`Computer vision`,
+`Generative models`,
 
-Resources | Source | Format | Status
-:-- | :--: | :--: | :--:
-[Practical Deep Learning for Coders - Part 1](https://course.fast.ai/) ❤️ | U of San Francisco | Online videos and projects | ✔️ Done
-[Practical Deep Learning for Coders - Part 2](https://course.fast.ai/) ❤️ | U of San Francisco | Online videos and projects | In progress
-[Deep Learning Specilization](http://https://www.deeplearning.ai/deep-learning-specialization/) ❤️ | Coursera - Andrew Ng | Online videos and projects | In progress
-[Fluent Python](http://shop.oreilly.com/product/0636920032519.do) | Luciano Ramalho | Book | In progress
-[Fastai Book](https://github.com/fastai/fastbook) | Jeremy Howard, Sylvain Gugger | Book | In progress
+
+Resources | Source | Format
+:-- | :--: | :--: 
+[Practical Deep Learning for Coders - Part 1](https://course.fast.ai/) ❤️ | U of San Francisco | Online videos and recommended projects 
+[Deep Learning Specilization](http://https://www.deeplearning.ai/deep-learning-specialization/) ❤️ | Coursera - Andrew Ng | Online videos and assignments 
+[CS224n: Natural Language Processing with Deep Learning](http://web.stanford.edu/class/cs224n/) ❤️ | Stanford - Chris Manning | Online videos, assignments & final project
+[EECS 498-007 / 598-005 - Deep Learning for Computer Vision](https://web.eecs.umich.edu/~justincj/teaching/eecs498/FA2020/schedule.html) ❤️ | U of Michigan - Justin Johnson | Online videos and assignments & final project
 
 **Overview**
-- Learn how to create state of the art models using the Fastai Library with part 1. 
-- Learn to build these models and part of the Fastai library from scratch with part 2. 
-- Complement Fastai's practical approach with Andrew Ng's theoretical one with the Deep Learning Specilization. 
-- Tackle advanced Python notions with a deep dive into data structures, functions decorators and closures, control flow, metaprogramming, etc.
+- Learn how to create state of the art models using the Fastai Library with part 1 of their course. I suggest taking both the Fastai course and the Deep Learning Specialization together since one is more focused on coding while the other is more focused on the theory and math behind it.
+- Both Chirs Maning's and Justin Johnson's course (he used to teach the very popular CS231n at Stanford) are world class and will give you deep insights into the worlds of NLP and computer vision. Be sure to do the assignements since they will make you code algorithms from scratch and give you solid foundations to go deeper. 
+
 
 ## Data Engineering
 
 Data Engineering is the foundation for the new world of Big Data. Here we learn to design data models, build data warehouses and data lakes, automate data pipelines, and work with massive data sets. Any good data scientist should know about data engineering. 
 
 **Topics covered**:
-`Data modeling`,
-`Relational data models`,
-`SQL`,
-`NoSQL data models`,
-`Cloud data warehouses`
-`Data lakes`
-`Data pipelines`
-
-Resources | Source | Format | Status
-:-- | :--: | :--: | :--:
-[Data Engineer Nanodegree](https://www.udacity.com/course/data-engineer-nanodegree--nd027) | Udacity | Self-paced videos and coding environment | Not Started
-[SQL](https://mode.com/sql-tutorial/) | Mode Analytics | Articles and exercises | In progress
-[Getting Started with Google Cloud Platform](https://cloud.google.com/gcp/getting-started/) ️| Google | Articles | Not started
 
 
+Resources | Source | Format
+:-- | :--: | :--: 
+[Full Stack Deep Learning](https://course.fullstackdeeplearning.com/) ❤️| Udacity | Online videos and GitHub Project 
+[ML in Production - Deployment Series](https://madewithml.com/projects/1011/ml-in-production-deployment-series/) | MLinProduction | Blogpost series 
+[Machine Learning Engineering](http://www.mlebook.com/) ❤️| Andriy Burkov | Book 
 
-## Projects
+- Learn all about built-in experiment management, unit tests, labeling, linting scripts, continuous integration/continuous development with CircleCI, model versioning, Docker and deployment with this course that truely should be way more popular than it currently is. 
+- Complement this course with Andriy's amazing Machine Learning Engineering book that will teach you about the whole life cycle of a machine learning project. 
+- Read this multi-part blog series on deploying machine learning models in an automated, reproducible, and auditable manner.
 
-Here I list the projects I have been working on and will be adding new ones as I advance in my curriculum. This is probably the most important part of the curriculum in my opinion. There isn't a predefined list of projects since everyone should choose their own projects to work on based on what they find interesting. 
+## Optional Courses
 
-Ex: My latest project involves ways of interpreting a model in a business context on a churn problem, in order to gain better insights and change business behavior. This is because as a former marketing professional, this is something I am very interested in. 
+The following are amazing courses that I encourage you to take depending on your interests. 
 
-**Topics covered**:
-`Computer vision`
-`Standardized project structure`
-`Telemetry with Tensorboard`
-`Kaggle competition`
-`Ensembling and stacking`
-`Model interpretation`
-`Partial dependence`
-`Tree interpreter`
-`Finite state machines`
-`Technical writing`
+Resources | Source | Format
+:-- | :--: | :--: |
+[Practical Deep Learning for Coders - Part 2](https://course.fast.ai/) ❤️ | U of San Francisco | Online videos and projects
+[CS229 - Machine Learning](https://www.youtube.com/watch?v=jGwO_UgTS7I&list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU) | Standford - Andrew Ng | Online videos and assignments
+[SQL](https://mode.com/sql-tutorial/) | Mode Analytics 
 
-
-Projects | Topics 
-:-- | :--: 
-[Kaggle competition - Bengali Character recognition](https://github.com/Julienbeaulieu/kaggle-computer-vision-competition) | Computer vision / Pytorch / Standardized project structure / Mixup, Cutmix, OHEM, OneCycleLR / Tensorboard
-[Model Interpretation with SHAP - Presentation](https://docs.google.com/presentation/d/1VjHslMSY7JdHZBkDtBS3TQRkklb0Ql2NRnB-azsVFDE/edit) | SHAP library / shapley values / ICE Plots / feature interactions 
-[Model Interpretation with Random Forests](https://julienbeaulieu.github.io/2019/10/16/model-interpretation-with-random-forests-and-going-beyond-simple-predictions/) | Decision science / Partial dependence / tree interpreter / confidence based on tree variance 
-[Kaggle competition - Fraud Detection - Using Fastai best practices ](https://github.com/Julienbeaulieu/fraud-detection-kaggle-competition) | LGBM / Model memory reduction / Ensembling and stacking / Stratified cross validation 
-[Deep Learning Classifier with Pytorch](hhttps://github.com/Julienbeaulieu/Deeplearing-Image-Classifier-with-Pytorch) | Deep Learning / Transfer learning / Torchvision / Pytorch 
-[Unsupervised Learning to Identify Customer Segments](https://github.com/Julienbeaulieu/Unsupervised-Learning-to-Identify-Customer-Segments) | KMeans clusters / Principal component analysis
+- Learn to rebuild some Pytorch modules as well as part of the Fastai library from scratch with part 2 of the course. This is also a great lecture in api design and software engineering. 
+- If you wish to specialize in machine learning moreso than deep learning, look no further than Andrew Ng's notorious machine learning lecture at Stanford.  
+- If SQL is important for your projects and current/future job, become an expert with this SQL tutorial. 
 
 
-Feel free to send me resources, materials, courses that I have not included, or to send me a message if you want to chat about my experience learning so far. 
+## Extras
+
+In addition to all of the above, I suggest doing the following:
+- Subscribe to these newsletters: [Andriy Burkov](https://www.linkedin.com/in/andriyburkov/detail/recent-activity/posts/), [Deeplearning.ai's The Batch](https://www.deeplearning.ai/thebatch/), [DataScienceWeekly](https://www.datascienceweekly.org/). 
+- Regularly explore [Meetup.com](https://www.meetup.com) to see if there are meetups on topics you are interested in. Since more meetups are currently happening online, you have access to meetups accross the entire world. 
+- Attend conferences. One I highly suggest going to is [Pycon]
+
+## Final Notes
+
+While I do update resources found in this curriculum quite regularly, some will inevitably become out dated. As a rule of thumb, you can be sure to trust the quality of the follow content if you come accross their new material: 
+- All new and old courses from Deeplearning.ai
+- All computer science / machine learning courses at Standford Online
+- All courses from Fastai and Jeremy Howard specifically
+- Andrew Ng for machine learning 
+- Justin Johnson for computer vision
+- Chris Manning for NLP
+- Shut up and buy Andriy Burkov's books / subscribe to his content
+- StatQuest for statistics/ML explanations
+- 3Blue1Brown for math
+
+
+By no means is this the only content you should consume. Feel free to send me resources, materials, courses that I have not included that you particularly enjoyed, or to send me a message if you want to chat about my experience learning this material. 
 
 
 
