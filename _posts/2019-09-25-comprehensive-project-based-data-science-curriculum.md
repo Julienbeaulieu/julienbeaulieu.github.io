@@ -99,7 +99,7 @@ Resources | Source | Format
 [Fastai Book](https://github.com/fastai/fastbook) | Jeremy Howard, Sylvain Gugger | Book
 
 
-**Overview**
+**Overview**s
 - Gain experience in the most important data science related tasks by taking Le Wagon's boot camp. For a cheaper version look at Udacity's [Data Analyst Nanodegree](https://www.udacity.com/course/data-analyst-nanodegree--nd002) combined with Coursera's [Machine Learning Course](https://www.coursera.org/learn/machine-learning#syllabus)
 - Get a practical approach to machine learning with tree based models and model interpretation with Fastai.
 - Complement your learning with the very well written and concise Hundred Page Machine Learning Book.  
@@ -216,7 +216,7 @@ Resources | Source | Format
 [SQL](https://mode.com/sql-tutorial/) | Mode Analytics 
 
 - Learn to rebuild some Pytorch modules as well as part of the Fastai library from scratch with part 2 of the course. This is also a great lecture in api design and software engineering. 
-- If you wish to specialize in machine learning more so than deep learning, look no further than Andrew Ng's notorious machine learning lecture at Stanford.  
+- If you wish to specialize in machine learning more so than deep learning, look no further than Andrew Ng's famous machine learning lecture at Stanford.  
 - If SQL is important for your projects and current/future job, become an expert with this SQL tutorial. 
 
 
