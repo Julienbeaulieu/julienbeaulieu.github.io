@@ -16,6 +16,10 @@
 
 The curriculum presented here offers a mix of best in class resources and a suggested path to complete them in order to become a data scientist. It is intended to be a **complete education in data science** using online materials and is an alternative to getting a Masters degree. All resources have been heavily researched and used by myself in my journey of becoming a Data Scientist & a Deep Learning practitioner.
 
+**Motivation behind the curriculum**
+
+There is a lack of curated online resource that organizes the material into a long term learning plan that covers all aspects of data science using only the very best resources. Most curriculums only suggest content from their own platform, or suggest too many options which makes it hard to choose what to learn. 
+
 **Who is this for?**
 
 The following education assumes no prior knowledge of data science, programming, and only assumes knowledge of basic high school math. For this reason, it is intended for anyone who is currently in a completely unrelated field that wants to fully transition careers and get hired as a data scientist (I used to be a digital marketer). 
@@ -59,9 +63,9 @@ Knowing how to programming is essential for data science. I highly suggest learn
 
 Resources | Source | Format 
 :-- | :--: | :--: |  
-[Fundamentals of AI](https://www.datacamp.com/courses/ai-fundamentals) ❤️ | DataCamp | Self-paced videos and coding environment
-[Learn Python](https://www.codecademy.com/learn/learn-python-3) | Codecademy | Self-paced videos and coding environment
-[Learning How to Learn](https://www.coursera.org/learn/learning-how-to-learn) ❤️ | Coursera | Self-paced videos
+[Fundamentals of AI](https://www.datacamp.com/courses/ai-fundamentals) | DataCamp | Videos and coding environment exercises
+[Learn Python](https://www.codecademy.com/learn/learn-python-3) | Codecademy | Coding environment exercises
+[Learning How to Learn](https://www.coursera.org/learn/learning-how-to-learn) ❤️ | Coursera | Videos and quizzes
 [A Mind for Numbers](https://barbaraoakley.com/books/a-mind-for-numbers/) | Barbara Oakley | Book |
 [Pragmatic Thinking and Learning](https://pragprog.com/book/ahptl/pragmatic-thinking-and-learning) ❤️ |  Andy Hunt | Book
 
@@ -99,7 +103,7 @@ Resources | Source | Format
 [Fastai Book](https://github.com/fastai/fastbook) | Jeremy Howard, Sylvain Gugger | Book
 
 
-**Overview**s
+**Overview**
 - Gain experience in the most important data science related tasks by taking Le Wagon's boot camp. For a cheaper version look at Udacity's [Data Analyst Nanodegree](https://www.udacity.com/course/data-analyst-nanodegree--nd002) combined with Coursera's [Machine Learning Course](https://www.coursera.org/learn/machine-learning#syllabus)
 - Get a practical approach to machine learning with tree based models and model interpretation with Fastai.
 - Complement your learning with the very well written and concise Hundred Page Machine Learning Book.  
@@ -180,7 +184,7 @@ Resources | Source | Format
 [Practical Deep Learning for Coders - Part 1](https://course.fast.ai/) ❤️ | U of San Francisco | Online videos and recommended projects 
 [Deep Learning Specilization](https://www.deeplearning.ai/deep-learning-specialization/) ❤️ | Coursera - Andrew Ng | Online videos and assignments 
 [CS224n: Natural Language Processing with Deep Learning](http://web.stanford.edu/class/cs224n/) ❤️ | Stanford - Chris Manning | Online videos, assignments & final project
-[EECS 498-007 / 598-005 - Deep Learning for Computer Vision](https://web.eecs.umich.edu/~justincj/teaching/eecs498/FA2020/schedule.html) ❤️ | U of Michigan - Justin Johnson | Online videos and assignments & final project
+[EECS 498-007 / 598-005 - Deep Learning for Computer Vision](https://web.eecs.umich.edu/~justincj/teaching/eecs498/FA2020/schedule.html) ❤️ | U of Michigan - Justin Johnson | Online videos, assignments & final project
 
 **Overview**
 - Learn how to create state of the art models using the Fastai Library with part 1 of their course. I suggest taking both the Fastai course and the Deep Learning Specialization together since one is more focused on coding while the other is more focused on the theory and math behind it.
@@ -196,7 +200,7 @@ Data Engineering is the foundation for the new world of Big Data. Any good data 
 
 Resources | Source | Format
 :-- | :--: | :--: 
-[Full Stack Deep Learning](https://course.fullstackdeeplearning.com/) ❤️| Udacity | Online videos and GitHub Project 
+[Full Stack Deep Learning](https://course.fullstackdeeplearning.com/) ❤️| Udacity | Online videos and Project 
 [ML in Production - Deployment Series](https://madewithml.com/projects/1011/ml-in-production-deployment-series/) | MLinProduction | Blogpost series 
 [Machine Learning Engineering](http://www.mlebook.com/) ❤️| Andriy Burkov | Book 
 
@@ -213,7 +217,7 @@ Resources | Source | Format
 :-- | :--: | :--: |
 [Practical Deep Learning for Coders - Part 2](https://course.fast.ai/) ❤️ | U of San Francisco | Online videos and projects
 [CS229 - Machine Learning](https://www.youtube.com/watch?v=jGwO_UgTS7I&list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU) | Standford - Andrew Ng | Online videos and assignments
-[SQL](https://mode.com/sql-tutorial/) | Mode Analytics 
+[SQL](https://mode.com/sql-tutorial/) | Mode Analytics | Coding environment exercises
 
 - Learn to rebuild some Pytorch modules as well as part of the Fastai library from scratch with part 2 of the course. This is also a great lecture in api design and software engineering. 
 - If you wish to specialize in machine learning more so than deep learning, look no further than Andrew Ng's famous machine learning lecture at Stanford.  
