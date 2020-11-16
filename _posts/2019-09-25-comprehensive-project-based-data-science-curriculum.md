@@ -27,7 +27,7 @@ The following curriculum is intended for anyone who is currently in a field comp
 
 If you already have experience with machine learning but are looking to refine your skills, you can start directly at within the data science or deep learning module and hand-pick what you find interesting throughout.  
 
-This curriculum does however assume that you are extremely eager to learn, self driven, and motivated because a lot of the resources are self-paced. Completing the curriculum end to end will easily take over a year. That said, my programme goes much deeper than a bootcamp and will give you more hands-on experience than most master's degrees.   
+This curriculum does however, assume that you are extremely eager to learn, self driven, and motivated because a lot of the resources are self-paced. Completing the curriculum end to end will easily take over a year. That said, my programme goes much deeper than a bootcamp and will give you more hands-on experience than most master's degrees.   
 
 This curriculum is inspired by [OSSU's](https://github.com/ossu/computer-science) amazing self-taught, open source education in Computer Science. 
 
