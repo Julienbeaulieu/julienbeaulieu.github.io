@@ -1,6 +1,7 @@
 ***updated 25 Oct 2020**: curriculum v3.0
 
 - [Summary](#summary)
+- [Roadmap Visualization](#roadmap-visualization)
 - [Curriculum](#curriculum)
   - [Programming Primer & Learning How to Learn](#programming-primer--learning-how-to-learn)
   - [Core Data Science](#core-data-science)
@@ -46,6 +47,19 @@ This curriculum is inspired by [OSSU's](https://github.com/ossu/computer-science
 - Read scientific papers and apply them or redo the experiments on your own. 
 - Deploy models with elegant and reusable code.
 - Get hired as a data scientist, data analyst, or machine learning engineer.
+
+## Roadmap Visualization
+
+<br />
+
+![Data Science Roadmap](https://julienbeaulieu.github.io/public/Data-Science-Roadmap.jpg)
+![Data Science Roadmap](/home/julien/data-science/julienbeaulieu.github.io/public/Data-Science-Roadmap.jpg)
+
+<script src="//my.visme.co/visme-embed.js"></script><div class="visme_d" data-url="7689w7nz-data-science-roadmap" data-w="800" data-h="2730" data-domain="my"></div><p style="width:220px !important;border-radius:3px !important;padding:3px !important;font-size:12px !important;font-family:Arial, sans-serif !important;color:#314152 !important;white-space:nowrap !important">Made with <a href="https://www.visme.co/make-infographics?utm_source=CTA&amp;utm_medium=Embed" target="_blank" style="font-weight:600 !important;text-decoration:none !important;font-size:12px !important;font-family:Arial, sans-serif !important;color:#314152 !important;white-space:nowrap !important">Visme Infographic Maker</a></p>
+
+
+<br />
+
 
 ## Curriculum
 
@@ -246,6 +260,5 @@ While I do update resources found in this curriculum quite regularly, some will 
 
 
 Feel free to send me resources, materials, courses that I have not included that you particularly enjoyed, or to send me a message if you want to chat about my experience learning this material. 
-
 
 

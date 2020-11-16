@@ -1,1 +1,1 @@
-# Data Science Curriculum
+# Julien Beaulieu's Blog
