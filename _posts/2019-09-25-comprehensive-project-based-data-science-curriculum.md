@@ -50,23 +50,14 @@ This curriculum is inspired by [OSSU's](https://github.com/ossu/computer-science
 
 ## Roadmap Visualization
 
-<br />
-
-![Data Science Roadmap](https://julienbeaulieu.github.io/public/Data-Science-Roadmap.jpg)
-![Data Science Roadmap](/home/julien/data-science/julienbeaulieu.github.io/public/Data-Science-Roadmap.jpg)
-
 <script src="//my.visme.co/visme-embed.js"></script><div class="visme_d" data-url="7689w7nz-data-science-roadmap" data-w="800" data-h="2730" data-domain="my"></div><p style="width:220px !important;border-radius:3px !important;padding:3px !important;font-size:12px !important;font-family:Arial, sans-serif !important;color:#314152 !important;white-space:nowrap !important">Made with <a href="https://www.visme.co/make-infographics?utm_source=CTA&amp;utm_medium=Embed" target="_blank" style="font-weight:600 !important;text-decoration:none !important;font-size:12px !important;font-family:Arial, sans-serif !important;color:#314152 !important;white-space:nowrap !important">Visme Infographic Maker</a></p>
-
-
-<br />
-
 
 ## Curriculum
 
 
 ### Programming Primer & Learning How to Learn
 
-Knowing how to programming is essential for data science. I highly suggest learning Python basics before anything else such as enrolling in a course or boot camp. This way, you'll make the most out of your boot camp/course and concentrate on the data science part. Make sure you are up to speed with the following material before going further. Also, since you are about to engage in a lifetime of learning new things, I highly recommend looking at the resources related to becoming a better learner.
+Knowing how to program is essential for data science. I highly suggest learning Python basics before anything else such as enrolling in a course or boot camp. This way, you'll make the most out of your boot camp/course and concentrate on the data science part. Make sure you are up to speed with the following material before going further. Also, since you are about to engage in a lifetime of learning new things, I highly recommend looking at the resources related to becoming a better learner.
 
 >Note: ❤️s represent material I particularly enjoyed and recommend. 
 
