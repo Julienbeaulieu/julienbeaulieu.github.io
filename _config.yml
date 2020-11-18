@@ -7,7 +7,7 @@ permalink:           pretty
 # Setup
 title:               Julien Beaulieu
 tagline:             'Data Scientist'
-description:         'I am Julien Beaulieu, an aspiring data scientist. I write about Data Science, work and productivity. Contact me to have a chat.'
+description:         'I am Julien Beaulieu, and I work as a data scientist. I write about Data Science, learning and productivity. Contact me to have a chat.'
 url:                 https://julienbeaulieu.github.io
 baseurl:             'https://julienbeaulieu.github.io'
 paginate:            5
