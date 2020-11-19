@@ -81,7 +81,7 @@ Resources | Source | Format
 
 ### Core Data Science
 
-This is where you'll improve your coding abilities, mathematical understanding and start working on real data science problems. In this respect, I recommend taking what I consider is the best data science bootcamp out there: [Le Wagon](https://www.lewagon.com/data-science-course/full-time). With a heavy emphasis on practical exercises and a final project in which you get to deploy your own machine learning model, this intensive bootcamp will give you the big picture on data science end to end: math theory, data wrangling, data vizualization, programming inside an IDE, Git, machine learning, deep learning, and data engineering. 
+This is where you'll improve your coding abilities, mathematical understanding and start working on real data science problems. In this respect, I recommend taking what I consider is the best data science bootcamp out there: [Le Wagon](https://www.lewagon.com/data-science-course/full-time)**. With a heavy emphasis on practical exercises and a final project in which you get to deploy your own machine learning model, this intensive bootcamp will give you the big picture on data science end to end: math theory, data wrangling, data vizualization, programming inside an IDE, Git, machine learning, deep learning, and data engineering. 
 
 Once you understand and have worked on the most important aspects of data science, you'll have a better idea of what you enjoy, what your strengths and weaknesses are, and where to head next. This is also an opportunity to build your new professional network. 
 
@@ -250,3 +250,5 @@ While I update resources found in this curriculum quite regularly, some will ine
 
 
 Please feel free to send me any resources, materials, courses that I have not included that you particularly enjoyed, or to send me a message if you want to chat about my experience learning this material. 
+
+**Disclaimer: I am a freelance teacher at Le Wagon's data science bootcamp. That said, they are not paying me to be included here. I decided to add the bootcamp to the curriculum because of how valuable I think it is. 
