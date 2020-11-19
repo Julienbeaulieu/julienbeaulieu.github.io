@@ -27,7 +27,7 @@ The following curriculum is intended for anyone who is currently in a field comp
 
 If you already have experience with machine learning but are looking to refine your skills, you can start directly at within the data science or deep learning module and hand-pick what you find interesting throughout.  
 
-This curriculum does however, assume that you are extremely eager to learn, self driven, and motivated because a lot of the resources are self-paced. Completing the curriculum end to end will easily take over a year. That said, my programme goes much deeper than a bootcamp and will give you more hands-on experience than most master's degrees.   
+This curriculum does, however, assume that you are extremely eager to learn, self driven, and motivated because a lot of the resources are self-paced. Completing the curriculum end to end will easily take over a year. That said, my programme goes much deeper than a bootcamp and will give you more hands-on experience than most master's degrees.   
 
 This curriculum is inspired by [OSSU's](https://github.com/ossu/computer-science) amazing self-taught, open source education in Computer Science. 
 
@@ -123,6 +123,7 @@ You don't need to go through all of this material in a linear way. Review this o
 Resources | Source | Format 
 :-- | :--: | :--: 
 [Python with Corey Schafer](https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g) ❤️ | YouTube | Videos
+[Python for Data Analysis, 2nd Edition](https://www.oreilly.com/library/view/python-for-data/9781491957653) | Wes McKinney | Book
 [Fluent Python](http://shop.oreilly.com/product/0636920032519.do) ❤️ | Luciano Ramalho | Book
 [Coding Exercises](https://www.hackerrank.com/domains/python) | HackerRank | Coding exercises
 [Intro to Data Structures and Algorithms](https://www.udacity.com/course/data-structures-and-algorithms-in-python--ud513) | Udacity | Self-paced videos and coding environment
@@ -130,7 +131,8 @@ Resources | Source | Format
 
 
 **Overview**
-- If you're struggling with any programming concept, make sure you search for videos of Corey Schafer explaining the subject. His videos are always well-built, clear and enlightening. 
+- If you're struggling with any programming concept, make sure you search for videos of Corey Schafer explaining the subject. His videos are always well-built, clear and enlightening.
+- This book is a practical, modern introduction for manipulating, processing, cleaning, and crunching datasets in Python. It is ideal for beginners and is a great way to get better at pandas, Numpy, and IPython.
 - Familiarize yourself with common data structures and algorithms in Python with practice exercises.
 - Complete HackerRank exercises to refine your Python skills with interview-style questions.
 - Once you've nailed the basics of Python, read Fluent Python to push things further. This book will walk you through Python’s core language features and libraries, and shows you how to make your code shorter, faster, and more readable at the same time. Note: keep an eye out for the updated edition of the book which is coming soon.
