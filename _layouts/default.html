@@ -26,6 +26,7 @@
 
       <div class="container content">
         {{ content }}
+        {% include subscription-form.html %}
       </div>
     </div>
 
@@ -48,8 +49,6 @@
         }, false);
       })(document);
     </script>
-
-    {% include subscription-form.html %}
 
   </body>
 </html>
